@@ -1,0 +1,11 @@
+.container {
+    @apply py-4 bg-gray-400 lg:px-32 flex items-center justify-between
+}
+
+.navigation {
+    @apply space-x-8
+}
+
+.navigation > a {
+    @apply hover:text-indigo-500 hover:underline hover:underline-offset-2
+}
