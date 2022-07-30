@@ -1,7 +1,7 @@
 import styles from './Main.module.css'
 import brandIcon from '../../public/punk4596.png'
 import Image from 'next/image';
-import { SiGithubactions, SiGraphql, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPython, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiAdobephotoshop, SiGithubactions, SiGraphql, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiNodedotjs, SiPython, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si';
  
 export const Main = () => {
 
@@ -71,8 +71,8 @@ export const Main = () => {
                         <p>MongoDB</p>
                     </div>
                     <div className={styles.skillItem}>
-                        <SiPostgresql className='w-14 h-14 duration-300 fill-[#0064a5]' />
-                        <p>PostgreSQL</p>
+                        <SiAdobephotoshop className='w-14 h-14 duration-300 fill-[#40D0FB]' />
+                        <p>Photoshop</p>
                     </div>
                 </div>
             </div>
