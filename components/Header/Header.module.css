@@ -1,11 +1,15 @@
 .container {
-    @apply py-4 bg-gray-400 lg:px-32 flex items-center justify-between
+    @apply py-4 shadow-lg  px-8 sm:px-16 md:px-24 lg:px-32 flex items-center justify-between sticky top-0 bg-black/10 backdrop-blur-sm
 }
 
 .navigation {
-    @apply space-x-8
+    @apply gap-6 hidden sm:flex
 }
 
 .navigation > a {
-    @apply hover:text-indigo-500 duration-200 ease-in-out
+    @apply hover:text-amethyst-400 duration-200 ease-in-out
+}
+
+.menu {
+    @apply  sm:hidden
 }

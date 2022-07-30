@@ -1,0 +1,11 @@
+.wrapper {
+    @apply px-8 sm:px-16 md:px-24 lg:px-32  py-16 flex flex-wrap justify-center gap-4
+}
+
+.wrapperItem {
+    @apply flex items-center gap-2 relative
+}
+
+/* .wrapperItem > svg {
+    @apply hover:scale-110 duration-300
+} */

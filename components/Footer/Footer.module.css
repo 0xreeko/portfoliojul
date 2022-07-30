@@ -1,5 +1,5 @@
 .container {
-    @apply py-8 flex items-center justify-between bg-gray-300 lg:px-32
+    @apply py-8 flex items-center justify-between px-8 sm:px-16 md:px-24 lg:px-32  text-m-copy sm:text-d-copy
 }
 
 .link {
