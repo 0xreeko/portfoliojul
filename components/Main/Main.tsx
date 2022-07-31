@@ -25,7 +25,7 @@ export const Main = () => {
             </div>
             <div className="py-12">
                 <h2 className="text-d-h2">Skills</h2>
-                <div className="grid grid-cols-4 gap-4 mt-4 gap-y-8 justify-items-center">
+                <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-8 justify-items-center">
                     <div className={styles.skillItem}>
                         <SiNextdotjs className='duration-300 w-14 h-14 fill-russian-400'/>
                         <p>NextJS</p>
