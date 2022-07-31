@@ -1,7 +1,8 @@
 import styles from './Main.module.css'
 import brandIcon from '../../public/punk4596.png'
 import Image from 'next/image';
-import { SiAdobephotoshop, SiGithubactions, SiGraphql, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiNodedotjs, SiPython, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import { SiAdobephotoshop, SiEthereum, SiGithubactions, SiGraphql, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiNodedotjs, SiPython, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si';
+import {FaHardHat } from 'react-icons/fa';
  
 export const Main = () => {
 
@@ -25,7 +26,7 @@ export const Main = () => {
             </div>
             <div className="py-12">
                 <h2 className="text-d-h2">Skills</h2>
-                <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-y-8 justify-items-center">
+                <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-8 justify-items-center">
                     <div className={styles.skillItem}>
                         <SiNextdotjs className='duration-300 w-14 h-14 fill-russian-400'/>
                         <p>NextJS</p>
@@ -61,6 +62,14 @@ export const Main = () => {
                     <div className={styles.skillItem}>
                         <SiPython className='w-14 h-14 duration-300 fill-[#4B8BBE]' />
                         <p>Python</p>
+                    </div>
+                    <div className={styles.skillItem}>
+                        <SiEthereum className='duration-300 w-14 h-14 fill-azure-500' />
+                        <p>EthersJS</p>
+                    </div>
+                    <div className={styles.skillItem}>
+                        <FaHardHat className='duration-300 w-14 h-14 fill-jasper-500' />
+                        <p>Hardhat</p>
                     </div>
                     <div className={styles.skillItem}>
                         <SiSolidity className='duration-300 w-14 h-14 fill-sylver-800' />
