@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Alert } from '../components/Alert/Alert'
 import { Contact } from '../components/Contact/Contact'
 import { Footer } from '../components/Footer/Footer'
 import { Header } from '../components/Header/Header'
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Built with 👾 by 0xreeko using NextJS and TailwindCSS" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+  <Alert/>
       <Header />
       <Main/>
       <Contact />
