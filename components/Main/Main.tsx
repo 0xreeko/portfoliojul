@@ -76,20 +76,17 @@ export const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full py-12 mx-auto portfolio">
+            {/* <div className="w-full py-12 mx-auto portfolio">
                 <h2 className="text-d-h2">Portfolio</h2>
                 <div className="grid grid-cols-3 mx-auto justify-items-center">
                     <p>hey</p>
                     <p>hey</p>
                     <p>hey</p>
                 </div>
-            </div>
-            <div className="">
+            </div> */}
+            {/* <div className="">
                 <h2 className="text-d-h2">Services</h2>
-            </div>
-            <div className="">
-                <h2 className="text-d-h2">Services</h2>
-            </div>
+            </div> */}
         </div>
     )
 };
