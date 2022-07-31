@@ -3,7 +3,7 @@ import {SiDiscord, SiTwitter, SiMicrosoftoutlook} from 'react-icons/si'
  
 export const Contact = () => {
     return (
-        <div className={styles.wrapper}>
+        <section id='contact' className={styles.wrapper}>
             <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`origin`}>
             <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                 <SiTwitter className='w-8 h-8 duration-300 fill-blue-500 group-hover:scale-110' />
@@ -20,6 +20,6 @@ export const Contact = () => {
                 <SiMicrosoftoutlook className='w-8 h-8 duration-300 fill-azure-500 group-hover:scale-110'/>
                 <p className='group-hover:text-azure-300'>Email me via Outlook</p>
             </div>
-        </div>
+        </section>
     )
 };
