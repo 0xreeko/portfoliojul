@@ -12,20 +12,21 @@ export const Main = () => {
     return (
         <div className={`${styles.container}`}>
             <div className="flex flex-col-reverse items-center py-12 gap-y-6 sm:justify-evenly sm:flex-row">
-            <div className="flex flex-col w-full max-w-md ">
+            <div className="flex flex-col w-full max-w-2xl">
                 {/* neon street light flicker every 6s ? */}
-                <h1 className=' text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
-                <p className='text-d-h3'>Fullstack Web3 Developer, Hacker & MPE Investor</p>
+                <p className='text-m-h1 sm:text-d-h1 text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</p>
+                <h1 className='text-m-hero sm:text-d-hero'>Building cool sh*t in public!</h1>
+                <p className='text-m-sub2 sm:text-d-sub2'>Fullstack Web3 Developer, Hacker & MPE Investor</p>
             </div>
             <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-russian-400/40 to-transparent w-fit'>
                 <div className="flex p-2 rounded-full bg-russian-600"><Image width={176}  height={176}  className="rounded-full bg-amethyst-500" src={brandIcon}></Image></div>
             </div>
             </div>
-            <div className="w-full py-8 mx-auto text-center text-d-sub2">
+            <div className="w-full py-8 mx-auto text-center text-m-sub1 sm:text-d-sub1">
                 <p>Solving problems and materialising visions into tangible products.</p>
             </div>
             <div className="py-12">
-                <h2 className="text-d-h2">Skills</h2>
+                <h2 className="text-m-h2 sm:text-d-h2"></h2>
                 <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-8 justify-items-center">
                     <div className={styles.skillItem}>
                         <SiNextdotjs className='duration-300 w-14 h-14 fill-russian-400'/>
