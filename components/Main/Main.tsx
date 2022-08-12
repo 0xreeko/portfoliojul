@@ -1,91 +1,31 @@
 import styles from './Main.module.css'
-import brandIcon from '../../public/punk4596.png'
 import Image from 'next/image';
-import { SiAdobephotoshop, SiEthereum, SiGithubactions, SiGraphql, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiNodedotjs, SiPython, SiSolidity, SiTailwindcss, SiTypescript } from 'react-icons/si';
-import {FaHardHat } from 'react-icons/fa';
- 
+import brandIcon from '../../public/punk4596.png'
+import Link from 'next/link';
+import { RuiButton } from 'ruskelui';
+
 export const Main = () => {
 
-    const skillItems = [
-        {"title": "NextJS","icon": <SiNextdotjs />}
-    ]
     return (
-        <div className={`${styles.container}`}>
-            <div className="flex flex-col-reverse items-center py-12 gap-y-6 sm:justify-evenly sm:flex-row">
-            <div className="flex flex-col w-full max-w-2xl">
-                {/* neon street light flicker every 6s ? */}
-                <p className='text-m-h1 sm:text-d-h1 text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</p>
-                <h1 className='text-m-hero sm:text-d-hero'>Building cool sh*t in public!</h1>
-                <p className='text-m-sub2 sm:text-d-sub2'>Fullstack Web3 Developer, Hacker & MPE Investor</p>
-            </div>
-            <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-russian-400/40 to-transparent w-fit'>
-                <div className="flex p-2 rounded-full bg-russian-600"><Image width={176}  height={176}  className="rounded-full bg-amethyst-500" src={brandIcon}></Image></div>
-            </div>
-            </div>
-            <div className="w-full py-8 mx-auto text-center text-m-sub1 sm:text-d-sub1">
-                <p>Solving problems and materialising visions into tangible products.</p>
-            </div>
-            <div className="py-12">
-                <h2 className="text-m-h2 sm:text-d-h2"></h2>
-                <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-8 justify-items-center">
-                    <div className={styles.skillItem}>
-                        <SiNextdotjs className='duration-300 w-14 h-14 fill-russian-400'/>
-                        <p>NextJS</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiTypescript className='w-14 h-14 duration-300 fill-[#007acc]'/>
-                        <p>Typescript</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiTailwindcss className='w-14 h-14 duration-300 fill-[#00b4b6]'/>
-                        <p>Tailwind</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiNodedotjs className='w-14 h-14 duration-300 fill-[#215732]'/>
-                        <p>Node & Express</p>
-                        </div>
-                    <div className={styles.skillItem}>
-                        <SiGraphql className='w-14 h-14 duration-300 fill-[#E10098]'/>
-                        <p>GraphQL</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiJsonwebtokens className='duration-300 w-14 h-14 fill-scarlet-500'/>
-                        <p>JWT</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiJest className='w-14 h-14 duration-300 fill-[#C63D14]' />
-                        <p>Jest</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiGithubactions className='duration-300 w-14 h-14 fill-azure-500' />
-                        <p>GitHub Actions</p>
-                        </div>
-                    <div className={styles.skillItem}>
-                        <SiPython className='w-14 h-14 duration-300 fill-[#4B8BBE]' />
-                        <p>Python</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiEthereum className='duration-300 w-14 h-14 fill-azure-500' />
-                        <p>EthersJS</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <FaHardHat className='duration-300 w-14 h-14 fill-jasper-500' />
-                        <p>Hardhat</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiSolidity className='duration-300 w-14 h-14 fill-sylver-800' />
-                        <p>Solidity</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiMongodb className='w-14 h-14 duration-300 fill-[#4DB33D]' />
-                        <p>MongoDB</p>
-                    </div>
-                    <div className={styles.skillItem}>
-                        <SiAdobephotoshop className='w-14 h-14 duration-300 fill-[#40D0FB]' />
-                        <p>Photoshop</p>
+        <div className={`${styles.mainContainer}`}>
+            <div className="flex flex-col-reverse items-center py-12 gap-y-6 sm:justify-around sm:flex-row">
+                <div className="flex flex-col w-full max-w-2xl">
+                    {/* neon street light flicker every 6s ? */}
+                    <h1 className='text-m-h1 sm:text-d-h1 text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
+                    <p className='text-d-h2'>The coolest Fullstack Web3 Dev building cool sh*t in public!</p>
+                </div>
+
+                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit'>
+                    <div className="flex p-2 rounded-full bg-russian-600">
+                        <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko punk" className="rounded-full bg-amethyst-500" />
                     </div>
                 </div>
             </div>
+            <div className="flex w-full gap-6">
+                <Link href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></Link>
+                <Link href={'/blog'} className={`border-2`}><RuiButton size='base' color='russian'>Read the blog</RuiButton></Link>
+            </div>
+            
             {/* <div className="w-full py-12 mx-auto portfolio">
                 <h2 className="text-d-h2">Portfolio</h2>
                 <div className="grid grid-cols-3 mx-auto justify-items-center">
@@ -96,6 +36,14 @@ export const Main = () => {
             </div> */}
             {/* <div className="">
                 <h2 className="text-d-h2">Services</h2>
+                <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+                    <div className="flex flex-col justify-between h-40 p-4 w-80 rounded-2xl bg-russian-400/20">
+                        <h3>Web Development</h3>
+                        <p className='mt-2'>I use modern web tooling, like NextJs and Tailwind, to develop visually compelling fullstack applications.</p>
+                    </div>
+                    <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
+                    <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
+                </div>
             </div> */}
         </div>
     )

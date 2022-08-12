@@ -1,15 +1,15 @@
-.container {
+.headerContainer {
     @apply py-4 shadow-lg  px-8 sm:px-16 md:px-24 lg:px-64 flex items-center justify-between sticky top-0 bg-black/10 backdrop-blur-sm text-sylver-100
 }
 
-.navigation {
+.headerNavigation {
     @apply gap-6 hidden sm:flex
 }
 
-.navigation > a {
+.headerNavigation > a {
     @apply hover:text-amethyst-400 duration-200 ease-in-out
 }
 
-.menu {
+.headerMenu {
     @apply  sm:hidden
 }

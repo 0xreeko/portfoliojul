@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  html {
     font-family: 'Ubuntu', sans-serif;
     @apply selection:bg-amethyst-500
-
   }
-}
-body {
-  @apply bg-russian-600
+  body {
+    @apply bg-russian-600
+  }
 }

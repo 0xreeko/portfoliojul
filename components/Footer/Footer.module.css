@@ -1,7 +1,7 @@
-.container {
-    @apply py-8 flex items-center justify-between px-8 sm:px-16 md:px-24 lg:px-64  text-m-copy sm:text-d-copy text-sylver-100
+.footerContainer {
+    @apply py-8 flex flex-col sm:flex-row items-center justify-between px-8 sm:px-16 md:px-24 lg:px-64  text-m-copy sm:text-d-copy text-sylver-100
 }
 
-.link {
-    @apply underline underline-offset-2 text-indigo-500 font-medium
+.footerLink {
+    @apply underline underline-offset-2 text-indigo-400
 }
