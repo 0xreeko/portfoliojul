@@ -3,20 +3,31 @@ import { menu } from '../Icons';
 import styles from './Header.module.css'
 import { discordIcon, linkedInIcon, twitterIcon, youtubeIcon } from '../Icons';
 import { useRouter } from 'next/router';
+import { useEffect, useRef } from 'react';
+import {gsap} from 'gsap';
 
  
 export const Header = () => {
     const router = useRouter()
+
+    let nav = useRef(null)
+
+    useEffect(() => {
+        gsap.fromTo('.nav', 
+            {x: -8, opacity: 0},
+            {x: 0, opacity:1, stagger: .5, delay: .5}
+        )
+    }, [])
 
     return (
         <header className={styles.headerContainer}>
             { router.route === '/' ? <p className='cursor-pointer select-none'>0xreeko</p> : <Link href={'/'}>0xreeko</Link>}
             <div className={styles.headerNavigation}>
             <div className="flex items-center gap-4 pr-6">
-                <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`}><span className='duration-300 hover:text-amethyst-500'>{twitterIcon}</span></a>
-                <a href="https://discord.com/users/0xreeko#1744" target={`_blank`}><span className='duration-300 hover:text-amethyst-500'>{discordIcon}</span></a>
-                <a href="https://www.linkedin.com/in/enrictrillo/" target={`_blank`}><span className='duration-300 hover:text-amethyst-500'>{linkedInIcon}</span></a>
-                <a href="https://www.youtube.com/channel/UCov6heLQcDoSUD2rwhyGdUA/"><span className='duration-300 hover:text-amethyst-500'>{youtubeIcon}</span></a>
+                <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`}><span className='duration-300 nav hover:text-amethyst-400'>{twitterIcon}</span></a>
+                <a href="https://discord.com/users/0xreeko#1744" target={`_blank`}><span className='duration-300 nav hover:text-amethyst-400'>{discordIcon}</span></a>
+                <a href="https://www.linkedin.com/in/enrictrillo/" target={`_blank`}><span className='duration-300 nav hover:text-amethyst-400'>{linkedInIcon}</span></a>
+                <a href="https://www.youtube.com/channel/UCov6heLQcDoSUD2rwhyGdUA/"><span className='duration-300 nav hover:text-amethyst-400'>{youtubeIcon}</span></a>
             </div>
                 <div className='relative group'>
                     <Link href={'/about'}>About </Link>

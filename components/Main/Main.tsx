@@ -3,25 +3,43 @@ import Image from 'next/image';
 import brandIcon from '../../public/punk4596.png'
 import Link from 'next/link';
 import { RuiButton } from 'ruskelui';
+import {gsap} from 'gsap'
+import { useEffect, useRef } from 'react';
 
 export const Main = () => {
+
+    let punkLogo = useRef(null)
+    let hero = useRef(null)
+
+    useEffect(() => {
+        gsap.fromTo(punkLogo, {
+            y: -45,
+            opacity: 0,
+        }, {y:0, delay: .9, duration: 5, opacity:1, ease: 'elastic'})
+        gsap.fromTo(hero, {
+            y: -45,
+            opacity: 0,
+        }, {y:0, delay: .3, duration: 5, opacity:1, ease: 'elastic'})
+    }, [])
 
     return (
         <div className={`${styles.mainContainer}`}>
             <div className="flex flex-col-reverse items-center py-12 gap-y-6 sm:justify-around sm:flex-row">
-                <div className="flex flex-col w-full max-w-2xl">
+                {/* @ts-ignore */}
+                <div ref={el => hero = el}className="flex flex-col w-full max-w-2xl">
                     {/* neon street light flicker every 6s ? */}
-                    <h1 className='text-m-h1 sm:text-d-h1 text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
-                    <p className='text-d-h2'>The coolest Fullstack Web3 Dev building cool sh*t in public!</p>
+                    <h1 className='text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
+                    <p className='font-medium text-center sm:text-left text-d-h2'>Solving problems and materialising visions into <span className='text-amethyst-500'>tangible products</span></p>
                 </div>
 
-                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit'>
+                {/* @ts-ignore */}
+                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit' ref={el => punkLogo = el}>
                     <div className="flex p-2 rounded-full bg-russian-600">
                         <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko punk" className="rounded-full bg-amethyst-500" />
                     </div>
                 </div>
             </div>
-            <div className="flex w-full gap-6">
+            <div className="flex justify-center w-full gap-6 sm:justify-start">
                 <Link href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></Link>
                 <Link href={'/blog'} className={`border-2`}><RuiButton size='base' color='russian'>Read the blog</RuiButton></Link>
             </div>

@@ -1,10 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Alert } from '../components/Alert/Alert'
-import { Contact } from '../components/Contact/Contact'
-import { Footer } from '../components/Footer/Footer'
-import { Header } from '../components/Header/Header'
 import { Main } from '../components/Main/Main'
+import { BaseLayout } from '../Layouts/Base'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -16,11 +13,9 @@ const Home: NextPage = () => {
         <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Alert/>
-      <Header />
-      <Main/>
-      {/* <Contact /> */}
-      <Footer />
+      <BaseLayout>
+        <Main/>
+      </BaseLayout>
     </div>
   )
 }
