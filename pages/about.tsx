@@ -7,17 +7,17 @@ const About: NextPage = () => {
         <BaseLayout>
         <div className="h-full px-8 text-sylver-100 sm:px-16 md:px-32 lg:px-64">
         <div id={`aboutRico`} className="flex flex-col w-full max-w-2xl py-8 ml-auto gap-y-6">
-                <p>Que lo que mi gente! I'm known as Rico - a Fullstack Web3 Developer with 4+ years of experience
+                <p>Que lo que mi gente! I&apos;m known as Rico - a Fullstack Web3 Developer with 4+ years of experience
                     solving problems and materialising visions into tangible
                     products. I made the switch to Web3 in Jan 2021, and I have
                     worked as a freelance creative for the past 8 years and counting,
                     covering areas like Djing, GFX, UI/UX & Motion Design, Video Editing,
                     Web development and more. I take pride in delivering quality digital
                     products with true impact.</p>
-                <p>I've embarked on my indie hacker journey to leverage my skills and develop products that solve your problems - currently working on RuskelUI to bring forth many out of my 23 biz ideas
+                <p>I&apos;ve embarked on my indie hacker journey to leverage my skills and develop products that solve your problems - currently working on RuskelUI to bring forth many out of my 23 biz ideas
                     that tap into 1T USD in TAM combined. Check out the official RuskelUI repo <a href="https://github.com/0xreeko/ruskelui" target={`_blank`}><span className='underline text-amethyst-400 underline-offset-4'>here.</span></a></p>
                 <p>Apart from Web3, my current interests are: Machine Learning & AI,
-                    Robotics, Internet of Things and the Mixed Reality umbrella. I've already developed in ML & AI before, but my goal is to eventually get deep in my dev bag and learn these themes thoroughly.</p>
+                    Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve already developed in ML & AI before, but my goal is to eventually get deep in my dev bag and learn these themes thoroughly.</p>
             </div>
             <div className="py-12">
                 <h2 className="text-m-h2 sm:text-d-h2"></h2>
