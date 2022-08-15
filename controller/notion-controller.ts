@@ -35,7 +35,7 @@ export default class NotionController {
     return {
       id: page.id,
       title: page.properties.Name.title[0].plain_text,
-      description: page.properties.Description.rich_text,
+      description: page.properties.Description.rich_text[0]?.text.content ?? null,
       date: page.properties.Created.created_time,
       slug: page.properties.Slug.rich_text,
       author: page.properties.Author.created_by.name,
