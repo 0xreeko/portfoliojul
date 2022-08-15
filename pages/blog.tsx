@@ -7,7 +7,7 @@ import NotionController from '../controller/notion-controller';
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
-   <>
+    <>
     <Head>
       <title>0xreeko Blog</title>
       <meta name="0xreeko&pos;s blog"/>
@@ -15,11 +15,15 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
     <div className='border text-sylver-100'>
       <Alert />
       <Header />
-      <div className="">
-
-      </div>
+      <main className="min-h-screen">
+        <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
+          <div className="flex items-center justify-center">
+            <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos; Blog</h1>
+          </div>
+        </div>
+      </main>
     </div>
-   </>
+    </>
   )
 };
 
