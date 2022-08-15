@@ -1,18 +1,19 @@
 import { colorType } from "ruskelui/dist/utils"
 
-type tags = 'Databases' | 'Auth2 & Encryption' | 'Reactjs' | 'Machine Learning & AI' | 'Testing' | 'Python' | 'Web3' | 'GraphQL' | 'Tailwind/CSS3/GSAP' | 'Nextjs' | 'Node & Express' | 'Typescript'
+type tags = 'Databases' | 'Security' | 'Reactjs' | 'Robotics' | 'Testing' | 'Python' | 'Web3' | 'GraphQL' | 'TailwindCSS3' | 'Nextjs' | 'APIs' | 'Typescript' | 'GSAP'
 
 export const variant: { [key in string]: colorType } = {
     'Databases': 'green',
-    'Auth2 & Encryption': 'cyan',
+    'Security': 'cyan',
     'Reactjs': 'jasper',
-    'Machine Learning & AI': 'kunzite',
+    'Robotics': 'kunzite',
     'Testing': 'orange',
     'Python': 'blue',
     'Web3': 'ruby',
     'GraphQL': 'fuchsia',
-    'Tailwind/CSS3/GSAP': 'teal',
+    'TailwindCSS3': 'teal',
     'Nextjs': 'scarlet',
-    'Node & Express': 'peridot',
-    'Typescript': 'azure'
+    'APIs': 'peridot',
+    'Typescript': 'azure',
+    'GSAP': 'jade'
   }
