@@ -8,7 +8,7 @@ export const TagsGroup = () => {
     return (
         <>
             {_tags.sort((a, b) => a.localeCompare(b)).map((item: string) => (
-                <RuiPill color={variant[item]}>{item}</RuiPill>
+                <a href={`/tags/${item}`}><RuiPill color={variant[item]}>{item}</RuiPill></a>
             ))}
         </>
     )

@@ -23,7 +23,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
         <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
           <div className="relative flex flex-col items-center justify-center">
             <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Corner</h1>
-            <div className="flex flex-wrap justify-center w-full gap-3">
+            <div className="flex flex-wrap justify-center w-full gap-3 mt-12">
               <TagsGroup />
             </div>
           </div>
