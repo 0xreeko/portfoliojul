@@ -7,19 +7,18 @@ import {gsap} from 'gsap'
 import { useEffect, useRef } from 'react';
 
 export const Main = () => {
-
     let punkLogo = useRef(null)
     let hero = useRef(null)
 
     useEffect(() => {
-        gsap.fromTo(punkLogo, {
-            y: -45,
-            opacity: 0,
-        }, {y:0, delay: .9, duration: 5, opacity:1, ease: 'elastic'})
-        gsap.fromTo(hero, {
-            y: -45,
-            opacity: 0,
-        }, {y:0, delay: .3, duration: 5, opacity:1, ease: 'elastic'})
+            gsap.fromTo(punkLogo, {
+                y: -45,
+                opacity: 0,
+            }, {y:0, delay: .9, duration: 5, opacity:1, ease: 'elastic'})
+            gsap.fromTo(hero, {
+                y: -45,
+                opacity: 0,
+            }, {y:0, delay: .3, duration: 5, opacity:1, ease: 'elastic'})
     }, [])
 
     return (
