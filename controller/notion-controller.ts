@@ -12,7 +12,6 @@ export default class NotionController {
   }
   async getPublishedPosts(): Promise<ReekoPost[]> {
     const database = process.env.NOTION_DATABASE ?? "";
-
     const response = await this.client.databases.query({
       database_id: database,
       filter: {
@@ -24,7 +23,7 @@ export default class NotionController {
       sorts: [
         {
           property: "Created",
-          direction: "descending",
+          direction: "ascending",
         },
       ],
     });
@@ -33,11 +32,12 @@ export default class NotionController {
     });
   }
   private static pageToReekoPostTransformer(page: any): ReekoPost {
+    console.log(page)
     return {
       id: page.id,
       title: page.properties.Name.title[0].plain_text,
       description: page.properties.Description.rich_text,
-      date: page.properties.Created,
+      date: page.properties.Created.created_time,
       slug: page.properties.Slug.rich_text,
       author: page.properties.Author.created_by.name,
       tags: page.properties.Tags.multi_select,

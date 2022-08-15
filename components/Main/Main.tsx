@@ -32,7 +32,7 @@ export const Main = () => {
                 </div>
 
                 {/* @ts-ignore */}
-                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit' ref={el => punkLogo = el}>
+                <div className='inline-flex p-2 rounded-full -z-10 bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit' ref={el => punkLogo = el}>
                     <div className="flex p-2 rounded-full bg-russian-600">
                         <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko punk" className="rounded-full bg-amethyst-500" />
                     </div>
@@ -43,15 +43,15 @@ export const Main = () => {
                 <Link href={'/blog'} className={`border-2`}><RuiButton size='base' color='russian'>Read the blog</RuiButton></Link>
             </div>
             
-            {/* <div className="w-full py-12 mx-auto portfolio">
+            <div className="w-full py-12 mx-auto portfolio">
                 <h2 className="text-d-h2">Portfolio</h2>
                 <div className="grid grid-cols-3 mx-auto justify-items-center">
                     <p>hey</p>
                     <p>hey</p>
                     <p>hey</p>
                 </div>
-            </div> */}
-            {/* <div className="">
+            </div>
+            <div className="">
                 <h2 className="text-d-h2">Services</h2>
                 <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
                     <div className="flex flex-col justify-between h-40 p-4 w-80 rounded-2xl bg-russian-400/20">
@@ -61,7 +61,7 @@ export const Main = () => {
                     <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
                     <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 };
