@@ -6,6 +6,7 @@ import { variant } from '../@types/tags';
 import { Alert } from '../components/Alert/Alert';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
+import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -20,8 +21,11 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
       <Header />
       <main className="h-fit text-sylver-100">
         <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center">
             <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Corner</h1>
+            <div className="flex flex-wrap justify-center w-full gap-3">
+              <TagsGroup />
+            </div>
           </div>
           <ol className="relative flex flex-col w-full gap-4 mt-12 -z-10">
           <div className=" fixed -left-[5%] top-[25%] w-64 h-64 blur-[3px] opacity-20">
