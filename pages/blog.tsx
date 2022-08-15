@@ -8,6 +8,7 @@ import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
+import dayjs from 'dayjs'
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -42,7 +43,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <div className="flex flex-col w-full gap-2">
                   <div className="flex flex-col justify-between sm:items-end sm:flex-row">
                     <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
+                    <span>{dayjs(item.date).format('MM-DD-YYYY')}</span>
                   </div>
                   <span className='text-m-base sm:text-d-base'>{item.description ?? ""}</span>
                   <ul className='flex flex-wrap gap-3'>
@@ -58,7 +59,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <div className="flex flex-col w-full gap-2">
                   <div className="flex flex-col justify-between sm:flex-row">
                     <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
+                    <p>{dayjs().format('{YYYY} MM-DDTHH:mm:ss SSS [Z] A')}</p>
                   </div>
                   <ul className='flex flex-wrap gap-3'>
                     {item.tags.length > 0 && item.tags.map((i: Tag) => (
