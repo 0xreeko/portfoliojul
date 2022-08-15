@@ -11,7 +11,7 @@ export type ReekoPost = {
     tags: Tag[],
     description: string,
     published: boolean,
+    updated: string,
     date: string
     author: string,
-    cover: string
 }
