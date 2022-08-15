@@ -12,5 +12,6 @@ export type ReekoPost = {
     description: string,
     published: boolean,
     date: string
-    author: string
+    author: string,
+    cover: string
 }
