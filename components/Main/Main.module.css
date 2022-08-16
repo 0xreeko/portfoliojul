@@ -1,5 +1,5 @@
 .mainContainer {
-    @apply py-8 px-8 sm:px-16 md:px-24 lg:px-64 flex-grow flex flex-col text-sylver-100
+    @apply py-8 px-8 sm:px-16 md:px-24 lg:px-64 flex-grow flex flex-col
 }
 
 .mainSkillItem {
