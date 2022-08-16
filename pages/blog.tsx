@@ -20,7 +20,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
       </Head>
       <Alert />
       <Header />
-      <main className="h-fit text-sylver-100">
+      <main className="h-fit">
         <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
           <div className="relative flex flex-col items-center justify-center">
             <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Corner</h1>

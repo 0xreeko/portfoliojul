@@ -8,6 +8,6 @@
     @apply selection:bg-amethyst-500
   }
   body {
-    @apply bg-russian-600
+    @apply bg-russian-600 text-sylver-100
   }
 }

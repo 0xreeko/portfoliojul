@@ -10,7 +10,7 @@ const About: NextPage = () => {
                 <title>About | 0xreeko</title>
             </Head>
             <BaseLayout>
-            <div className="h-full px-8 text-sylver-100 sm:px-16 md:px-32 lg:px-64">
+            <div className="h-full px-8 sm:px-16 md:px-32 lg:px-64">
                 <div id={`aboutRico`} className="flex flex-col w-full max-w-2xl py-8 ml-auto gap-y-6">
                     <p>Que lo que mi gente! I&apos;m known as Rico - a Fullstack Web3 Developer with 4+ years of experience
                         solving problems and materialising visions into tangible
