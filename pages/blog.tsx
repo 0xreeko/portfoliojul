@@ -43,7 +43,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <div className="flex flex-col w-full gap-2">
                   <div className="flex flex-col justify-between sm:items-end sm:flex-row">
                     <p className='text-d-sub1'>{item.title}</p>
-                    <span>{dayjs(item.date).format('MM-DD-YYYY')}</span>
+                    <span>{dayjs(item.date).format('MM-DD-YYYY, HH:mm A')}</span>
                   </div>
                   <span className='text-m-base sm:text-d-base'>{item.description ?? ""}</span>
                   <ul className='flex flex-wrap gap-3'>
