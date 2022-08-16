@@ -5,11 +5,11 @@ import { Header } from '../components/Header/Header';
  
 export const BaseLayout = ({children}: {children: ReactNode}) => {
     return (
-        <>
+        <div className='flex flex-col min-h-screen'>
         <Alert/>
         <Header/>
         {children}
         <Footer/>
-        </>
+        </div>
     )
 };

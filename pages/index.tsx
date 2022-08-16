@@ -2,11 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Main } from '../components/Main/Main'
 import { BaseLayout } from '../Layouts/Base'
-import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>0xreeko | Fullstack Web3 Developer</title>
         <meta name="author" content="0xreeko | Enric Trillo" />
@@ -16,7 +15,7 @@ const Home: NextPage = () => {
       <BaseLayout>
         <Main/>
       </BaseLayout>
-    </div>
+    </>
   )
 }
 

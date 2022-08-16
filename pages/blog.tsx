@@ -3,12 +3,10 @@ import Head from 'next/head';
 import { RuiPill } from 'ruskelui';
 import { ReekoPost, Tag } from '../@types/schema';
 import { variant } from '../@types/tags';
-import { Alert } from '../components/Alert/Alert';
-import { Footer } from '../components/Footer/Footer';
-import { Header } from '../components/Header/Header';
 import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
 import dayjs from 'dayjs'
+import { BaseLayout } from '../Layouts/Base';
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -18,9 +16,8 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
         <title>Blog | 0xreeko</title>
         <meta name="0xreeko&pos;s blog" />
       </Head>
-      <Alert />
-      <Header />
-      <main className="h-full">
+      <BaseLayout>
+      <main className="flex-grow">
         <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
           <div className="relative flex flex-col items-center justify-center">
             <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Corner</h1>
@@ -57,7 +54,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
           </ol>
         </div>
       </main>
-      <Footer />
+      </BaseLayout>
     </>
   )
 };
