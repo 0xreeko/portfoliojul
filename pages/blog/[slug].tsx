@@ -1,25 +1,47 @@
-import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import dayjs from 'dayjs';
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import ReactMarkdown from 'react-markdown';
+import { RuiPill } from 'ruskelui';
 import NotionController from '../../controller/notion-controller';
+import { variant } from '../../@types/tags';
+import { Tag } from '../../@types/schema';
 import { BaseLayout } from '../../Layouts/Base';
+const localisedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localisedFormat)
 
-const Slug: NextPage = ({markdown, post}: InferGetStaticPropsType <typeof getStaticProps>) => {
+const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
     const router = useRouter()
-    console.log(router.isReady ? router.query : null)
+    console.log(markdown)
     return (
         <>
-            <Head>
-                <title>{post.title}</title>
+            {router.isReady ? (<>
+                <Head>
+                <title>{`${post.title} | 0xreeko`}</title>
                 <meta name='description' title='description' content={post.description} />
                 <meta name='og:description' title='og:description' content={post.description} />
             </Head>
             <BaseLayout>
-                <main className='flex-grow'>
-                <article></article>
+                <main className='flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
+                    <div className="flex flex-col items-center text-center gap-y-3">
+                        <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
+                        <p className='flex items-center gap-3 text-d-bases'>
+                            <span>{dayjs(post.date).format('LL - HH:mm')}</span>
+                            <span>&middot;</span>
+                            <span className='flex gap-3'>{post.tags.map((tag: Tag) => (
+                                <RuiPill key={tag.id} color={variant[tag.name]}>{tag.name}</RuiPill>
+                            ))}</span>
+                            </p>
+                            <p className='italic text-sylver-800 text-m-sub1 md:text-d-sub1'>{post.description}</p>
+                    </div>
+                        <div className="w-full mt-12 prose text-sylver-100">
+                            <ReactMarkdown>{ markdown}</ReactMarkdown>
+                                </div>
                 </main>
-            </BaseLayout>
+                </BaseLayout>
+            </>) : "Loadin..."}
         </>
     )
 };
@@ -49,10 +71,10 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     if (!_page) {
         throw "Error"
     }
-  return {
-      props: {
-          markdown: _page.markdown,
-          post: _page.post
-    },
-  }
+    return {
+        props: {
+            markdown: _page.markdown,
+            post: _page.post
+        },
+    }
 }

@@ -44,7 +44,6 @@ export default class NotionController {
           }
         }
       })
-      console.log(response.results[0].id)
 
       if (!response.results[0]) {
         throw 'No post found!'
