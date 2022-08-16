@@ -1,5 +1,5 @@
 .footerContainer {
-    @apply py-8 flex bottom-0 w-full flex-col sm:flex-row items-center justify-between px-8 sm:px-16 md:px-24 lg:px-64 text-m-copy sm:text-d-copy border
+    @apply py-8 flex bottom-0 w-full flex-col sm:flex-row items-center justify-between px-8 sm:px-16 md:px-24 lg:px-64 text-m-copy sm:text-d-copy
 }
 
 .footerLink {
