@@ -15,3 +15,8 @@ export type ReekoPost = {
     date: string
     author: string,
 }
+
+export type PostPage = {
+    post: ReekoPost,
+    markdown: string
+}
