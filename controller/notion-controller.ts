@@ -37,7 +37,7 @@ export default class NotionController {
       title: page.properties.Name.title[0].plain_text,
       description: page.properties.Description.rich_text[0]?.text.content ?? null,
       date: page.properties.Created.created_time,
-      slug: page.properties.Slug.rich_text,
+      slug: page.properties.Slug.rich_text[0]?.text.content ?? null,
       author: page.properties.Author.created_by.name,
       tags: page.properties.Tags.multi_select,
       published: page.properties.Published.checkbox,
