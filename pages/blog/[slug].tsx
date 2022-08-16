@@ -1,4 +1,3 @@
-import dayjs from 'dayjs';
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -8,8 +7,7 @@ import NotionController from '../../controller/notion-controller';
 import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
 import { BaseLayout } from '../../Layouts/Base';
-const localisedFormat = require('dayjs/plugin/localizedFormat')
-dayjs.extend(localisedFormat)
+import dayjs from '../../utils/day'
 
 const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -36,7 +34,7 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                             </p>
                             <p className='italic text-sylver-800 text-m-sub1 md:text-d-sub1'>{post.description}</p>
                     </div>
-                        <div className="w-full mt-12 prose text-sylver-100">
+                        <div className="w-full mt-12 prose">
                             <ReactMarkdown>{ markdown}</ReactMarkdown>
                                 </div>
                 </main>

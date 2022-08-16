@@ -5,13 +5,11 @@ import { ReekoPost, Tag } from '../@types/schema';
 import { variant } from '../@types/tags';
 import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
-import dayjs from 'dayjs'
 import { BaseLayout } from '../Layouts/Base';
 import Link from 'next/link';
 import { linkIcon } from '../components/Icons';
 
-const localisedFormat = require('dayjs/plugin/localizedFormat')
-dayjs.extend(localisedFormat)
+import dayjs from '../utils/day'
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
