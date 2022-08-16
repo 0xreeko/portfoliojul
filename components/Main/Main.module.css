@@ -1,3 +1,7 @@
 .mainContainer {
     @apply py-8 px-8 sm:px-16 md:px-24 lg:px-64 flex-grow flex flex-col text-sylver-100
 }
+
+.mainSkillItem {
+    @apply flex flex-col items-center gap-2 text-center
+}
