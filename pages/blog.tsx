@@ -7,6 +7,10 @@ import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
 import dayjs from 'dayjs'
 import { BaseLayout } from '../Layouts/Base';
+import Link from 'next/link';
+
+const localisedFormat = require('dayjs/plugin/localizedFormat')
+dayjs.extend(localisedFormat)
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -39,8 +43,8 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
               <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
                 <div className="flex flex-col w-full gap-2">
                   <div className="flex flex-col justify-between sm:items-end sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{dayjs(item.date).format('MM-DD-YYYY')}</span>
+                    <Link href={`/blog/${item.slug}`}><p className='text-d-sub1'>{item.title}</p></Link>
+                    <span>{dayjs(item.date).format('LL')}</span>
                   </div>
                   <span className='text-m-base sm:text-d-base'>{item.description ?? ""}</span>
                   <ul className='flex flex-wrap gap-3'>
