@@ -23,7 +23,7 @@ export default class NotionController {
       sorts: [
         {
           property: "Created",
-          direction: "ascending",
+          direction: "descending",
         },
       ],
     });

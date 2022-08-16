@@ -20,7 +20,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
       </Head>
       <Alert />
       <Header />
-      <main className="h-fit">
+      <main className="h-full">
         <div className="w-full px-8 mt-12 sm:px-16 md:px-32 lg:px-64">
           <div className="relative flex flex-col items-center justify-center">
             <h1 className='font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Corner</h1>
@@ -43,129 +43,9 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <div className="flex flex-col w-full gap-2">
                   <div className="flex flex-col justify-between sm:items-end sm:flex-row">
                     <p className='text-d-sub1'>{item.title}</p>
-                    <span>{dayjs(item.date).format('MM-DD-YYYY, HH:mm A')}</span>
+                    <span>{dayjs(item.date).format('MM-DD-YYYY')}</span>
                   </div>
                   <span className='text-m-base sm:text-d-base'>{item.description ?? ""}</span>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <p>{dayjs().format('{YYYY} MM-DDTHH:mm:ss SSS [Z] A')}</p>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
-                  <ul className='flex flex-wrap gap-3'>
-                    {item.tags.length > 0 && item.tags.map((i: Tag) => (
-                      <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
-                    ))}
-                  </ul>
-                </div>
-              </li>
-            ))}
-            {posts.map((item: ReekoPost) => (
-              <li key={item.id} className="flex w-full p-4 border rounded-lg border-sylver-100 border-opacity-5 backdrop-blur-sm bg-amethyst-400/5">
-                <div className="flex flex-col w-full gap-2">
-                  <div className="flex flex-col justify-between sm:flex-row">
-                    <p className='text-d-sub1'>{item.title}</p>
-                    <span>{item.date}</span>
-                  </div>
                   <ul className='flex flex-wrap gap-3'>
                     {item.tags.length > 0 && item.tags.map((i: Tag) => (
                       <RuiPill key={i.id} color={variant[i.name]}>{i.name}</RuiPill>
