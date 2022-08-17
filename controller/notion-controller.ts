@@ -5,16 +5,15 @@ import { PostPage, ReekoPost } from "../@types/schema";
 export default class NotionController {
   client: Client;
   n2m: NotionToMarkdown;
-  database: string
 
   constructor() {
     this.client = new Client({ auth: process.env.NOTION_KEY });
     this.n2m = new NotionToMarkdown({ notionClient: this.client });
-    this.database = process.env.NOTION_DATABASE ?? "";
   }
   async getPublishedPosts(): Promise<ReekoPost[]> {
+    const database = process.env.NOTION_DATABASE ?? "";
     const response = await this.client.databases.query({
-      database_id: this.database,
+      database_id: database,
       filter: {
         property: "Published",
         checkbox: {
@@ -33,10 +32,11 @@ export default class NotionController {
     });
   }
   
-    async getSingleReekoPost(_slug: string): Promise<PostPage> {
-      let post, markdown
+  async getSingleReekoPost(_slug: string): Promise<PostPage> {
+    let post, markdown
+    const database = process.env.NOTION_DATABASE ?? "";
       const response = await this.client.databases.query({
-        database_id: this.database,
+        database_id: database,
         filter: {
           property: 'Slug',
           text: {
