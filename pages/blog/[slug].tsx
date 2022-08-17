@@ -8,36 +8,36 @@ import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
 import { BaseLayout } from '../../Layouts/Base';
 import dayjs from '../../utils/day'
+import styles from './Slug.module.css'
 
 const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
     const router = useRouter()
-    console.log(markdown)
     return (
         <>
             {router.isReady ? (<>
                 <Head>
-                <title>{`${post.title} | 0xreeko`}</title>
-                <meta name='description' title='description' content={post.description} />
-                <meta name='og:description' title='og:description' content={post.description} />
-            </Head>
-            <BaseLayout>
-                <main className='flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
-                    <div className="flex flex-col items-center text-center gap-y-3">
-                        <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
-                        <p className='flex items-center gap-3 text-d-bases'>
-                            <span>{dayjs(post.date).format('LL - HH:mm')}</span>
-                            <span>&middot;</span>
-                            <span className='flex gap-3'>{post.tags.map((tag: Tag) => (
-                                <RuiPill key={tag.id} color={variant[tag.name]}>{tag.name}</RuiPill>
-                            ))}</span>
+                    <title>{`${post.title} | 0xreeko`}</title>
+                    <meta name='description' title='description' content={post.description} />
+                    <meta name='og:description' title='og:description' content={post.description} />
+                </Head>
+                <BaseLayout>
+                    <main className='flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
+                        <div className="flex flex-col items-center text-center gap-y-3">
+                            <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
+                            <p className='flex items-center gap-3 mt-4 text-d-bases'>
+                                <span>{dayjs(post.date).format('LL - HH:mm')}</span>
+                                <span>&middot;</span>
+                                <span className='flex gap-3'>{post.tags.map((tag: Tag) => (
+                                    <RuiPill key={tag.id} color={variant[tag.name]}>{tag.name}</RuiPill>
+                                ))}</span>
                             </p>
-                            <p className='italic text-sylver-800 text-m-sub1 md:text-d-sub1'>{post.description}</p>
-                    </div>
-                        <div className="w-full mt-12 prose">
-                            <ReactMarkdown>{ markdown}</ReactMarkdown>
-                                </div>
-                </main>
+                            <p className='my-4 italic text-sylver-800 text-m-sub1 md:text-d-sub1'>{post.description}</p>
+                        </div>
+                        <div className="w-full prose">
+                            <ReactMarkdown className={styles.reekoStyle}>{markdown}</ReactMarkdown>
+                        </div>
+                    </main>
                 </BaseLayout>
             </>) : "Loadin..."}
         </>
