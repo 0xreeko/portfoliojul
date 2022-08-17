@@ -31,9 +31,6 @@ const Tags: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
 export default Tags
 
 export async function getStaticPaths() {
-    const notionController = new NotionController()
-    const posts = await notionController.getPublishedPosts()
-
     const paths = tagsType.map(p => {
         return `/tags/${p}`
     })
