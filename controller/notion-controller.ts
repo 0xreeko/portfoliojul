@@ -57,7 +57,38 @@ export default class NotionController {
         post,
         markdown
       }
-    }
+  }
+  
+   async getTagPosts(_slug: string): Promise<ReekoPost[]> {
+    const response =  await this.client.databases.query({
+      database_id: `${process.env.NOTION_DATABASE}`,
+      filter: {
+        and: [
+          {
+            property: "Published",
+            checkbox: {
+              equals: true,
+            },
+          },
+          {
+            property: "Tags",
+            multi_select: {
+              contains: _slug
+            }
+          }
+        ]
+      },
+      sorts: [
+        {
+          property: "Created",
+          direction: "descending",
+        },
+      ],
+    })
+    return response.results.map((res) => {
+      return NotionController.pageToReekoPostTransformer(res)
+    })
+  }
 
   private static pageToReekoPostTransformer(page: any): ReekoPost {
     return {

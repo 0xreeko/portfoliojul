@@ -1,6 +1,6 @@
 import { colorType } from "ruskelui/dist/utils"
 
-type tags = 'Databases' | 'Security' | 'Reactjs' | 'Robotics' | 'Testing' | 'Python' | 'Web3' | 'GraphQL' | 'TailwindCSS3' | 'Nextjs' | 'APIs' | 'Typescript' | 'GSAP'
+export const tagsType = ['Databases', 'Security', 'Reactjs', 'Robotics', 'Testing', 'Python', 'Web3', 'GraphQL', 'TailwindCSS3', 'Nextjs', 'APIs', 'Typescript', 'GSAP']
 
 export const variant: { [key in string]: colorType } = {
     'Databases': 'green',
