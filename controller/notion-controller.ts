@@ -11,9 +11,8 @@ export default class NotionController {
     this.n2m = new NotionToMarkdown({ notionClient: this.client });
   }
   async getPublishedPosts(): Promise<ReekoPost[]> {
-    const database = process.env.NOTION_DATABASE ?? "";
     const response = await this.client.databases.query({
-      database_id: database,
+      database_id: `${process.env.NOTION_DATABASE}`,
       filter: {
         property: "Published",
         checkbox: {
@@ -34,7 +33,7 @@ export default class NotionController {
   
   async getSingleReekoPost(_slug: string): Promise<PostPage> {
     let post, markdown
-    const database = process.env.NOTION_DATABASE ?? "";
+    const database = `${process.env.NOTION_DATABASE}`
       const response = await this.client.databases.query({
         database_id: database,
         filter: {
