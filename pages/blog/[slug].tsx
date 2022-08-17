@@ -2,7 +2,7 @@ import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
-import { RuiPill } from 'ruskelui';
+import { RuiBreadcrumbs, RuiPill } from 'ruskelui';
 import NotionController from '../../controller/notion-controller';
 import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
@@ -22,7 +22,10 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                     <meta name='og:description' title='og:description' content={post.description} />
                 </Head>
                 <BaseLayout>
-                    <main className='flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
+                    <main className='flex flex-col justify-center flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
+                        <div className="py-4">
+                            <RuiBreadcrumbs path={router.asPath} color={'amethyst'} />
+                    </div>
                         <div className="flex flex-col items-center text-center gap-y-3">
                             <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
                             <p className='flex items-center gap-3 mt-4 text-d-bases'>
@@ -32,10 +35,13 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                                     <RuiPill key={tag.id} color={variant[tag.name]}>{tag.name}</RuiPill>
                                 ))}</span>
                             </p>
-                            <p className='my-4 italic text-sylver-800 text-m-sub1 md:text-d-sub1'>{post.description}</p>
+                            <p className='my-4 italic text-sylver-700 text-m-sub2 md:text-d-sub2'>{post.description}</p>
                         </div>
-                        <div className="w-full prose">
+                        <div className="max-w-full prose">
                             <ReactMarkdown className={styles.reekoStyle}>{markdown}</ReactMarkdown>
+                        </div>
+                        <div className="py-12">
+                            <a href={`https://twitter.com/intent/tweet?url=enrictrillo.com${router.asPath}&text=${post.title}&via=0xreeko`} target={'_blank'}><p>Share on Twitter</p></a>
                         </div>
                     </main>
                 </BaseLayout>

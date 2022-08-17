@@ -1,5 +1,5 @@
 .reekoStyle {
-    @apply text-sylver-100
+    @apply text-sylver-500 w-full
 }
 
 .reekoStyle h1 {
@@ -7,17 +7,27 @@
 }
 
 .reekoStyle h2 {
-    @apply text-m-h2 md:text-d-h2 text-amethyst-500
+    @apply text-m-h2 md:text-d-h2 text-sylver-100
 }
 .reekoStyle h3 {
-    @apply text-m-h3 md:text-d-h3 text-amethyst-500
+    @apply text-m-h3 md:text-d-h3 text-sylver-100
 }
 .reekoStyle h4 {
-    @apply text-m-h4 md:text-d-h4 text-amethyst-500
+    @apply text-m-h4 md:text-d-h4 text-sylver-100
 }
 
 .reekoStyle p {
-    @apply text-d-base
+    @apply text-d-base leading-8
+}
+
+.reekoStyle p code {
+    @apply inline bg-amethyst-400/20 p-1.5 rounded-md text-amethyst-200 mx-0.5
+}
+.reekoStyle p code::before{
+    content: '';
+}
+.reekoStyle p code::after{
+    content: '';
 }
 
 .reekoStyle code {
