@@ -17,7 +17,7 @@ export const Header = () => {
                 { x: 0, opacity: 1, stagger: .5, delay: .5 }
             )
         }
-    }, [])
+    })
 
     return (
         <header className={styles.headerContainer}>
