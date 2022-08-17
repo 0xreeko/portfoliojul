@@ -25,15 +25,18 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                     <main className='flex flex-col justify-center flex-grow px-8 sm:px-16 md:px-32 lg:px-64'>
                         <div className="py-4">
                             <RuiBreadcrumbs path={router.asPath} color={'amethyst'} />
-                    </div>
+                        </div>
                         <div className="flex flex-col items-center text-center gap-y-3">
                             <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
                             <p className='flex items-center gap-3 mt-4 text-d-bases'>
                                 <span>{dayjs(post.date).format('LL - HH:mm')}</span>
                                 <span>&middot;</span>
+                                <span>Author: {post.author ? "0xreeko" : post.author}</span>
+                                <span>&middot;</span>
                                 <span className='flex gap-3'>{post.tags.map((tag: Tag) => (
                                     <RuiPill key={tag.id} color={variant[tag.name]}>{tag.name}</RuiPill>
                                 ))}</span>
+                                
                             </p>
                             <p className='my-4 italic text-sylver-700 text-m-sub2 md:text-d-sub2'>{post.description}</p>
                         </div>
