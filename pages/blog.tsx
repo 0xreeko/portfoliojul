@@ -1,13 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head';
-import { RuiPill } from 'ruskelui';
-import { ReekoPost, Tag } from '../@types/schema';
-import { variant } from '../@types/tags';
+import { ReekoPost } from '../@types/schema';
 import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import NotionController from '../controller/notion-controller';
 import { BaseLayout } from '../Layouts/Base';
-import Link from 'next/link';
-import { linkIcon } from '../components/Icons';
 import { HoriCard } from '../components/HoriCard/HoriCard';
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
