@@ -6,7 +6,7 @@ import { RuiButton } from 'ruskelui';
 import {gsap} from 'gsap'
 import { useEffect, useRef } from 'react';
 import { ethers, githubActions, gql, greensock, hardhat, jwt, mongodb, nextjs, node, photoshop, python, solitidy, tailwind, typescript } from '../Icons';
-import { LatestReekoPost } from '../LastestReekoPost/LatestReekoPost';
+import { LastestCard } from '../LastestCard/LatestCard';
 
 export const Main = () => {
     let punkLogo = useRef(null)
@@ -110,7 +110,7 @@ export const Main = () => {
                     </div>
             <div className="w-full py-12 mx-auto portfolio">
                 <h2 className="text-d-h2">Portfolio</h2>
-                <LatestReekoPost/>
+                <LastestCard/>
             </div>
             {/* <div className="w-full py-12 mx-auto portfolio">
                 <h2 className="text-d-h2">Portfolio</h2>
