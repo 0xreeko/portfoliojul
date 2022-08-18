@@ -6,12 +6,12 @@ const Store: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Store &middot; 0xreeko</title>
+                <title>Store - 0xreeko</title>
             </Head>
             <BaseLayout>
                 <main className='flex-grow'>
                     <div className="px-8 sm:px-16 md:px-24 lg:px-64">
-                        this is store
+                        store
                     </div>
                 </main>
             </BaseLayout>

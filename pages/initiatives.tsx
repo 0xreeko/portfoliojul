@@ -6,7 +6,7 @@ const Initiatives: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Initiatives &middot; 0xreeko</title>
+                <title>Initiatives - 0xreeko</title>
             </Head>
             <BaseLayout>
                 <main className='flex-grow'>
