@@ -36,7 +36,6 @@ export default class NotionController {
         },
       ],
     });
-    console.log(response.results)
     return response.results.map((res) => {
       return NotionController.pageToReekoPostTransformer(res);
     });
@@ -100,8 +99,7 @@ export default class NotionController {
           direction: "descending",
         },
       ],
-     })
-     console.log(response.results)
+    })
     return response.results.map((res) => {
       return NotionController.pageToReekoPostTransformer(res)
     })
