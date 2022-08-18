@@ -5,7 +5,7 @@ import { ReekoPost } from '../../@types/schema';
 import { tagsType } from '../../@types/tags';
 import { HoriCard } from '../../components/HoriCard/HoriCard';
 import { TagsGroup } from '../../components/TagsGroup/TagsGroup';
-import NotionController from '../../controller/notion-controller';
+import {getTagPosts} from '../../controller/notion-controller';
 import { BaseLayout } from '../../Layouts/Base';
 
 
@@ -60,9 +60,8 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const notionController = new NotionController()
     // @ts-ignore
-    const posts = await notionController.getTagPosts(ctx?.params.tags)
+    const posts = await getTagPosts(ctx?.params.tags)
 
     return {
         props: {

@@ -2,17 +2,12 @@ import { Client } from "@notionhq/client";
 import { NotionToMarkdown } from "notion-to-md";
 import { PostPage, ReekoPost } from "../@types/schema";
 
-export default class NotionController {
-  client: Client;
-  n2m: NotionToMarkdown;
-
-  constructor() {
-    this.client = new Client({ auth: process.env.NOTION_KEY });
-    this.n2m = new NotionToMarkdown({ notionClient: this.client });
-  }
-  async getPublishedPosts(): Promise<ReekoPost[]> {
-    const databaseId = process.env.NOTION_DATABASE ?? ''
-    const response = await this.client.databases.query({
+  const notion = new Client({ auth: process.env.NOTION_KEY });
+  const n2m = new NotionToMarkdown({ notionClient: notion });
+    
+export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
+    const databaseId = `${process.env.NOTION_DATABASE}`
+    const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
         and: [
@@ -37,42 +32,43 @@ export default class NotionController {
         },
       ],
     });
+  console.log(response)
     return response.results.map((res) => {
-      return NotionController.pageToReekoPostTransformer(res);
+      return pageToReekoPostTransformer(res);
     });
   }
   
-  async getSingleReekoPost(_slug: string): Promise<PostPage> {
+  export const getSingleReekoPost = async(_slug: string): Promise<PostPage> => {
     let post, markdown
-    const databaseId = process.env.NOTION_DATABASE ?? ''  
-    const response = await this.client.databases.query({
+    const databaseId = `${process.env.NOTION_DATABASE}`  
+    const response = await notion.databases.query({
       database_id: databaseId,
-        filter: {
-          property: 'Slug',
-          text: {
-            equals: _slug
-          }
+      filter: {
+        property: 'Slug',
+        rich_text: {
+          equals: _slug
         }
-      })
-
-      if (!response.results[0]) {
-        throw 'No post found!'
       }
-      const page = response.results[0]
-      
-      const mdBlocks = await this.n2m.pageToMarkdown(page?.id)
-      markdown = this.n2m.toMarkdownString(mdBlocks)
-      post = NotionController.pageToReekoPostTransformer(page)
-
-      return {
-        post,
-        markdown
-      }
+    })
+    
+    if (!response.results[0]) {
+      throw 'No post found!'
+    }
+    const page = response.results[0]
+    
+    const mdBlocks = await n2m.pageToMarkdown(page?.id)
+    markdown = n2m.toMarkdownString(mdBlocks)
+    post = pageToReekoPostTransformer(page)
+    
+    return {
+      post,
+      markdown
+    }
   }
   
-   async getTagPosts(_slug: string): Promise<ReekoPost[]> {
-    const databaseId = process.env.NOTION_DATABASE ?? '' 
-    const response = await this.client.databases.query({
+  export const getTagPosts = async(_slug: string): Promise<ReekoPost[]> => {
+    const databaseId = `${process.env.NOTION_DATABASE}` 
+    const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
         and: [
@@ -103,12 +99,14 @@ export default class NotionController {
         },
       ],
     })
+    console.log(response.results)
     return response.results.map((res) => {
-      return NotionController.pageToReekoPostTransformer(res)
+      return pageToReekoPostTransformer(res)
     })
   }
 
-  private static pageToReekoPostTransformer(page: any): ReekoPost {
+const pageToReekoPostTransformer = (page: any): ReekoPost => {
+    console.log(page)
     return {
       id: page.id,
       title: page.properties.Name.title[0].plain_text,
@@ -121,4 +119,3 @@ export default class NotionController {
       updated: page.properties.Updated.last_edited_time,
     };
   }
-}

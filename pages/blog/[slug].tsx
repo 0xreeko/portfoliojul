@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 import { RuiBreadcrumbs, RuiPill } from 'ruskelui';
-import NotionController from '../../controller/notion-controller';
+import {getPublishedPosts, getSingleReekoPost} from '../../controller/notion-controller';
 import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
 import { BaseLayout } from '../../Layouts/Base';
@@ -54,8 +54,7 @@ export default Slug
 
 
 export async function getStaticPaths() {
-    const notionController = new NotionController()
-    const posts = await notionController.getPublishedPosts()
+    const posts = await getPublishedPosts()
 
     const paths = posts.map(p => {
         return `/blog/${p.slug}`
@@ -68,10 +67,8 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-    const _notionController = new NotionController()
-
     // @ts-ignore
-    const _page = await _notionController.getSingleReekoPost(ctx.params?.slug)
+    const _page = await getSingleReekoPost(ctx.params?.slug)
     if (!_page) {
         throw "Error"
     }

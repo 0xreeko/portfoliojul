@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head';
 import { ReekoPost } from '../@types/schema';
 import { TagsGroup } from '../components/TagsGroup/TagsGroup';
-import NotionController from '../controller/notion-controller';
+import { getPublishedPosts } from '../controller/notion-controller';
 import { BaseLayout } from '../Layouts/Base';
 import { HoriCard } from '../components/HoriCard/HoriCard';
 
@@ -46,9 +46,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
 export default Blog
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  const notionController = new NotionController()
-
-  const posts = await notionController.getPublishedPosts()
+  const posts = await getPublishedPosts()
 
   return {
     props: {
