@@ -12,8 +12,7 @@ export default class NotionController {
   }
   async getPublishedPosts(): Promise<ReekoPost[]> {
     const response = await this.client.databases.query({
-      // @ts-ignore
-      database_id: process.env.NOTION_DATABASE,
+      database_id: `${process.env.NOTION_DATABASE}`,
       filter: {
         property: "Published",
         checkbox: {
@@ -35,8 +34,7 @@ export default class NotionController {
   async getSingleReekoPost(_slug: string): Promise<PostPage> {
     let post, markdown
       const response = await this.client.databases.query({
-        // @ts-ignore
-      database_id: process.env.NOTION_DATABASE,
+      database_id: `${process.env.NOTION_DATABASE}`,
         filter: {
           property: 'Slug',
           text: {
@@ -62,8 +60,7 @@ export default class NotionController {
   
    async getTagPosts(_slug: string): Promise<ReekoPost[]> {
      const response = await this.client.databases.query({
-      // @ts-ignore
-      database_id: process.env.NOTION_DATABASE,
+      database_id: `${process.env.NOTION_DATABASE}`,
       filter: {
         and: [
           {
