@@ -17,3 +17,5 @@ const Store: NextPage = () => {
         </>
     )
 };
+
+export default Store
