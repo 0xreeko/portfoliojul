@@ -42,7 +42,7 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                         <ReactMarkdown className={styles.reekoStyle}>{markdown}</ReactMarkdown>
                     </div>
                     <div className="py-12">
-                        <a href={`https://twitter.com/intent/tweet?url=enrictrillo.com${router.asPath}&text=${post.title}&via=0xreeko`} target={'_blank'}><p>Share on Twitter</p></a>
+                        <a href={`https://twitter.com/intent/tweet?url=enrictrillo.com${router.asPath}&text=${post.title}&via=0xreeko`} target={'_blank'} rel="noreferrer"><p>Share on Twitter</p></a>
                     </div>
                 </main>
             </BaseLayout>
