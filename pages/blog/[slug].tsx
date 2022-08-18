@@ -54,12 +54,10 @@ export default Slug
 
 export const getStaticPaths: GetStaticPaths = async() =>  {
     const posts = await getPublishedPosts()
-    console.log(posts)
 
     const paths = posts.map(p => {
         return `/blog/${p.slug}`
     })
-    console.log(paths)
     return {
         paths,
         fallback: false
