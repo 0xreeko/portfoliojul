@@ -32,7 +32,6 @@ export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
         },
       ],
     });
-  console.log(response)
     return response.results.map((res) => {
       return pageToReekoPostTransformer(res);
     });
@@ -99,14 +98,12 @@ export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
         },
       ],
     })
-    console.log(response.results)
     return response.results.map((res) => {
       return pageToReekoPostTransformer(res)
     })
   }
 
 const pageToReekoPostTransformer = (page: any): ReekoPost => {
-    console.log(page)
     return {
       id: page.id,
       title: page.properties.Name.title[0].plain_text,
