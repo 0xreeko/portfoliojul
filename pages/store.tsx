@@ -11,7 +11,7 @@ const Store: NextPage = () => {
             <BaseLayout>
                 <main className='flex-grow'>
                     <div className="px-8 sm:px-16 md:px-24 lg:px-64">
-                        store
+                        <h1>tis store page</h1>
                     </div>
                 </main>
             </BaseLayout>
