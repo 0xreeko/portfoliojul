@@ -11,8 +11,9 @@ export default class NotionController {
     this.n2m = new NotionToMarkdown({ notionClient: this.client });
   }
   async getPublishedPosts(): Promise<ReekoPost[]> {
+    const databaseId = process.env.NOTION_DATABASE ?? ''
     const response = await this.client.databases.query({
-      database_id: `${process.env.NOTION_DATABASE}`,
+      database_id: databaseId,
       filter: {
         and: [
           {
@@ -43,8 +44,9 @@ export default class NotionController {
   
   async getSingleReekoPost(_slug: string): Promise<PostPage> {
     let post, markdown
-      const response = await this.client.databases.query({
-      database_id: `${process.env.NOTION_DATABASE}`,
+    const databaseId = process.env.NOTION_DATABASE ?? ''  
+    const response = await this.client.databases.query({
+      database_id: databaseId,
         filter: {
           property: 'Slug',
           text: {
@@ -69,8 +71,9 @@ export default class NotionController {
   }
   
    async getTagPosts(_slug: string): Promise<ReekoPost[]> {
-     const response = await this.client.databases.query({
-      database_id: `${process.env.NOTION_DATABASE}`,
+    const databaseId = process.env.NOTION_DATABASE ?? '' 
+    const response = await this.client.databases.query({
+      database_id: databaseId,
       filter: {
         and: [
           {
