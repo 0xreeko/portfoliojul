@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
-import { BaseLayout } from '../Layouts/Base';
+import { Alert } from '../components/Alert/Alert';
+import { Header } from '../components/Header/Header';
 
 const Store: NextPage = () => {
     return (
@@ -8,13 +9,11 @@ const Store: NextPage = () => {
             <Head>
                 <title>Store &middot; 0xreeko</title>
             </Head>
-            <BaseLayout>
-                <main className='flex-grow'>
-                    this is store
-                </main>
-            </BaseLayout>
+            <div className='min-h-screen'>
+            <Alert />
+            <Header />
+            this is store
+        </div>
         </>
     )
 };
-
-export default Store
