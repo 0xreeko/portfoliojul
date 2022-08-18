@@ -80,15 +80,15 @@ export default class NotionController {
             },
           },
           {
-            property: "Tags",
-            multi_select: {
-              contains: _slug
-            }
-          },
-          {
             property: "Slug",
             rich_text: {
               is_not_empty: true
+            }
+          },
+          {
+            property: "Tags",
+            multi_select: {
+              contains: _slug
             }
           }
         ]
