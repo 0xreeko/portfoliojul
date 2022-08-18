@@ -84,6 +84,12 @@ export default class NotionController {
             multi_select: {
               contains: _slug
             }
+          },
+          {
+            property: "Slug",
+            rich_text: {
+              is_not_empty: true
+            }
           }
         ]
       },
