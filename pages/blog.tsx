@@ -11,7 +11,7 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
   return (
     <>
       <Head>
-        <title>Blog | 0xreeko</title>
+        <title>Blog &middot; 0xreeko</title>
         <meta name="0xreeko&pos;s blog" />
       </Head>
       <BaseLayout>

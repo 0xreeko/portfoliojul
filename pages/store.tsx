@@ -7,7 +7,7 @@ const Store: NextPage = () => {
     return (
         <>
             <Head>
-                <title>Store | 0xreeko</title>
+                <title>Store &middot; 0xreeko</title>
             </Head>
             <div className='min-h-screen'>
             <Alert />

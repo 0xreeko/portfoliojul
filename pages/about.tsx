@@ -6,7 +6,7 @@ const About: NextPage = () => {
     return (
         <>
             <Head>
-                <title>About | 0xreeko</title>
+                <title>About &middot; 0xreeko</title>
             </Head>
             <BaseLayout>
                 <main className="flex-grow px-8 mt-12 sm:px-16 md:px-32 lg:px-64">

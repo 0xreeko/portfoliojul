@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>0xreeko | Fullstack Web3 Developer</title>
+        <title>0xreeko &middot; Fullstack Web3 Developer</title>
         <meta name="author" content="0xreeko | Enric Trillo" />
         <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
         <link rel="icon" href="/favicon.ico" />

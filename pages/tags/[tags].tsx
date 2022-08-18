@@ -14,8 +14,7 @@ const Tags: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
     return (
         <>
             <Head>
-                {/* @ts-ignore */}
-                <title> {router.query.tags} | Blog | 0xreeko</title>
+                <title>{`${router.query.tags} · Blog · 0xreeko`}</title>
                 <meta name="0xreeko&pos;s blog" />
             </Head>
             <BaseLayout>
