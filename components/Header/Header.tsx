@@ -30,7 +30,7 @@ export const Header = () => {
                     <a href="https://www.youtube.com/channel/UCov6heLQcDoSUD2rwhyGdUA/" target={'_blank'} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{youtubeIcon}</span></a>
                 </div>
                 <div className='relative group'>
-                    <Link href={'/about'}>Initiatives </Link>
+                    <Link href={'/initiatives'}>Initiatives </Link>
                     <div className={`absolute -bottom-2 rounded-lg h-[1px] ${router.route.split('/')[1] === "initiatives" ? "w-full bg-amethyst-500" : "w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500"} duration-300`}></div>
                 </div>
                 <div className='relative group'>
