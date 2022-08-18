@@ -36,6 +36,7 @@ export default class NotionController {
         },
       ],
     });
+    console.log(response.results)
     return response.results.map((res) => {
       return NotionController.pageToReekoPostTransformer(res);
     });
@@ -99,7 +100,8 @@ export default class NotionController {
           direction: "descending",
         },
       ],
-    })
+     })
+     console.log(response.results)
     return response.results.map((res) => {
       return NotionController.pageToReekoPostTransformer(res)
     })
@@ -109,9 +111,9 @@ export default class NotionController {
     return {
       id: page.id,
       title: page.properties.Name.title[0].plain_text,
-      description: page.properties.Description.rich_text[0]?.text.content ?? null,
+      description: page.properties.Description.rich_text[0]?.text.content,
       date: page.properties.Created.created_time,
-      slug: page.properties.Slug.rich_text[0]?.text.content ?? null,
+      slug: page.properties.Slug.rich_text[0]?.text.content,
       author: page.properties.Author.created_by.name,
       tags: page.properties.Tags.multi_select,
       published: page.properties.Published.checkbox,
