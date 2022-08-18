@@ -14,10 +14,20 @@ export default class NotionController {
     const response = await this.client.databases.query({
       database_id: `${process.env.NOTION_DATABASE}`,
       filter: {
-        property: "Published",
-        checkbox: {
-          equals: true,
-        },
+        and: [
+          {
+            property: "Published",
+            checkbox: {
+              equals: true,
+            },
+          },
+          {
+            property: "Slug",
+            rich_text: {
+              is_not_empty: true
+            }
+          }
+        ]
       },
       sorts: [
         {
