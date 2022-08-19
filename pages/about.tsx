@@ -16,7 +16,7 @@ const About: NextPage = () => {
                 <div className={styles.wrapper}>
                     <main className={styles.main}>
                         <div className="flex items-center justify-center">
-                            <h1 className='font-bold text-m-h1 md:text-d-h1'>About</h1>
+                            <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>About</h1>
                         </div>
                         <div id={`about-rico`} className="flex flex-col w-full max-w-2xl py-8 ml-auto gap-y-6">
                             <p>Que lo que mi gente! I&apos;m known as Rico - a Fullstack Web3 Developer with 4+ years of experience
