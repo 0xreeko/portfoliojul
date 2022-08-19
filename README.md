@@ -1,5 +1,4 @@
 # 0xreeko
-<hr>
 <!-- (note to self: include revamp brand banner here) -->
 
 ## Tools Used
