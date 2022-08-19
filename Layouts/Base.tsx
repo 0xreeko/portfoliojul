@@ -8,7 +8,7 @@ export const BaseLayout = ({ children }: { children: ReactNode }) => {
         <div className='flex flex-col min-h-screen'>
             <Alert />
             <Header />
-            <div className="flex-grow border border-red-400">
+            <div className="flex-grow">
                 <main className="px-8 sm:px-16 md:px-24 lg:px-64">
                     {children}
                 </main>
