@@ -1,0 +1,11 @@
+.container {
+    @apply flex flex-col min-h-screen
+}
+
+.wrapper {
+    @apply flex-grow
+}
+
+.main {
+    @apply px-8 sm:px-16 md:px-24 lg:px-64
+}
