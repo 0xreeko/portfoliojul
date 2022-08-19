@@ -4,11 +4,16 @@ import { BaseLayout } from '../Layouts/Base';
 
 const Store: NextPage = () => {
     return (
-        <BaseLayout>
-            <p>
-                under construction🛠
-            </p>
-        </BaseLayout>
+        <>
+            <Head>
+                <title>store</title>
+            </Head>
+            <BaseLayout>
+                <p>
+                    under construction🛠
+                </p>
+            </BaseLayout>
+        </>
     )
 };
 

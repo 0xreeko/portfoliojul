@@ -2,7 +2,7 @@ import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage } fro
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
-import { RuiBreadcrumbs, RuiPill } from 'ruskelui';
+import { RuiPill } from 'ruskelui';
 import { getPublishedPosts, getSingleReekoPost } from '../../controller/notion-controller';
 import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
