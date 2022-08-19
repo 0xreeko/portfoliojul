@@ -8,15 +8,17 @@ import { variant } from '../../@types/tags';
 import { Tag } from '../../@types/schema';
 import dayjs from '../../utils/day'
 import styles from './Slug.module.css'
+import baseStyles from '../../styles/BaseLayout.module.css'
 import { Footer } from '../../components/Footer/Footer';
 import { Alert } from '../../components/Alert/Alert';
 import { Header } from '../../components/Header/Header';
+
 
 const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
     const router = useRouter()
     return (
-        <div className={ styles.container}>
+        <div className={ baseStyles.container}>
             <Head>
                 <title>{`${post.title} · 0xreeko`}</title>
                 <meta name='description' title='description' content={post.description} />
@@ -24,8 +26,8 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
             </Head>
             <Alert />
             <Header/>
-                <div className={styles.wrapper}>
-                    <main className={styles.main}>
+                <div className={baseStyles.wrapper}>
+                    <main className={baseStyles.main}>
                         <div className="flex flex-col items-center text-center gap-y-3">
                             <h1 className="mt-6 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
                             <div className='flex items-center gap-3 mt-4 text-d-base'>
