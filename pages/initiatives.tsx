@@ -9,11 +9,7 @@ const Initiatives: NextPage = () => {
                 <title>Initiatives - 0xreeko</title>
             </Head>
             <BaseLayout>
-                <main className='flex-grow'>
-                    <div className="px-8 sm:px-16 md:px-24 lg:px-64">
-                        this is initiatives
-                    </div>
-                </main>
+                <p>this is initiatives</p>
             </BaseLayout>
         </>
     )

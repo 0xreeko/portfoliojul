@@ -4,18 +4,11 @@ import { BaseLayout } from '../Layouts/Base';
 
 const Store: NextPage = () => {
     return (
-        <>
-            <Head>
-                <title>Store - 0xreeko</title>
-            </Head>
-            <BaseLayout>
-                <main className='flex-grow'>
-                    <div className="px-8 sm:px-16 md:px-24 lg:px-64">
-                        <h1>tis store page</h1>
-                    </div>
-                </main>
-            </BaseLayout>
-        </>
+        <BaseLayout>
+            <p>
+                under construction🛠
+            </p>
+        </BaseLayout>
     )
 };
 
