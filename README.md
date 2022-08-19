@@ -9,7 +9,7 @@
 - **Deployment**: [Vercel](https://vercel.com)
 
 ## Overview
-- `@types`: contains types.
+- `@types/*`: contains types.
 - `components/*`: contains components and icons used throughout my portfolio.
 - `controller/notionController`: contains async methods for fetch *ReekoPosts* from Notion
 - `pages/blog`: displays all *ReekoPosts* 
