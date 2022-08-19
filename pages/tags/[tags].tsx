@@ -7,7 +7,7 @@ import { Footer } from '../../components/Footer/Footer';
 import { HoriCard } from '../../components/HoriCard/HoriCard';
 import { TagsGroup } from '../../components/TagsGroup/TagsGroup';
 import { getTagPosts } from '../../controller/notion-controller';
-import styles from '../styles/BaseLayout.module.css'
+import styles from '../../styles/BaseLayout.module.css'
 
 
 const Tags: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
