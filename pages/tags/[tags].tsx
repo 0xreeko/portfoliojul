@@ -3,7 +3,9 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReekoPost } from '../../@types/schema';
 import { tagsType } from '../../@types/tags';
+import { Alert } from '../../components/Alert/Alert';
 import { Footer } from '../../components/Footer/Footer';
+import { Header } from '../../components/Header/Header';
 import { HoriCard } from '../../components/HoriCard/HoriCard';
 import { TagsGroup } from '../../components/TagsGroup/TagsGroup';
 import { getTagPosts } from '../../controller/notion-controller';
@@ -18,10 +20,12 @@ const Tags: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <title>{`${router.query.tags} · Blog · 0xreeko`}</title>
                 <meta name="0xreeko&pos;s blog" />
             </Head>
+            <Alert />
+            <Header/>
             <div className={styles.wrapper}>
                 <main className={styles.main}>
                     <div className="relative flex flex-col items-center justify-center">
-                        <h1 className='font-bold text-m-h1 md:text-d-h1'>{(router.query.tags)}</h1>
+                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>{(router.query.tags)}</h1>
                         <div className='mt-12'>
                             <div className="flex flex-wrap justify-center gap-3 mt-3">
                                 <TagsGroup />
