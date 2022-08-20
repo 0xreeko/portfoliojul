@@ -23,7 +23,7 @@ export const Header = () => {
     return (
         <header className={styles.headerContainer}>
             <div className="flex items-center">
-                <Image src={'/punk4596.png'} layout={'fixed'} width={24} height={24} className={'-translate-y-0.5'} />
+                <Image src={'/punk4596.png'} layout={'fixed'} width={24} height={24} className={'-translate-y-0.5'} alt={'smaller 0xreeko NFT headshot'} />
                 {router.route === '/' ? <p className='cursor-pointer select-none'>0xreeko</p> : <Link href={'/'}>0xreeko</Link>}
             </div>
             <div className={styles.headerNavigation}>

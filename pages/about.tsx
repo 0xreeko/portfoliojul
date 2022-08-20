@@ -36,7 +36,7 @@ const About: NextPage = () => {
                         <div className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
                             <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
                                 <div className="flex p-2 rounded-full bg-russian-600">
-                                    <Image src={'/linkedinHeadshot.jpeg'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />
+                                    <Image src={'/linkedinHeadshot.jpeg'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />
                                 </div>
                             </div>
                             <p className=''>You can find me on <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={'_blank'} rel={'noreferrer'} className={'decoration-amethyst-400 underline underline-offset-4 duration-300 hover:text-amethyst-400'}>Twitter</a> where I share my progress and build cool sh*t in public, follow me on <a href="https://github.com/0xreeko" className='underline duration-300 decoration-amethyst-400 underline-offset-4 hover:text-amethyst-400' target={'_blank'} rel={'noreferrer'}>Github</a>, or connect with me on <a href='https://www.linkedin.com/in/enrictrillo/' className='underline duration-300 decoration-amethyst-400 underline-offset-4 hover:text-amethyst-400' target={'_blank'} rel={'noreferrer'}>LinkedIn</a>. I intend to post often about my findings, tutorials, the entire dev process of building the 33 Web3 biz initiatives and more.</p>
