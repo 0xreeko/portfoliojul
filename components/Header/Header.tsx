@@ -5,6 +5,7 @@ import { discordIcon, linkedInIcon, twitterIcon, youtubeIcon } from '../Icons';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import Image from 'next/image';
 
 
 export const Header = () => {
@@ -21,7 +22,10 @@ export const Header = () => {
 
     return (
         <header className={styles.headerContainer}>
-            {router.route === '/' ? <p className='cursor-pointer select-none'>0xreeko</p> : <Link href={'/'}>0xreeko</Link>}
+            <div className="flex items-center">
+                <Image src={'/punk4596.png'} layout={'fixed'} width={24} height={24} className={'-translate-y-0.5'} />
+                {router.route === '/' ? <p className='cursor-pointer select-none'>0xreeko</p> : <Link href={'/'}>0xreeko</Link>}
+            </div>
             <div className={styles.headerNavigation}>
                 <div className="flex items-center gap-4 pr-6">
                     <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{twitterIcon}</span></a>

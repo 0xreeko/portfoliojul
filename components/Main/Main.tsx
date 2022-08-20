@@ -34,7 +34,7 @@ export const Main = () => {
                 </div>
 
                 {/* @ts-ignore */}
-                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/40 to-transparent w-fit' ref={el => punkLogo = el}>
+                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit' ref={el => punkLogo = el}>
                     <div className="flex p-2 rounded-full bg-russian-600">
                         <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko punk" className="rounded-full bg-amethyst-500" />
                     </div>

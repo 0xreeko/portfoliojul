@@ -9,7 +9,7 @@ const Store: NextPage = () => {
     return (
         <div className={styles.container}>
             <Head>
-                <title>store</title>
+                <title>Store &middot; 0xreeko</title>
             </Head>
             <Alert />
             <Header />
