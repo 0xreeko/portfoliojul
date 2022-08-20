@@ -11,7 +11,7 @@ const About: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>About &middot; 0xreeko</title>
-                <meta name="description" title="description" content="I&apos;m 0xreeko, a Fullstack Web3 Developer with a mission to solve problems and materialise visions in to tangible products. I&apos;m glad you're here!" />
+                <meta name="description" title="description" content="Hey there, anon! I&apos;m 0xreeko, a Fullstack Web3 Developer with a mission to solve problems and materialise visions in to tangible products." />
             </Head>
             <Alert />
             <Header />
