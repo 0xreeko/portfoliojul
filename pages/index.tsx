@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="0xreeko &middot; Fullstack Web3 Developer" />
         <meta property="og:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
         <meta property="og:image" content="/OG-Image--main.png" />
-        <meta property="og:image:secure_url" content="p/OG-Image--main.png" />
+        <meta property="og:image:secure_url" content="/OG-Image--main.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
