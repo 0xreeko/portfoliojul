@@ -12,8 +12,9 @@ const Home: NextPage = () => {
       <Head>
         <title>0xreeko &middot; Fullstack Web3 Developer</title>
         <meta name="author" content="0xreeko | Enric Trillo" />
+        <meta name="keywords" content="web3"/>
         <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta name='og:image' content="/OG-Image--main.png"/>
+        <meta property='og:image' content="/OG-Image--main.png"/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Alert />
