@@ -10,12 +10,28 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>0xreeko &middot; Fullstack Web3 Developer</title>
-        <meta name="author" content="0xreeko | Enric Trillo" />
-        <meta name="keywords" content="web3"/>
-        <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta property='og:image' content="/OG-Image--main.png"/>
         <link rel="icon" href="/favicon.ico" />
+
+        {/* <!-- HTML Meta Tags --> */}
+        <title>0xreeko &middot; Fullstack Web3 Developer</title>
+        <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
+        <meta name="keywords" content="web3, 0xreeko" />
+        <meta name="author" content="0xreeko" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://portfoliojul.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="0xreeko &middot; Fullstack Web3 Developer" />
+        <meta property="og:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
+        <meta property="og:image" content="https://portfoliojul.vercel.app/OG-Image--main.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="portfoliojul.vercel.app" />
+        <meta property="twitter:url" content="https://portfoliojul.vercel.app/" />
+        <meta name="twitter:title" content="0xreeko &middot; Fullstack Web3 Developer" />
+        <meta name="twitter:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
+        <meta name="twitter:image" content="https://portfoliojul.vercel.app/OG-Image--main.png"></meta>
       </Head>
       <Alert />
       <Header />
