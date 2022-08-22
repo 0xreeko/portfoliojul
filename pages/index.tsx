@@ -23,8 +23,8 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="0xreeko &middot; Fullstack Web3 Developer" />
         <meta property="og:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta property="og:image" content="ogmain.png" />
-        <meta property="og:image:secure_url" content="ogmain.png" />
+        <meta property="og:image" content="/ogmain.png" />
+        <meta property="og:image:secure_url" content="/ogmain.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -35,8 +35,8 @@ const Home: NextPage = () => {
         <meta property="twitter:url" content="https://portfoliojul.vercel.app/" />
         <meta name="twitter:title" content="0xreeko &middot; Fullstack Web3 Developer" />
         <meta name="twitter:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta name="twitter:image" content="ogmain.png" />
-        <meta property="twitter:image:secure_url" content="ogmain.png" />
+        <meta name="twitter:image" content="/ogmain.png" />
+        <meta property="twitter:image:secure_url" content="/ogmain.png" />
         <meta property="twitter:image:type" content="image/png" />
         <meta property="twitter:image:width" content="1200" />
         <meta property="twitter:image:height" content="630" />
