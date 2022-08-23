@@ -8,16 +8,21 @@ import styles from '../styles/BaseLayout.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
-      <Alert />
-      <Header />
-      <div className={styles.wrapper}>
-        <main className={styles.main}>
-          <Main />
-        </main>
+    <>
+      <Head>
+        <title>0xreeko &middot; Fullstack Web3 Developer</title>
+      </Head>
+      <div className={styles.container}>
+        <Alert />
+        <Header />
+        <div className={styles.wrapper}>
+          <main className={styles.main}>
+            <Main />
+          </main>
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   )
 }
 

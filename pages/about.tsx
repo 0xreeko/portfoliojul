@@ -11,7 +11,7 @@ const About: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>About &middot; 0xreeko</title>
-                <meta name="description" title="description" content="Hey there, anon! I&apos;m 0xreeko, a Fullstack Web3 Developer with a mission to solve problems and materialise visions in to tangible products." />
+                <meta name="description" title="description" content="Hey there, anon! I&apos;m 0xreeko, a Fullstack Web3 Developer solving problems and materialising visions into tangible products." />
             </Head>
             <Alert />
             <Header />
@@ -20,20 +20,35 @@ const About: NextPage = () => {
                     <div className="flex items-center justify-center">
                         <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>About</h1>
                     </div>
-
-                    <div id={`about-rico`} className="flex flex-col w-full py-8 gap-y-6 text-d-base">
-                        <p>Que lo que mi gente! I&apos;m Rico, a Fullstack Web3 Developer with a mission to solve problems and materialise visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years.</p>
-                        <p>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, covering: Djing, GFX, UI/UX, Motion Design, plus more.</p>
-                        <p>I narrowed down on web development in 2018, two years after writing my first line of code and offering a bunch of services in the niches I was operating in, to direct that experience towards my own projects (kinda selfish, I know😂). </p>
-                        <p>I graduated from university in 2020. After graduation, I spent a few months learning about the dev side of blockchain, leading to my full switch to Web3 in Jan 2021.</p>
-                        <p>Since then, I&apos;ve helped and guided many individuals who wanted to transition from their Web2 role, to greener pastures (Ou la la mon ami😂).</p>
-                        <p>I&apos;ve now embarked on my indie hacker journey to leverage my skills and experience to develop products that solve your problems - a journey that&apos;s starting with my very own UI library called <a className='underline duration-300 decoration-amethyst-400 underline-offset-4 hover:text-amethyst-400' href='https://github.com/0xreeko/ruskelui' target={'_blank'} rel={'noreferrer'}>RuskelUI</a>, which I&apos;ve been building since July 2022.</p>
-                        <p>I plan to use RuskelUI to bring forth many out of my 33 Web3 biz initiatives that, combined, amount to over 1T in estimated Total Addressable Market (yes, I did the research anon📊).</p>
-                        <p>Prior to RuskelUI, I worked as a Web3 contractor with CWJ Capital, where I helped develop their UI and integrate Web3 tooling, managing to solve their biggest technical challenge within the first two weeks of being active in the role.</p>
-                        <p>Before CWJ Capital, I temporarily worked as an SDR/BDR Hybrid for European Gateway helping our tech clients with tasks like prospecting and cold calling, writing scripts for the team and more. It helped in building the business & sales acumen I needed to acquire as I wanted to ship my own products in the Web3 space.</p>
-                        <p>My current interests are: Machine Learning & AI, Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve already developed in ML & AI before <a href="https://medium.com/swlh/an-image-classifier-with-keras-2f0e9b868a36" target={'_blank'} rel={'noreferrer'} className={'underline underline-offset-4 italic decoration-amethyst-400 duration-300 hover:text-amethyst-400'}>(An Image Classifier With Keras, 2020)</a>, but my goal is to eventually get deeper in my dev bag, build on these domains and mesh &apos;em with Web3, using my experience as a foundation.</p>
-                        <p>I like to travel, so who knows, maybe we&apos;ll cross paths in the mediterranean and have a chat over some margaritas.</p>
-                        <div className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
+                    {/* <span>Estimated reading time: 1 minute, 45 seconds.</span> */}
+                    <div id='about' className="flex flex-col w-full py-8 gap-y-6 text-d-base">
+                        <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
+                            <div id="content" className='w-full'>
+                                <p className='text-m-sub1 md:text-d-sub1'>GM anon👾,</p>
+                                <p className='text-m-h2 md:text-d-h2'>I&apos;m Rico</p>
+                                <p className='mt-2'>a Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI and a portfolio of Web3 products.</p>
+                            </div>
+                            <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
+                                <div className="flex p-2 rounded-full bg-russian-600">
+                                    <Image src={'/punk4596.png'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'transform bg-amethyst-500 rounded-full'} />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="background" className="flex flex-col gap-y-6">
+                            <h2 className='text-m-h2 md:text-d-h2'>Background</h2>
+                            <p>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, covering: Djing, GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
+                            <p>Post graduation, I spent some months learning about the dev side of Web3, leading to my full switch to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many transition from Web2 to greener pastures. Currently, I&apos;m working on RuskelUI, a component library for Web3 that will help with the development of a Web3 business portfolio I intend to work on.</p>
+                        </div>
+                        <div id="experience">
+                            <h2 className='text-m-h2 md:text-d-h2'>Experience</h2>
+                            <p>Recently, I worked as a Web3 contractor with CWJ Capital, where I helped develop their UI and integrate Web3 tooling, managing to solve their biggest technical challenge within the first two weeks of being active in the role.</p>
+                            <p>Prior to CWJ Capital, I worked as an SDR/BDR Hybrid for European Gateway helping our tech clients with tasks like prospecting, cold calling, writing scripts for the team and more. It helped build the business & sales acumen I needed to acquire as I wanted to ship my own products in the Web3 space.</p>
+                        </div>
+                        <div id="interests">
+                            <h2 className='text-m-h2 md:text-d-h2'>Interests</h2>
+                            <p>Aside from Web3, my current interests are: Machine Learning & AI, Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve developed in ML before <a href="https://medium.com/swlh/an-image-classifier-with-keras-2f0e9b868a36" className='italic underline duration-300 underline-offset-4 decoration-amethyst-400 hover:text-amethyst-400/60 text-amethyst-400' target={'_blank'} rel="noreferrer">(An Image Classifier with Keras)</a>, but my goal is to get deeper in my dev bag, build on these domains and mesh &apos;em with Web3 to ship the products of your tomorrow, today.</p>
+                        </div>
+                        <div id='outro' className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
                             <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
                                 <div className="flex p-2 rounded-full bg-russian-600">
                                     <Image src={'/linkedinHeadshot.jpeg'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />

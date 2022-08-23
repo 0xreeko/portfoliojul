@@ -13,7 +13,6 @@ class MyDoc extends Document {
                     <link rel="icon" href="/favicon.ico" />
 
                     {/* <!-- HTML Meta Tags --> */}
-                    <title>0xreeko &middot; Fullstack Web3 Developer</title>
                     <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
                     <meta name="keywords" content="web3, 0xreeko" />
                     <meta name="author" content="0xreeko" />
