@@ -3,7 +3,7 @@
 }
 
 .headerNavigation {
-    @apply gap-6 hidden sm:flex
+    @apply gap-6 hidden md:flex
 }
 
 .headerNavigation > a {
@@ -11,5 +11,5 @@
 }
 
 .headerMenu {
-    @apply  sm:hidden
+    @apply  md:hidden
 }
