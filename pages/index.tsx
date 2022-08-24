@@ -10,6 +10,7 @@ import { Hero } from '../components/Hero/Hero'
 import { FeaturedProjects } from '../components/FeaturedProjects/FeaturedProjects'
 import { Skills } from '../components/Skills/Skills'
 import styles from '../styles/BaseLayout.module.css'
+import { USP } from '../components/USP/USP'
 
 const Home: NextPage = () => {
   return (
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
             <Skills />
             <Background/>
             <Education />
+            <USP/>
           </main>
         </div>
         <Footer />
