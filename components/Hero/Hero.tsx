@@ -28,7 +28,7 @@ export const Hero = () => {
                 <div ref={el => hero = el} className="flex flex-col w-full max-w-2xl">
                     {/* neon street light flicker every 6s ? */}
                     <h1 className='text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
-                    <p className='font-medium text-center sm:text-left text-d-h2'>Solving problems and materialising visions into <span className='text-amethyst-500'>tangible products</span></p>
+                    <h2 className='font-medium text-center sm:text-left text-m-h2 md:text-d-h2'>Solving problems and materialising visions into <span className='text-amethyst-500'>tangible products</span></h2>
                 </div>
 
                 {/* @ts-ignore */}
