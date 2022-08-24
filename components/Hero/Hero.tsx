@@ -1,4 +1,4 @@
-import styles from './Main.module.css'
+import styles from './Hero.module.css'
 import Image from 'next/image';
 import brandIcon from '../../public/punk4596.png'
 import Link from 'next/link';
@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react';
 import { ethers, githubActions, gql, greensock, hardhat, jwt, mongodb, nextjs, node, photoshop, python, solitidy, tailwind, typescript } from '../Icons';
 import { LastestCard } from '../LastestCard/LatestCard';
 
-export const Main = () => {
+export const Hero= () => {
     let punkLogo = useRef(null)
     let hero = useRef(null)
 

@@ -5,8 +5,8 @@ import { Background } from '../components/Background/Background'
 import { Education } from '../components/Education/Education'
 import { Footer } from '../components/Footer/Footer'
 import { Header } from '../components/Header/Header'
-import { Main } from '../components/Main/Main'
-import { Projects } from '../components/Projects/Projects'
+import { Hero } from '../components/Hero/Hero'
+import { FeaturedProjects } from '../components/Projects/FeaturedProjects'
 import { Skills } from '../components/Skills/Skills'
 import styles from '../styles/BaseLayout.module.css'
 
@@ -21,11 +21,11 @@ const Home: NextPage = () => {
         <Header />
         <div className={styles.wrapper}>
           <main className={styles.main}>
-            <Main />
+            <Hero />
+            <FeaturedProjects/>
+            <Skills />
             <Background/>
             <Education />
-            <Skills />
-            <Projects/>
           </main>
         </div>
         <Footer />
