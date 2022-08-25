@@ -35,12 +35,10 @@ const About: NextPage = () => (
                         </div>
                     </div>
                     <div id="background" className="relative flex flex-col">
-                        <div className="flex flex-col items-center lg:flex-row">
-                            <div className='flex items-center justify-center w-full'><Image src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} /></div>
-                            <div className="lg:max-w-lg">
+                            <div className="flex flex-col items-center w-full gap-8 py-1 justify-cesnter xl:flex-row">
                                 <p>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, starting as a DJ, then covering: GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
-                                <p className='mt-3'>Post graduation, I spent some months learning about the dev side of Web3, leading to me transferring my skills to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many devs transition from Web2 to blockchain.</p>
-                            </div>
+                                <div><Image src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} /></div>
+                                <p>Post graduation, I spent some months learning about the dev side of Web3, leading to me transferring my skills to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many devs transition from Web2 to blockchain.</p>
                         </div>
                     </div>
                     <div id="experience">
