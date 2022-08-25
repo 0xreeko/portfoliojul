@@ -21,14 +21,14 @@ const About: NextPage = () => {
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
                         <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>About</h1>
-                        <h5 className='tracking-widest text-amethyst-300/80'>Here's My Story</h5>
+                        <h5 className='tracking-widest text-amethyst-300/80'>Here&apos;s My Story</h5>
                         <p className='text-sylver-800'>Estimated Read Time: 1 min</p>
                     </div>
                     <div id='about' className="flex flex-col w-full py-8 gap-y-12 text-d-base">
                         <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
                             <div id="content" className='w-full'>
                                 <p className='text-m-sub1 md:text-d-sub1'>Hey anon👾,</p>
-                                <p className='mt-2'>I'm 0xreeko, or formally Enric Trillo, a 23 year old Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI using <span className='inline-flex'><RuiPill color={variant['Typescript']}>Reactjs</RuiPill></span>, <span className="inline-flex"><RuiPill color={variant['TailwindCSS3']}>TailwindCSS</RuiPill></span> and <span className="inline-flex"><RuiPill color='ruby'>Storybook</RuiPill></span>, and a portfolio of Web3 products.</p>
+                                <p className='mt-2'>I&apos;m 0xreeko, or formally Enric Trillo, a 23 year old Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI using <span className='inline-flex'><RuiPill color={variant['Typescript']}>Reactjs</RuiPill></span>, <span className="inline-flex"><RuiPill color={variant['TailwindCSS3']}>TailwindCSS</RuiPill></span> and <span className="inline-flex"><RuiPill color='ruby'>Storybook</RuiPill></span>, and a portfolio of Web3 products.</p>
                             </div>
                             <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
                                 <div className="flex p-2 rounded-full bg-russian-600">
