@@ -29,7 +29,7 @@ export const Hero = () => {
                     <h4 className='text-center sm:text-left text-m-h4 sm:text-d-h4'>GM anon👾, I&apos;m </h4>
                     <h1 className='tracking-widest text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
                     <h5 className='text-center sm:text-left text-m-sub1 sm:text-d-sub1'>Fullstack Web3 Developer</h5>
-                    <p className='max-w-lg mt-4 text-center sm:text-left text-m-base md:text-d-base'>I'm a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I'm building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
+                    <p className='max-w-lg mt-4 text-center sm:text-left text-m-base md:text-d-base'>I&apos;m a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
                 </div>
 
                 {/* @ts-ignore */}
