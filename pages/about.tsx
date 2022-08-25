@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import Image from 'next/image';
+import { RuiPill } from 'ruskelui';
+import { variant } from '../@types/tags';
 import { Alert } from '../components/Alert/Alert';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
@@ -17,16 +19,16 @@ const About: NextPage = () => {
             <Header />
             <div className={styles.wrapper}>
                 <main className={styles.main}>
-                    <div className="flex items-center justify-center">
+                    <div className="flex flex-col items-center justify-center">
                         <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>About</h1>
+                        <h5 className='tracking-widest text-amethyst-300/80'>Here's My Story</h5>
+                        <p className='text-sylver-800'>Estimated Read Time: 1 min</p>
                     </div>
-                    {/* <span>Estimated reading time: 1 minute, 45 seconds.</span> */}
                     <div id='about' className="flex flex-col w-full py-8 gap-y-12 text-d-base">
                         <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
                             <div id="content" className='w-full'>
-                                <p className='text-m-sub1 md:text-d-sub1'>GM anon👾,</p>
-                                <p className='text-m-h2 md:text-d-h2'>I&apos;m Rico</p>
-                                <p className='mt-2'>a Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI and a portfolio of Web3 products.</p>
+                                <p className='text-m-sub1 md:text-d-sub1'>Hey anon👾,</p>
+                                <p className='mt-2'>I'm 0xreeko, or formally Enric Trillo, a 23 year old Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI using <span className='inline-flex'><RuiPill color={variant['Typescript']}>Reactjs</RuiPill></span>, <span className="inline-flex"><RuiPill color={variant['TailwindCSS3']}>TailwindCSS</RuiPill></span> and <span className="inline-flex"><RuiPill color='ruby'>Storybook</RuiPill></span>, and a portfolio of Web3 products.</p>
                             </div>
                             <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
                                 <div className="flex p-2 rounded-full bg-russian-600">
@@ -35,18 +37,22 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div id="background" className="relative flex flex-col">
-                            <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>Background</h2>
-                            <p className='mt-3'>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, covering: Djing, GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
-                            <div className='flex items-center justify-center w-full'><Image src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} /></div>
-                            <p className='mt-3'>Post graduation, I spent some months learning about the dev side of Web3, leading to my full switch to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many transition from Web2 to greener pastures. Currently, I&apos;m working on RuskelUI, a component library for Web3 that will help with the development of a Web3 business portfolio I intend to work on.</p>
+                            <div className="flex flex-row-reverse items-center">
+                                <div className="">
+                                    {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>background.</h2> */}
+                                    <p className='mt-3'>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, starting as a DJ, then covering: GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
+                                    <p className='mt-3'>Post graduation, I spent some months learning about the dev side of Web3, leading to me transferring my skills to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many transition from Web2 to blockchain.</p>
+                                </div>
+                                <div className='flex items-center justify-center w-full'><Image src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} /></div>
+                            </div>
                         </div>
                         <div id="experience">
-                            <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>Experience</h2>
-                            <p className='mt-3'>Recently, I worked as a Web3 contractor with CWJ Capital, where I helped develop their UI and integrate Web3 tooling, managing to solve their biggest technical challenge within the first two weeks of being active in the role.</p>
-                            <p className='mt-8'>Prior to CWJ Capital, I worked as an SDR/BDR Hybrid for European Gateway helping our tech clients with tasks like prospecting, cold calling, writing scripts for the team and more. It helped build the business & sales acumen I needed to acquire as I wanted to ship my own products in the Web3 space.</p>
+                            {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>experience.</h2> */}
+                            <p className='mt-3'>Recently, I worked as a Web3 contractor with <span className={"underline decoration-amethyst-500 underline-offset-4"}>CWJ Capital</span>, where I helped develop their UI and integrate Web3 tooling, managing to solve their biggest technical challenge within the first two weeks of being active in the role.</p>
+                            <p className='mt-8'>Prior to CWJ Capital, I worked as an SDR/BDR Hybrid for <span className={"underline decoration-amethyst-500 underline-offset-4"}>European Gateway</span> helping our tech clients with tasks like prospecting, cold calling, writing scripts for the team and more. It helped build the business & sales acumen I needed to acquire as I wanted to ship my own products in the Web3 space.</p>
                         </div>
                         <div id="interests">
-                            <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>Interests</h2>
+                            {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>interests.</h2> */}
                             <p className='mt-3'>Aside from Web3, my current interests are: Machine Learning & AI, Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve developed in ML before <a href="https://medium.com/swlh/an-image-classifier-with-keras-2f0e9b868a36" className='italic underline duration-300 underline-offset-4 decoration-amethyst-400 hover:text-amethyst-400/60 text-amethyst-400' target={'_blank'} rel="noreferrer">(An Image Classifier with Keras)</a>, but my goal is to get deeper in my dev bag, build on these domains and mesh &apos;em with Web3 to ship the products of your tomorrow, today.</p>
                         </div>
                         <div id='outro' className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
