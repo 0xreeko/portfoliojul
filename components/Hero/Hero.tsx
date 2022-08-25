@@ -40,8 +40,8 @@ export const Hero = () => {
                 </div>
             </div>
             <div className="flex justify-center w-full gap-6 sm:justify-start">
-                <Link href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></Link>
-                <Link href={'/blog'} className={`border-2`}><RuiButton size='base' color='russian'>Read the blog</RuiButton></Link>
+                <a href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></a>
+                <a href={'/blog'}><RuiButton size='base' color='russian'>Read the blog</RuiButton></a>
             </div>
         </>
     )
