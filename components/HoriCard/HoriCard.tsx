@@ -4,7 +4,6 @@ import { Tag } from '../../@types/schema';
 import { variant } from '../../@types/tags';
 import dayjs from '../../utils/day'
 import { linkIcon } from '../Icons';
-import styles from './HoriCard.module.css'
 
 interface Props {
     title: string;

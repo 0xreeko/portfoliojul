@@ -11,6 +11,7 @@ import { FeaturedProjects } from '../components/FeaturedProjects/FeaturedProject
 import { Skills } from '../components/Skills/Skills'
 import styles from '../styles/BaseLayout.module.css'
 import { USP } from '../components/USP/USP'
+import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
             {/* <AboutMe/> */}
             <Skills />
             <FeaturedProjects/>
-            <Background/>
+            <LatestBlogs/>
             <Education />
             <USP/>
           </main>
