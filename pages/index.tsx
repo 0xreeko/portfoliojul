@@ -1,6 +1,5 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
-import { AboutMe } from '../components/AboutMe/AboutMe'
 import { Alert } from '../components/Alert/Alert'
 import { Background } from '../components/Background/Background'
 import { Education } from '../components/Education/Education'
@@ -12,8 +11,11 @@ import { Skills } from '../components/Skills/Skills'
 import styles from '../styles/BaseLayout.module.css'
 import { USP } from '../components/USP/USP'
 import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
+import { getPublishedPosts } from '../controller/notion-controller'
 
-const Home: NextPage = () => {
+
+const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // console.log(posts)
   return (
     <>
       <Head>
@@ -25,10 +27,10 @@ const Home: NextPage = () => {
         <div className={styles.wrapper}>
           <main className={styles.main}>
             <Hero />
-            {/* <AboutMe/> */}
             <Skills />
-            <FeaturedProjects/>
-            <LatestBlogs/>
+            <FeaturedProjects />
+            
+            <LatestBlogs props={posts} />
             <Education />
             <USP/>
           </main>
@@ -40,3 +42,15 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const posts = await getPublishedPosts()
+
+  return {
+    props: {
+      posts
+    },
+    revalidate: 135
+  }
+}
