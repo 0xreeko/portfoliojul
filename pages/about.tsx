@@ -37,9 +37,8 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div id="background" className="relative flex flex-col">
-                            <div className="flex flex-row-reverse items-center">
+                            <div className="flex flex-col-reverse items-center md:flex-row-reverse">
                                 <div className="">
-                                    {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>background.</h2> */}
                                     <p className='mt-3'>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, starting as a DJ, then covering: GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
                                     <p className='mt-3'>Post graduation, I spent some months learning about the dev side of Web3, leading to me transferring my skills to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many transition from Web2 to blockchain.</p>
                                 </div>
@@ -47,12 +46,10 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div id="experience">
-                            {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>experience.</h2> */}
                             <p className='mt-3'>Recently, I worked as a Web3 contractor with <span className={"underline decoration-amethyst-500 underline-offset-4"}>CWJ Capital</span>, where I helped develop their UI and integrate Web3 tooling, managing to solve their biggest technical challenge within the first two weeks of being active in the role.</p>
                             <p className='mt-8'>Prior to CWJ Capital, I worked as an SDR/BDR Hybrid for <span className={"underline decoration-amethyst-500 underline-offset-4"}>European Gateway</span> helping our tech clients with tasks like prospecting, cold calling, writing scripts for the team and more. It helped build the business & sales acumen I needed to acquire as I wanted to ship my own products in the Web3 space.</p>
                         </div>
                         <div id="interests">
-                            {/* <h2 className='underline text-m-h2 md:text-d-h2 underline-offset-4 text-amethyst-400'>interests.</h2> */}
                             <p className='mt-3'>Aside from Web3, my current interests are: Machine Learning & AI, Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve developed in ML before <a href="https://medium.com/swlh/an-image-classifier-with-keras-2f0e9b868a36" className='italic underline duration-300 underline-offset-4 decoration-amethyst-400 hover:text-amethyst-400/60 text-amethyst-400' target={'_blank'} rel="noreferrer">(An Image Classifier with Keras)</a>, but my goal is to get deeper in my dev bag, build on these domains and mesh &apos;em with Web3 to ship the products of your tomorrow, today.</p>
                         </div>
                         <div id='outro' className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
