@@ -18,7 +18,7 @@ export const Education = () => {
                 <p>Final Grade: DMM </p>
             </div>
             <div>
-                <h3 className='font-bold text-d-sub2 text-amethyst-400'>St Mary's RC High School</h3>
+                <h3 className='font-bold text-d-sub2 text-amethyst-400'>St Mary&apos;s RC High School</h3>
                 <p className='italic'>2010 - 2015</p>
                 <p>GCSE</p>
                 <p>Final Grade: 11 GCSEs (A* - C)</p>
