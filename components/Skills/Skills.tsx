@@ -1,5 +1,5 @@
 import styles from './Skills.module.css'
-import { ethers, githubActions, gql, greensock, hardhat, jwt, mongodb, nextjs, node, photoshop, python, solitidy, tailwind, typescript } from '../Icons';
+import { ethers, githubActions, gql, greensock, hardhat, jwt, mongodb, nextjs, node, photoshop, python, solidity, tailwind, typescript } from '../Icons';
  
 export const Skills = () => {
     return (
@@ -54,7 +54,7 @@ export const Skills = () => {
                         <p>Hardhat</p>
                     </div>
                     <div className={styles.mainSkillItem}>
-                        {solitidy}
+                        {solidity}
                         <p>Solidity</p>
                     </div>
                     <div className={styles.mainSkillItem}>

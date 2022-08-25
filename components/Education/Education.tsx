@@ -12,7 +12,7 @@ export const Education = () => {
                 <p>Final Grade: Second Class Upper (2:1) </p>
             </div>
             <div>
-                <h3 className='font-bold text-d-sub2 text-amethyst-400'>Saint Francis Xavier</h3>
+                <h3 className='font-bold text-d-sub2 text-amethyst-400'>Saint Francis Xavier College</h3>
                 <p className='italic'>2015 - 2017</p>
                 <p>BTEC Level 3 Extended Diploma</p>
                 <p>Final Grade: DMM </p>

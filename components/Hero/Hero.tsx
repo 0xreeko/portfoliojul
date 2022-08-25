@@ -1,4 +1,3 @@
-import styles from './Hero.module.css'
 import Image from 'next/image';
 import brandIcon from '../../public/punk4596.png'
 import Link from 'next/link';
@@ -23,16 +22,19 @@ export const Hero = () => {
 
     return (
         <>
-            <div className="flex flex-col-reverse items-center py-12 gap-y-6 sm:justify-around sm:flex-row">
+            <div className="flex flex-col-reverse items-center gap-6 py-12 sm:justify-around sm:flex-row">
                 {/* @ts-ignore */}
-                <div ref={el => hero = el} className="flex flex-col w-full max-w-2xl">
+                <div ref={el => hero = el} className="flex flex-col w-full">
                     {/* neon street light flicker every 6s ? */}
-                    <h1 className='text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
-                    <h2 className='font-medium text-center sm:text-left text-m-h2 md:text-d-h2'>Solving problems and materialising visions into <span className='text-amethyst-500'>tangible products</span></h2>
+                    <h4 className='text-center sm:text-left text-m-h4 sm:text-d-h4'>GM anon👾, I&apos;m </h4>
+                    <h1 className='tracking-widest text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
+                    <h5 className='text-center sm:text-left text-m-sub1 sm:text-d-sub1'>Fullstack Web3 Developer</h5>
+                    {/* <h2 className='max-w-full font-medium text-center sm:text-left text-m-h2 md:text-d-h2'>materialising visions into <span className='text-amethyst-500'>tangible products</span></h2> */}
+                    <p className='max-w-lg mt-4 text-center sm:text-left text-m-base md:text-d-base'>I'm a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I'm building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
                 </div>
 
                 {/* @ts-ignore */}
-                <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit' ref={el => punkLogo = el}>
+                <div className='relative inline-block p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
                     <div className="flex p-2 rounded-full bg-russian-600">
                         <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
                     </div>
