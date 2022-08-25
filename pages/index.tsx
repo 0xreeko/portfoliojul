@@ -12,6 +12,7 @@ import styles from '../styles/BaseLayout.module.css'
 import { USP } from '../components/USP/USP'
 import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
 import { getPublishedPosts } from '../controller/notion-controller'
+import { mouse, touch } from '../components/Icons'
 
 
 const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -27,12 +28,19 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
         <div className={styles.wrapper}>
           <main className={styles.main}>
             <Hero />
+            <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
+              <span className='text-teal-500 animate-bounce'>{touch}</span>
+              <p>scroll down</p>
+            </div>
             <Skills />
+            <div className="items-center justify-center hidden gap-4 pb-12 lg:flex">
+              <span className='text-teal-500 animate-bounce'>{mouse}</span>
+              <p>scroll down</p>
+            </div>
             <FeaturedProjects />
-            
             <LatestBlogs props={posts} />
             <Education />
-            <USP/>
+            <USP />
           </main>
         </div>
         <Footer />
