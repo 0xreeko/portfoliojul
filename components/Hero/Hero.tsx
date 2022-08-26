@@ -22,7 +22,7 @@ export const Hero = () => {
 
     return (
         <>
-            <div className="flex h-[70vh] md:h-[80vh] flex-col-reverse items-center gap-6 py-12 sm:justify-around sm:flex-row">
+            <div className="flex flex-col-reverse items-center gap-6 py-12 sm:justify-around sm:flex-row">
                 {/* @ts-ignore */}
                 <div ref={el => hero = el} className="flex flex-col w-full">
                     {/* neon street light flicker every 6s ? */}
