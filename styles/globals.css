@@ -10,7 +10,7 @@
   body {
     @apply bg-russian-600 text-sylver-100
   }
-  .text-d-hero > span, .text-m-hero > span {
+  .text-d-hero > span, .text-m-hero > span, .text-d-h4 > span, .text-m-h4 > span {
     font-family: 'Bungee Inline', cursive;
     @apply text-amethyst-400
   }

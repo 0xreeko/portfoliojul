@@ -48,8 +48,9 @@ const About: NextPage = () => (
                     <div id="interests">
                         <p>Aside from Web3, my current interests are: Machine Learning & AI, Robotics, Internet of Things and the Mixed Reality umbrella. I&apos;ve developed in ML before <a href="https://medium.com/swlh/an-image-classifier-with-keras-2f0e9b868a36" className='italic underline duration-300 underline-offset-4 decoration-amethyst-400 hover:text-amethyst-400/60 text-amethyst-400' target={'_blank'} rel="noreferrer">(An Image Classifier with Keras)</a>, but my goal is to get deeper in my dev bag, build on these domains and mesh &apos;em with Web3 to ship the products of your tomorrow, today.</p>
                     </div>
+                    <p className='italic font-black text-center text-m-h4 md:text-d-h4'>"building cool <span>sh*t</span> in public"</p>
                     <div id='outro' className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
-                        <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
+                        <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-500/60 to-transparent w-fit'>
                             <div className="flex p-2 rounded-full bg-russian-600">
                                 <Image src={'/linkedinHeadshot.jpeg'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />
                             </div>
