@@ -20,8 +20,8 @@ const FeaturedCard = (props: Props) => (
             <div className="flex flex-wrap items-center justify-between">
                 <h5 className='text-d-sub1'>{props.title}</h5>
                 <div className="flex gap-2">
-                    {props.isDev === true ? <a href={props.devLink !== "" ? props.devLink : undefined} target={'_blank'} rel={'origin'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
-                    {props.isLive === true ? <a href={props.liveLink !== "" ? props.liveLink : undefined} target={'_blank'} rel={'origin'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
+                    {props.isDev === true ? <a href={props.devLink !== "" ? props.devLink : undefined} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
+                    {props.isLive === true ? <a href={props.liveLink !== "" ? props.liveLink : undefined} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
                 </div>
             </div>
             {/* <p className='mt-3'>{ }</p> */}
@@ -85,8 +85,8 @@ export const FeaturedProjects = () => {
             <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">featuredBuilds.</h3>
             <div className="grid items-center grid-cols-1 gap-12 mt-3 sm:grid-cols-2 xl:grid-cols-3">
                 {
-                    data.map((item) => (
-                        <FeaturedCard title={item.title} description={item.description} image={item.image} isLive={item.isLive} isDev={item.isDev} liveLink={item.liveLink} devLink={item.devLink} />
+                    data.map((item, idx) => (
+                        <FeaturedCard key={idx} title={item.title} description={item.description} image={item.image} isLive={item.isLive} isDev={item.isDev} liveLink={item.liveLink} devLink={item.devLink} />
                     ))
                 }
             </div>
