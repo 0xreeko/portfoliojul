@@ -13,6 +13,7 @@ import { USP } from '../components/USP/USP'
 import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
 import { getPublishedPosts } from '../controller/notion-controller'
 import { mouse, touch } from '../components/Icons'
+import { Contact } from '../components/Contact/Contact'
 
 
 const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -41,6 +42,7 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
             <LatestBlogs props={posts} />
             <Education />
             <USP />
+            <Contact />
           </main>
         </div>
         <Footer />
