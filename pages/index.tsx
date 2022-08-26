@@ -30,12 +30,12 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
             <Hero />
             <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
               <span className='text-teal-500 animate-bounce'>{touch}</span>
-              <p>scroll down</p>
+              <p className='tracking-widest'>swipe down</p>
             </div>
             <Skills />
             <div className="items-center justify-center hidden gap-4 pb-12 lg:flex">
               <span className='text-teal-500 animate-bounce'>{mouse}</span>
-              <p>scroll down</p>
+              <p className='tracking-widest'>scroll down</p>
             </div>
             <FeaturedProjects />
             <LatestBlogs props={posts} />
