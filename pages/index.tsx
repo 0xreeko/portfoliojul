@@ -28,8 +28,8 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
         <Header />
         <div className={styles.wrapper}>
           <main className={styles.main}>
-            <CopyHero />
-            {/* <Hero /> */}
+            {/* <CopyHero /> */}
+            <Hero />
             <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
               <span className='text-teal-500 animate-bounce'>{touch}</span>
               <p className='tracking-widest'>swipe down</p>
