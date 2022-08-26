@@ -22,14 +22,18 @@ export const Hero = () => {
 
     return (
         <>
-            <div className="flex flex-col-reverse items-center gap-6 py-12 sm:justify-around sm:flex-row">
+            <div className="flex h-[70vh] md:h-[80vh] flex-col-reverse items-center gap-6 py-12 sm:justify-around sm:flex-row">
                 {/* @ts-ignore */}
                 <div ref={el => hero = el} className="flex flex-col w-full">
                     {/* neon street light flicker every 6s ? */}
-                    <h4 className='text-center sm:text-left text-m-h4 sm:text-d-h4'>GM anon👾, I&apos;m </h4>
+                    <h6 className='text-center sm:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m </h6>
                     <h1 className='tracking-widest text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
                     <h5 className='text-center sm:text-left text-m-sub1 sm:text-d-sub1'>Fullstack Web3 Developer</h5>
                     <p className='max-w-lg mt-4 text-center sm:text-left text-m-base md:text-d-base'>I&apos;m a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
+                    <div className="flex justify-center w-full gap-6 pt-12 sm:justify-start">
+                        <a href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></a>
+                        <a href={'/blog'}><RuiButton size='base' color='russian'>Read the blog</RuiButton></a>
+                    </div>
                 </div>
 
                 {/* @ts-ignore */}
@@ -38,10 +42,6 @@ export const Hero = () => {
                         <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
                     </div>
                 </div>
-            </div>
-            <div className="flex justify-center w-full gap-6 sm:justify-start">
-                <a href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></a>
-                <a href={'/blog'}><RuiButton size='base' color='russian'>Read the blog</RuiButton></a>
             </div>
         </>
     )
