@@ -28,10 +28,10 @@ export const Header = () => {
             </div>
             <div className={styles.headerNavigation}>
                 <div className="flex items-center gap-4 pr-6">
-                    <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{twitterIcon}</span></a>
-                    <a href="https://discord.com/users/0xreeko#1744" target={`_blank`} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{discordIcon}</span></a>
-                    <a href="https://www.linkedin.com/in/enrictrillo/" target={`_blank`} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{linkedInIcon}</span></a>
-                    <a href="https://www.youtube.com/channel/UCov6heLQcDoSUD2rwhyGdUA/" target={'_blank'} rel="noreferrer"><span className='duration-300 nav hover:text-amethyst-400'>{youtubeIcon}</span></a>
+                    <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`} rel="noreferrer"><span className='duration-300 opacity-0 nav hover:text-amethyst-400'>{twitterIcon}</span></a>
+                    <a href="https://discord.com/users/0xreeko#1744" target={`_blank`} rel="noreferrer"><span className='duration-300 opacity-0 nav hover:text-amethyst-400'>{discordIcon}</span></a>
+                    <a href="https://www.linkedin.com/in/enrictrillo/" target={`_blank`} rel="noreferrer"><span className='duration-300 opacity-0 nav hover:text-amethyst-400'>{linkedInIcon}</span></a>
+                    <a href="https://www.youtube.com/channel/UCov6heLQcDoSUD2rwhyGdUA/" target={'_blank'} rel="noreferrer"><span className='duration-300 opacity-0 nav hover:text-amethyst-400'>{youtubeIcon}</span></a>
                 </div>
                 <div className='relative group'>
                     <Link href={'/initiatives'}>Initiatives </Link>
