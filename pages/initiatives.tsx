@@ -35,8 +35,8 @@ const Initiatives: NextPage = () => {
             <Header />
             <div className={styles.wrapper}>
                 <main className={styles.main}>
-                    <div className="">
-                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>0xreeko&apos;s Initiatives</h1>
+                    <div className="flex flex-col items-center justify-center">
+                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>Initiatives</h1>
                         <div className='w-full mt-12'>
                             {/* <div className="">SECTION TO INCLUDE ALL COMBINED STATS ex. MRR</div> */}
                             <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">
