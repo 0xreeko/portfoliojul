@@ -5,14 +5,9 @@ import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react';
 
 export const CopyHero = () => {
-    let punkLogo = useRef(null)
     let hero = useRef(null)
 
     useEffect(() => {
-        gsap.fromTo(punkLogo, {
-            y: -45,
-            opacity: 0,
-        }, { y: 0, delay: .9, duration: 5, opacity: 1, ease: 'elastic' })
         gsap.fromTo(hero, {
             y: -45,
             opacity: 0,
@@ -21,9 +16,9 @@ export const CopyHero = () => {
 
     return (
         <>
-            <div className="flex flex-col-reverse items-center gap-6 lg:h-[80vh] py-12 text-center md:flex-row md:text-left">
-                {/* @ts-ignore */}
-                <div ref={el => hero = el} className="flex flex-col justify-center w-full">
+            {/* @ts-ignore */}
+            <div ref={el => hero = el} className="flex flex-col-reverse items-center gap-6 lg:h-[80vh] py-12 text-center md:flex-row md:text-left">
+                <div className="flex flex-col justify-center w-full">
                     <h6 className='text-center md:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m</h6>
                     <h1 className='tracking-widest text-m-hero md:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko </h1>
                     <h3 className='italic text-m-hero md:text-d-hero'>building cool <span>sh*t</span> in public</h3>
@@ -35,7 +30,7 @@ export const CopyHero = () => {
                     </div>
                 </div>
                 {/* @ts-ignore */}
-                <div className="flex flex-col items-center gap-6" ref={el => punkLogo = el}>
+                <div className="flex flex-col items-center gap-6">
                     <div className='relative inline-block p-2 transition-all duration-300 rounded-full bg-gradient-to-tr from-amethyst-500/80 to-transparent w-fit h-fit' >
                         <div className="flex p-2 rounded-full bg-russian-600">
                             <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
