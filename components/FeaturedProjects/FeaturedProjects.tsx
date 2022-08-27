@@ -20,8 +20,8 @@ const FeaturedCard = (props: Props) => (
             <div className="flex flex-wrap items-center justify-between">
                 <h5 className='text-d-sub1'>{props.title}</h5>
                 <div className="flex gap-2">
-                    {props.isDev === true ? <a href={props.devLink !== "" ? props.devLink : undefined} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
-                    {props.isLive === true ? <a href={props.liveLink !== "" ? props.liveLink : undefined} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
+                    {props.isDev === true && props.devLink !== "" ? <a href={props.devLink } target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
+                    {props.isLive === true && props.liveLink !== "" ? <a href={props.liveLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
                 </div>
             </div>
             {/* <p className='mt-3'>{ }</p> */}
