@@ -21,7 +21,7 @@ export const CopyHero = () => {
 
     return (
         <>
-            <div className="flex flex-col-reverse items-center gap-6 py-12 text-center md:flex-row md:text-left">
+            <div className="flex flex-col-reverse items-center gap-6 lg:h-[80vh] py-12 text-center md:flex-row md:text-left">
                 {/* @ts-ignore */}
                 <div ref={el => hero = el} className="flex flex-col justify-center w-full">
                     <h6 className='text-center md:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m</h6>
