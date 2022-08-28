@@ -46,7 +46,7 @@ const data: Props[] = [
     {
         title: "RuskelUI",
         description: "An Reactjs UI component library for rapid Web3 development.",
-        image: imgRuskelUI,
+        image: "/ruskelUI--cover.png",
         isDev: true,
         isLive: true,
         devLink: "https://github.com/0xreeko/ruskelui",
@@ -55,7 +55,7 @@ const data: Props[] = [
     {
         title: 'Web3Source',
         description: 'A gateway for top Web3 jobs & talent. Currently revamping.',
-        image: imgWeb3Source,
+        image: '/web3source--cover.png',
         isDev: true,
         isLive: true,
         devLink: "",
