@@ -1,7 +1,7 @@
 import { githubIcon, globeIcon } from '../Icons';
 import styles from './FeaturedProjects.module.css'
-import imgRuskelUI from '/public/ruskelUI--cover.png'
-import imgWeb3Source from '/public/web3source--cover.png'
+import imgRuskelUI from '../../public/ruskelUI--cover.png'
+import imgWeb3Source from '../../public/web3source--cover.png'
 import Image, { StaticImageData } from 'next/image';
 
 interface Props {
