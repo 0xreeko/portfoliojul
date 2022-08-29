@@ -1,7 +1,7 @@
 import { githubIcon, globeIcon } from '../Icons';
 import styles from './FeaturedProjects.module.css'
-import imgRuskelUI from '../../images/ruskelUI.png'
-import imgWeb3Source from '../../images/web3source.png'
+import ruskelUI from '../../public/ruskelUI.png'
+import web3Source from '../../public/web3source.png'
 import Image, { StaticImageData } from 'next/image';
 
 interface Props {
@@ -48,7 +48,7 @@ const data: Props[] = [
     {
         title: "RuskelUI",
         description: "An Reactjs UI component library for rapid Web3 development.",
-        image: "/images/ruskelUI.png",
+        image: '/ruskelUI.png',
         isDev: true,
         isLive: true,
         devLink: "https://github.com/0xreeko/ruskelui",
@@ -57,7 +57,7 @@ const data: Props[] = [
     {
         title: 'Web3Source',
         description: 'A gateway for top Web3 jobs & talent. Currently revamping.',
-        image: '/images/web3source.png',
+        image: '/web3source.png',
         isDev: true,
         isLive: true,
         devLink: "",

@@ -6,7 +6,6 @@
 .pnp.js
 .history
 /public
-/images
 
 # testing
 /coverage
