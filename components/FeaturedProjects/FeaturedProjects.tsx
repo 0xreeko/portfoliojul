@@ -1,13 +1,11 @@
 import { githubIcon, globeIcon } from '../Icons';
 import styles from './FeaturedProjects.module.css'
-import ruskelUI from '../../public/ruskelUI.png'
-import web3Source from '../../public/web3source.png'
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 interface Props {
     title: string,
     description: string,
-    image: StaticImageData | string
+    image: string
     isLive: boolean
     isDev: boolean
     devLink: string
@@ -28,7 +26,6 @@ const FeaturedCard = (props: Props) => {
                         {props.isLive === true && props.liveLink !== "" ? <a href={props.liveLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
                     </div>
                 </div>
-                {/* <p className='mt-3'>{ }</p> */}
                 <p className='mt-3'>{props.description}</p>
             </div>
         </div>
