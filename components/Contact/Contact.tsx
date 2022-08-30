@@ -2,7 +2,7 @@ import styles from './Contact.module.css'
 
 export const Contact = () => {
     return (
-        <section id='contact' className='py-12'>
+        <section id='contact'>
             <div className="">
                 <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>contact.</h3>
             </div>

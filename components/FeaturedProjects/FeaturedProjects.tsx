@@ -83,7 +83,7 @@ const data: Props[] = [
 
 export const FeaturedProjects = () => {
     return (
-        <div className="w-full py-12 mx-auto portfolio">
+        <section id="portfolio" className="w-full mx-auto">
             <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">featuredBuilds.</h3>
             <div className="grid items-center grid-cols-1 gap-12 mt-3 sm:grid-cols-2 xl:grid-cols-3">
                 {
@@ -92,6 +92,6 @@ export const FeaturedProjects = () => {
                     ))
                 }
             </div>
-        </div>
+        </section>
     )
 };

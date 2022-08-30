@@ -15,9 +15,9 @@ export const CopyHero = () => {
     }, [])
 
     return (
-        <>
+        <section id='hero'>
             {/* @ts-ignore */}
-            <div ref={el => hero = el} className="flex flex-col-reverse items-center gap-6 lg:h-[80vh] py-12 text-center md:flex-row md:text-left">
+            <div ref={el => hero = el} className="flex flex-col-reverse items-center gap-6 lg:h-[80vh] text-center md:flex-row md:text-left">
                 <div className="flex flex-col justify-center w-full">
                     <h6 className='text-center md:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m</h6>
                     <h1 className='tracking-widest text-m-hero md:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko </h1>
@@ -40,6 +40,6 @@ export const CopyHero = () => {
                 </div>
 
             </div>
-        </>
+        </section>
     )
 };

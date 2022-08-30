@@ -3,7 +3,7 @@ import { ethers, githubActions, gql, greensock, hardhat, jwt, mongodb, nextjs, n
  
 export const Skills = () => {
     return (
-        <div className="py-12">
+        <section id='skills'>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">skills.</h3>
                 <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-y-8 justify-items-center">
                     <div className={styles.mainSkillItem}>
@@ -66,6 +66,6 @@ export const Skills = () => {
                         <p>Photoshop</p>
                     </div>
                 </div>
-            </div>
+            </section>
     )
 };
