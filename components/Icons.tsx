@@ -39,6 +39,8 @@ export const globeIcon = <svg xmlns="http://www.w3.org/2000/svg" className="icon
     <path d="M12.5 3a17 17 0 0 1 0 18"></path>
 </svg>
 
+export const indieIcon = <svg width={24} height={24} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 6H7V18H4V6Z" fill="none"></path> <path d="M10 6H13V10.5H17V6H20V18H17V13.5H13V18H10V6Z" fill="none"></path> </svg>
+
 // skills  - about
 export const nextjs = <svg className='duration-300 w-14 h-14 fill-russian-400 hover:fill-russian-400/80' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48"><path d="M18.974,31.5c0,0.828-0.671,1.5-1.5,1.5s-1.5-0.672-1.5-1.5v-14c0-0.653,0.423-1.231,1.045-1.43 c0.625-0.198,1.302,0.03,1.679,0.563l16.777,23.704C40.617,36.709,44,30.735,44,24c0-11-9-20-20-20S4,13,4,24s9,20,20,20 c3.192,0,6.206-0.777,8.89-2.122L18.974,22.216V31.5z M28.974,16.5c0-0.828,0.671-1.5,1.5-1.5s1.5,0.672,1.5,1.5v13.84l-3-4.227 V16.5z"></path></svg>
 

@@ -1,5 +1,5 @@
 .contactWrapper {
-    @apply px-8 sm:px-16 md:px-24 lg:px-32 flex flex-wrap justify-center gap-4 text-sylver-100
+    @apply flex flex-col text-sylver-100
 }
 
 .wrapperItem {

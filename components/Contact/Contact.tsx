@@ -1,32 +1,46 @@
+import { RuiInput } from 'ruskelui';
+import { discordIcon, indieIcon, linkedInIcon, twitterIcon } from '../Icons';
 import styles from './Contact.module.css'
 
 export const Contact = () => {
     return (
-        <section id='contact'>
+        <section id='contact' className={styles.contactWrapper}>
             <div className="">
                 <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>contact.</h3>
+                <p>Want to connect or drop me a message about anything Web3? Complete this form and I'll do my best to get back to you ASAP!</p>
             </div>
-            <div className={styles.contactWrapper}>
-                <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`}>
-                    <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
-                        <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#00ACEE] to-[#36D8FF]'>Follow me on Twitter</p>
-                    </div>
-                </a>
-                <a href={`https://discord.com/users/0xreeko#1744`} target={`_blank`} rel={`noreferrer`}>
-                    <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
-                        <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#7289da] to-kunzite-500'>Message me on Discord</p>
-                    </div>
-                </a>
-                <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
-                    <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#0077b5] to-[#00A0DC]'>Connect with me via LinkedIn</p>
+            <div className="flex w-full gap-12 mt-8 mb-24 dark">
+                <div className="flex flex-col w-full max-w-lg gap-9">
+                    <RuiInput name="name" floatingLabel='Name' color='amethyst' fullWidth />
+                    <RuiInput name="subject" color='amethyst' floatingLabel='Email' fullWidth />
+                    <RuiInput name="subject" color='amethyst' floatingLabel='Subject' fullWidth />
+                    <textarea rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
                 </div>
-                <a href="https://www.indiehackers.com/0xreeko" target={`_blank`}>
+                <div>
+                    <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`}>
+                        <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
+                            <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#00ACEE] to-[#36D8FF]'>Follow me on Twitter</p>
+                            <span className='text-sylver-100 duration-300 group-hover:text-[#36D8FF]'>{twitterIcon}</span>
+                        </div>
+                    </a>
+                    <a href={`https://discord.com/users/0xreeko#1744`} target={`_blank`} rel={`noreferrer`}>
+                        <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
+                            <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#7289da] to-amethyst-500'>Message me on Discord</p>
+                            <span className='duration-300 text-sylver-100 group-hover:text-amethyst-500 '>{discordIcon}</span>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/enrictrillo" target={'_blank'}>
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
-                        <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-sunstone-500'>Follow me on Indie Hackers</p>
-                    </div>
-                </a>
-                <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
-                    <p className='duration-300 group-hover:text-transparent bg-gradient-to-r from-[#0072C6] to-azure-500 bg-clip-text'>Email me via Outlook</p>
+                        <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#0077b5] to-[#00A0DC]'>Connect w/ me on LinkedIn</p>
+                            <span className='text-sylver-100 duration-300 group-hover:text-[#00A0DC]'>{linkedInIcon}</span>
+                        </div>
+                    </a>
+                    <a href="https://www.indiehackers.com/0xreeko" target={`_blank`}>
+                        <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
+                            <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-sunstone-500'>Follow me on Indie Hackers</p>
+                            <span className='duration-300 stroke-sylver-100 group-hover:stroke-sunstone-500'>{indieIcon}</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
