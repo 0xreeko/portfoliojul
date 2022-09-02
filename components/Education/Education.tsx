@@ -4,7 +4,7 @@ export const Education = () => {
     return (
         <section id='education' className='py-16'>
             <div className="flex items-end gap-4">
-                <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>03.</span>
+                <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>04.</span>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">Education</h3>
                 <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
             </div>
