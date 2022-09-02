@@ -8,7 +8,11 @@ interface Props {
 export const LatestBlogs = ({ props }: Props) => {
     return (
         <div className="py-16">
-            <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>latestBlogs.</h3>
+            <div className="flex items-end gap-4">
+                <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>05.</span>
+                <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">Latest Blogs</h3>
+                <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
+            </div>
             <ol className='relative flex flex-col w-full gap-4 mt-12'>
                 {
                     props.length > 0 ? props.map((item, idx) => (
