@@ -6,6 +6,6 @@
     @apply flex items-center gap-2 relative
 }
 
-/* .wrapperItem > svg {
-    @apply hover:scale-110 duration-300
-} */
+.wrapperItem > p {
+    @apply whitespace-nowrap
+}
