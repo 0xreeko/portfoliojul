@@ -22,7 +22,7 @@ const About: NextPage = () => (
                     <h5 className='tracking-widest text-amethyst-300/80'>Here&apos;s My Story</h5>
                     <p className='text-sylver-800'>Estimated Read Time: 1 min, 45 sec</p>
                 </div>
-                <div id='about' className="flex flex-col w-full py-8 gap-y-12 text-d-base">
+                <div id='about' className="flex flex-col w-full pt-8 gap-y-12 text-d-base">
                     <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
                         <div id="content" className='w-full'>
                             <p className='text-m-sub1 md:text-d-sub1'>Hey anon👾,</p>
