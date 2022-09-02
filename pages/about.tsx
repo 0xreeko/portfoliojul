@@ -28,7 +28,7 @@ const About: NextPage = () => (
                             <p className='text-m-sub1 md:text-d-sub1'>Hey anon👾,</p>
                             <div className='mt-2'>I&apos;m 0xreeko, or formally Enric Trillo, a 23 year old Fullstack Web3 Developer solving problems and materialising visions into tangible products. Born in southwest Madrid, and I&apos;ve been living in London for the past 12 years. Currently focused on building RuskelUI using <span className='inline-flex'><RuiPill color={'blue'}>Reactjs</RuiPill></span>, <span className="inline-flex"><RuiPill color={'teal'}>TailwindCSS</RuiPill></span> and <span className="inline-flex"><RuiPill color='ruby'>Storybook</RuiPill></span>, and a portfolio of Web3 products.</div>
                         </div>
-                        <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-400/60 to-transparent w-fit'>
+                        <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-500/60 to-transparent w-fit'>
                             <div className="flex p-2 rounded-full bg-russian-600">
                                 <Image src={'/punk4596.png'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'transform bg-amethyst-500 rounded-full'} />
                             </div>

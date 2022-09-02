@@ -4,25 +4,55 @@ import React from 'react';
 import { Alert } from '../components/Alert/Alert';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
+import { githubIcon, globeIcon } from '../components/Icons';
 import styles from '../styles/BaseLayout.module.css'
 
 interface Props {
-    id: number,
     name: string,
     status: string,
     description: string
+    isLive: boolean
+    isDev: boolean
+    liveLink: string
+    devLink: string
 }
 
 const InitCard = (attributes: Props) => {
     return (
         <div className="flex flex-col w-full p-4 duration-300 border rounded-lg h-fit text-d-base border-sylver-100 bg-amethyst-400/5 hover:bg-amethyst-400/10 border-opacity-5 hover:border-opacity-10">
-            <p className='text-m-sub2 md:text-d-sub2'>Initiative: #{attributes.id}</p>
-            <p className='mt-4'>Name: <span className={`text-sylver-800`}>{attributes.name}</span></p>
+            <p className='flex justify-between text-m-sub2 md:text-d-sub2'>
+                <span>{attributes.name}</span>
+                <div className="flex gap-2">
+                    {attributes.isDev === true && attributes.devLink !== "" ? <a href={attributes.devLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
+                    {attributes.isLive === true && attributes.liveLink !== "" ? <a href={attributes.liveLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
+                </div>
+            </p>
             <p>Status: <span className={`${attributes.status === "Not Started" ? "text-sylver-800" : "text-green-600"}`}>{attributes.status}</span></p>
             <p>Description: <span className='text-sylver-800'>{attributes.description}</span></p>
         </div>
     )
 }
+
+let _data = [
+    {
+        name: "Web3Source",
+        status: "Started",
+        description: "Currently working on revamping its branding purpose.",
+        isDev: false,
+        isLive: true,
+        devLink: "",
+        liveLink: "https://web3source.co"
+    },
+    {
+        name: "RuskelUI",
+        status: "Started",
+        description: "An UI library for rapid Web3 development",
+        isDev: true,
+        isLive: true,
+        devLink: "https://github.com/0xreeko/ruskelui",
+        liveLink: "https://0xreeko.github.io/ruskelui/"
+    },
+]
 
 const Initiatives: NextPage = () => {
     return (
@@ -41,10 +71,10 @@ const Initiatives: NextPage = () => {
                             {/* <div className="">SECTION TO INCLUDE ALL COMBINED STATS ex. MRR</div> */}
                             <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">
                                 {
-                                    [{ id: 1, name: "RuskelUI", status: "Started", description: "An UI library for rapid Web3 development" }].map((item, idx) => (
+                                    _data.map((item, idx) => (
                                         <>
-                                            <InitCard key={idx} id={item.id} name={item.name} status={item.status} description={item.description} />
-                                        </> 
+                                            <InitCard key={idx} name={item.name} status={item.status} description={item.description} isDev={item.isDev} isLive={item.isLive} liveLink={item.liveLink} devLink={item.devLink} />
+                                        </>
                                     ))
                                 }
                             </div>
