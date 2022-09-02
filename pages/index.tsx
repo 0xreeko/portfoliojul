@@ -15,6 +15,7 @@ import { getPublishedPosts } from '../controller/notion-controller'
 import { mouse, touch } from '../components/Icons'
 import { Contact } from '../components/Contact/Contact'
 import { CopyHero } from '../components/CopyHero/CopyHero'
+import { Experience } from '../components/Experience/Experience'
 
 
 const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -68,6 +69,7 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
 
             <USP />
             <Skills />
+            <Experience/>
             <Education />
             <FeaturedProjects />
             <LatestBlogs props={posts} />
