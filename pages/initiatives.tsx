@@ -37,7 +37,7 @@ let _data = [
     {
         name: "Web3Source",
         status: "Started",
-        description: "Currently working on revamping its branding purpose.",
+        description: "Currently working on revamping its branding and purpose.",
         isDev: false,
         isLive: true,
         devLink: "",

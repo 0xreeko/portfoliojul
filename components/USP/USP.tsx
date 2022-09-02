@@ -1,16 +1,35 @@
 import styles from './USP.module.css'
 
+interface Props {
+    title: string
+}
+
+const USPCard = ({title}: Props) => (
+    <div className="flex flex-col justify-between p-4 duration-300 border cursor-default select-none h-fit w-fit rounded-2xl backdrop-blur-sm bg-amethyst-400/5 hover:bg-amethyst-400/10 border-sylver-100 border-opacity-5 hover:border-opacity-10" >
+        <h4 className='text-m-h4 md:text-d-h4'>{title}</h4>
+    </div >
+)
+
+let _data: Props[] = [
+    {title: 'UI Development'},
+    {title: 'State Management'},
+    {title: 'API & Server Development'},
+    {title: 'Auth2 & Encryption'},
+    {title: 'Web3 Development'},
+    {title: 'Testing'},
+    {title: 'Databases'},
+]
+
 export const USP = () => {
     return (
         <div className="py-16">
-            <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">services.</h3>
+            {/* <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">services.</h3> */}
             <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-                <div className="flex flex-col justify-between h-40 p-4 w-80 rounded-2xl bg-russian-400/20">
-                    <h3>Web Development</h3>
-                    <p className='mt-2'>I use modern web tooling, like NextJs and Tailwind, to develop visually compelling fullstack applications.</p>
-                </div>
-                <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
-                <div className="h-40 p-4 w-80 bg-russian-400/20 rounded-2xl">asdas</div>
+                {
+                    _data.map((item, idx) => (
+                        <USPCard title={item.title} key={idx} />
+                    ))
+                }
             </div>
         </div>
     )
