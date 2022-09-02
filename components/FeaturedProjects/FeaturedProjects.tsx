@@ -95,7 +95,7 @@ export const FeaturedProjects = () => {
         <section id="portfolio" className="w-full py-16 mx-auto ">
             <div className="flex items-end gap-4">
                 <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>04.</span>
-                <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">Featured Projects</h3>
+                <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400 whitespace-nowrap">Featured Projects</h3>
                 <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
             </div>
             <div className="grid items-center grid-cols-1 gap-12 mt-8 sm:grid-cols-2 xl:grid-cols-3">
