@@ -66,8 +66,8 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
               <p className='tracking-widest'>scroll down</p>
             </div>
 
-            <Skills />
             <USP />
+            <Skills />
             <Education />
             <FeaturedProjects />
             <LatestBlogs props={posts} />
