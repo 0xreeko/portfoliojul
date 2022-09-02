@@ -2,7 +2,7 @@ import styles from './Education.module.css'
  
 export const Education = () => {
     return (
-        <section id='education'>
+        <section id='education' className='py-16'>
             <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">education.</h3>
             <div className='flex flex-wrap justify-between gap-8 mt-3'>
             <div>
