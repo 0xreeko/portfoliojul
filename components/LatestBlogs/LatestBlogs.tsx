@@ -11,9 +11,9 @@ export const LatestBlogs = ({ props }: Props) => {
             <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>latestBlogs.</h3>
             <ol className='relative flex flex-col w-full gap-4 mt-12'>
                 {
-                    props.map((item, idx) => (
+                    props.length > 0 ? props.map((item, idx) => (
                         <HoriCard key={idx} title={item.title} slug={item.slug} date={item.date} description={item.description} tags={item.tags} />
-                    )).slice(0, 2)
+                    )).slice(0, 2) : (<p className='text-center text-sylver-700 text-d-base'>No blog posts available :/ Check back another time, or follow me on <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`}><span className='underline text-azure-500 underline-offset-2'>Twitter</span></a> for announcements.</p>)
                 }
             </ol>
         </div>
