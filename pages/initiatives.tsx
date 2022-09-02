@@ -59,6 +59,7 @@ const Initiatives: NextPage = () => {
         <div className={styles.container}>
             <Head>
                 <title>Initiatives - 0xreeko</title>
+                <meta name='author' content='0xreeko' />
                 <meta name="description" title="description" content="Displaying the 33 Web3 biz initiatives I&apos;m building and their combined numbers, including status, the description of the project, and a link to the landing page." />
             </Head>
             <Alert />
