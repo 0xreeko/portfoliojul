@@ -4,7 +4,7 @@ export const Education = () => {
     return (
         <section id='education' className='py-16'>
             <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">education.</h3>
-            <div className='flex flex-wrap justify-between gap-8 mt-3'>
+            <div className='flex flex-wrap justify-between gap-8 mt-8'>
             <div>
                 <h3 className='font-bold text-d-sub2 text-amethyst-400'>The University Of Northampton</h3>
                 <p className='italic'>2017 - 2020</p>

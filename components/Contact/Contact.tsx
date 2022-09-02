@@ -7,7 +7,7 @@ export const Contact = () => {
         <section id='contact' className={styles.contactWrapper}>
             <div className="">
                 <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>contact.</h3>
-                <p>Want to connect or drop me a message about anything Web3? Complete this form and I'll do my best to get back to you ASAP!</p>
+                <p className='mt-8'>Want to connect or drop me a message about anything Web3? Complete this form and I'll do my best to get back to you ASAP!</p>
             </div>
             <div className="flex flex-col-reverse w-full gap-12 mt-8 mb-24 lg:flex-row dark">
                 <div className="flex flex-col w-full max-w-lg gap-9">

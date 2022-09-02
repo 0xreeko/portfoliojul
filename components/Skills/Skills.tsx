@@ -5,7 +5,7 @@ export const Skills = () => {
     return (
         <section id='skills' className='py-16'>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">skills.</h3>
-                <div className="grid grid-cols-2 gap-4 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-y-8 justify-items-center">
+                <div className="grid grid-cols-2 gap-4 mt-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-y-8 justify-items-center">
                     <div className={styles.mainSkillItem}>
                         <span>{nextjs}</span>
                         <p>NextJS</p>

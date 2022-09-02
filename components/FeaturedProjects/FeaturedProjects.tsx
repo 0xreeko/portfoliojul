@@ -52,6 +52,15 @@ const data: Props[] = [
         liveLink: "https://0xreeko.github.io/ruskelui/"
     },
     {
+        title: "NexusPesquisa",
+        description: "A Web3 browser using the Google Search API.",
+        image: "",
+        isDev: true,
+        isLive: true,
+        devLink: "",
+        liveLink: ""
+    },
+    {
         title: 'Web3Source',
         description: 'A gateway for top Web3 jobs & talent. Currently revamping.',
         image: '/web3source.png',
@@ -59,6 +68,15 @@ const data: Props[] = [
         isLive: true,
         devLink: "",
         liveLink: "https://web3source.co"
+    },
+    {
+        title: 'NFT RPG Game',
+        description: 'Dynamic ERC721 tokens representing  characters in a turn-based game against the final boss.',
+        image: '/web3source.png',
+        isDev: true,
+        isLive: true,
+        devLink: "https://replit.com/@strikzplaydirty/nft-game-starter-project#src/App.jsx",
+        liveLink: "https://nft-game-starter-project.strikzplaydirty.repl.co"
     },
     {
         title: "Tweetify",
@@ -69,15 +87,6 @@ const data: Props[] = [
         devLink: "",
         liveLink: ""
     },
-    {
-        title: "NexusPesquisa",
-        description: "A Web3 browser using the Google Search API.",
-        image: "",
-        isDev: true,
-        isLive: true,
-        devLink: "",
-        liveLink: ""
-    },
 
 ]
 
@@ -85,7 +94,7 @@ export const FeaturedProjects = () => {
     return (
         <section id="portfolio" className="w-full py-16 mx-auto ">
             <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">featuredBuilds.</h3>
-            <div className="grid items-center grid-cols-1 gap-12 mt-3 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid items-center grid-cols-1 gap-12 mt-8 sm:grid-cols-2 xl:grid-cols-3">
                 {
                     data.map((item, idx) => (
                         <FeaturedCard key={idx} title={item.title} description={item.description} image={item.image} isLive={item.isLive} isDev={item.isDev} liveLink={item.liveLink} devLink={item.devLink} />

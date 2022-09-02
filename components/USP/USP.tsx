@@ -15,7 +15,7 @@ let _data: Props[] = [
     { title: 'State Management' },
     { title: 'API & Server Development' },
     { title: 'Auth2 & Encryption' },
-    { title: 'Web3 Development' },
+    { title: 'Web3/Blockchain Development' },
     { title: 'Testing' },
     { title: 'Databases' },
 ]
@@ -24,7 +24,7 @@ export const USP = () => {
     return (
         <div className="py-16">
             {/* <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">services.</h3> */}
-            <div className="flex flex-wrap items-center justify-center max-w-3xl gap-4 mx-auto mt-4">
+            <div className="flex flex-wrap items-center justify-center max-w-4xl gap-4 mx-auto mt-4">
                 {
                     _data.map((item, idx) => (
                         <USPCard title={item.title} key={idx} />
