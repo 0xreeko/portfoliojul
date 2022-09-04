@@ -31,13 +31,13 @@ export const Contact = () => {
                             <span className='duration-300 text-sylver-100 group-hover:text-amethyst-500 '>{discordIcon}</span>
                         </div>
                     </a>
-                    <a href="https://linkedin.com/in/enrictrillo" target={'_blank'}>
+                    <a href="https://linkedin.com/in/enrictrillo" target={'_blank'} rel={`noreferrer`}>
                         <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                             <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-[#0077b5] to-[#00A0DC]'>Connect w/ me on LinkedIn</p>
                             <span className='text-sylver-100 duration-300 group-hover:text-[#00A0DC]'>{linkedInIcon}</span>
                         </div>
                     </a>
-                    <a href="https://www.indiehackers.com/0xreeko" target={`_blank`}>
+                    <a href="https://www.indiehackers.com/0xreeko" target={`_blank`} rel={`noreferrer`}>
                         <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                             <p className='duration-300 group-hover:text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-sunstone-500'>Follow me on Indie Hackers</p>
                             <span className='duration-300 stroke-sylver-100 group-hover:stroke-sunstone-500'>{indieIcon}</span>
