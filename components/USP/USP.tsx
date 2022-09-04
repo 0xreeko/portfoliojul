@@ -28,7 +28,7 @@ export const USP = () => {
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400 whitespace-nowrap">Expertise</h3>
                 <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
             </div>
-            <div className="flex flex-wrap justify-center w-full gap-4 mt-8">
+            <div className="flex flex-wrap justify-center w-full gap-4 mt-16">
                 {
                     _data.map((item, idx) => (
                         <USPCard title={item.title} key={idx} />
