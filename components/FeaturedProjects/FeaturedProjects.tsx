@@ -1,18 +1,13 @@
 import { githubIcon, globeIcon } from '../Icons';
 import styles from './FeaturedProjects.module.css'
 import Image from 'next/image';
+import { FPProps } from '../../@types/fpType';
 
 interface Props {
-    title: string,
-    description: string,
-    image: string
-    isLive: boolean
-    isDev: boolean
-    devLink: string
-    liveLink: string
+    props: FPProps[]
 }
 
-const FeaturedCard = (props: Props) => {
+const FeaturedCard = (props: FPProps) => {
     return (
         <div className="flex flex-col w-full h-full gap-4 p-5 duration-300 border rounded-lg group backdrop-blur-sm bg-amethyst-400/5 hover:bg-amethyst-400/10 border-sylver-100 border-opacity-5 hover:border-opacity-10">
             <div className="w-full overflow-hidden border rounded-lg h-44">
@@ -32,7 +27,7 @@ const FeaturedCard = (props: Props) => {
     )
 }
 
-const data: Props[] = [
+const data: FPProps[] = [
     {
         title: "*********",
         description: "Coming Soon. Keep an eye out on my social media accounts 👀",
@@ -90,7 +85,7 @@ const data: Props[] = [
 
 ]
 
-export const FeaturedProjects = () => {
+export const FeaturedProjects = ({props}: Props) => {
     return (
         <section id="portfolio" className="w-full py-16 mx-auto ">
             <div className="flex items-end gap-4">
@@ -100,7 +95,7 @@ export const FeaturedProjects = () => {
             </div>
             <div className="grid items-center grid-cols-1 gap-12 mt-8 sm:grid-cols-2 xl:grid-cols-3">
                 {
-                    data.map((item, idx) => (
+                    props.map((item, idx) => (
                         <FeaturedCard key={idx} title={item.title} description={item.description} image={item.image} isLive={item.isLive} isDev={item.isDev} liveLink={item.liveLink} devLink={item.devLink} />
                     ))
                 }
