@@ -20,7 +20,6 @@ export const getExperiences = async (): Promise<ExpProps[]> => {
 }
 
 const experienceTranformer = (block: any): ExpProps => {
-    console.log(block)
     return {
         title: block.properties.Title.title[0].plain_text,
         company: block.properties.Company.rich_text[0]?.plain_text,

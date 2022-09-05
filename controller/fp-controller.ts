@@ -25,7 +25,7 @@ export const getFeaturedProjects = async (): Promise<FPProps[]> => {
 const blockTransformer = (block: any): FPProps => {
     console.log(block)
     return {
-        title: "",
+        title: block.properties.Title.title[0]?.plain_text,
         description: "",
         image: "",
         isDev: true,
