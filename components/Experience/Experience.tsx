@@ -1,6 +1,4 @@
 import { ExpProps } from '../../@types/experience';
-import styles from './Experience.module.css'
-
 
 const _data: ExpProps[] = [
     { title: "Fullstack Web3 Developer", company: '0xreeko', startMonth: "Oct", startYear: 2020, endMonth: "cur", endYear: 2022 },
