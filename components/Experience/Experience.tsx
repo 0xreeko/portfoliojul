@@ -20,7 +20,7 @@ export const Experience = ({props}: Props) => {
                 <h3 className='underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400'>Experience</h3>
                 <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
             </div>
-            <div className="grid grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2 xl:grid-cols-3">
                 {
                     props.map(({ title, company, startMonth, startYear, endMonth, endYear }, idx) => (
                         <ExpCard key={idx} title={title} company={company} startMonth={startMonth} startYear={startYear} endMonth={endMonth} endYear={endYear} />
