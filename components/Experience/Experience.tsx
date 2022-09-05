@@ -1,15 +1,8 @@
+import { ExpProps } from '../../@types/experience';
 import styles from './Experience.module.css'
 
-interface Props {
-    title: string
-    company: string
-    startMonth: string
-    startYear: number
-    endMonth: string
-    endYear: number
-}
 
-const _data: Props[] = [
+const _data: ExpProps[] = [
     { title: "Fullstack Web3 Developer", company: '0xreeko', startMonth: "Oct", startYear: 2020, endMonth: "cur", endYear: 2022 },
     { title: "Web3 Contractor", company: 'CWJ Capital', startMonth: "Mar", startYear: 2022, endMonth: "Jul", endYear: 2022 },
     { title: "SDR/BDR Hybrid", company: 'European Gateway', startMonth: "Jun", startYear: 2021, endMonth: "Dec", endYear: 2022 },
@@ -22,7 +15,7 @@ const _data: Props[] = [
     { title: "DJ", company: 'DJ Reekz', startMonth: "Aug", startYear: 2014, endMonth: "May", endYear: 2019 },
 ]
 
-const ExpCard = ({ title, company, startMonth, startYear, endMonth, endYear }: Props) => (
+const ExpCard = ({ title, company, startMonth, startYear, endMonth, endYear }: ExpProps) => (
     <div className="w-full p-4 duration-300 border rounded-lg cursor-default select-none backdrop-blur-sm bg-amethyst-400/5 hover:bg-amethyst-400/10 border-sylver-100 border-opacity-5 hover:border-opacity-10">
         <h4 className='text-m-sub1 md:text-d-sub1'><span className='text-sylver-100'>{title} </span><span className='text-amethyst-400'>@ {company}</span></h4>
         <p className='font-mono text-d-copy'>{startMonth} {startYear !== endYear ? startYear : '' } - {endMonth === 'cur' ? 'Current' : endMonth} {endMonth === 'cur' ? undefined : endYear}</p>
