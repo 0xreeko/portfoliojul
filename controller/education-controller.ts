@@ -21,14 +21,13 @@ export const getSchools = async (): Promise<SchoolProps[]> => {
 }
 
 const blockTransformer = (block: any): SchoolProps => {
-    console.log(block)
     return {
-        name: "",
-        subject: "",
-        startMonth: "",
-        startYear: 1,
-        endMonth:"",
-        endYear: 2,
-        finalGrade: ""
+        name: block.properties.Name.title[0]?.plain_text,
+        subject: block.properties.Subject.rich_text[0]?.plain_text,
+        startMonth: block.properties.startMonth.rich_text[0]?.plain_text,
+        startYear: block.properties.startYear.number,
+        endMonth: block.properties.endMonth.rich_text[0]?.plain_text,
+        endYear: block.properties.endYear.number,
+        finalGrade: block.properties.finalGrade.rich_text[0]?.plain_text
     }
 }

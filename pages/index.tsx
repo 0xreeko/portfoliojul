@@ -18,9 +18,10 @@ import { CopyHero } from '../components/CopyHero/CopyHero'
 import { Experience } from '../components/Experience/Experience'
 import { getExperiences } from '../controller/experience-controller'
 import { getFeaturedProjects } from '../controller/fp-controller'
+import { getSchools } from '../controller/education-controller'
 
 
-const Home: NextPage = ({ posts, expBlocks, featuredProjects}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
@@ -72,7 +73,7 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects}: InferGetStaticPro
             <USP />
             <Skills />
             <Experience props={expBlocks} />
-            <Education />
+            <Education props={schools} />
             <FeaturedProjects props={featuredProjects} />
             <LatestBlogs props={posts} />
             <Contact />
@@ -90,13 +91,15 @@ export default Home
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const posts = await getPublishedPosts()
   const expBlocks = await getExperiences()
-  const featuredProjects = await getFeaturedProjects() 
+  const featuredProjects = await getFeaturedProjects()
+  const schools = await getSchools()
 
   return {
     props: {
       posts,
       expBlocks,
-      featuredProjects
+      featuredProjects,
+      schools
     },
     revalidate: 135
   }
