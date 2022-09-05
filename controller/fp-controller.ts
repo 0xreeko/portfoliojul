@@ -12,7 +12,7 @@ export const getFeaturedProjects = async (): Promise<FPProps[]> => {
         sorts: [
             {
                 property: "Created",
-                direction: "ascending"
+                direction: "descending"
             }
         ]
     })
@@ -26,11 +26,11 @@ const blockTransformer = (block: any): FPProps => {
     console.log(block)
     return {
         title: block.properties.Title.title[0]?.plain_text,
-        description: "",
+        description: block.properties.Description.rich_text[0]?.plain_text,
         image: "",
-        isDev: true,
-        isLive: true,
-        devLink: "",
-        liveLink:""
+        isDev: block.properties.isDev.checkbox,
+        isLive: block.properties.isLive.checkbox,
+        devLink: block.properties.devLink.rich_text[0]?.text.content ?? "",
+        liveLink: block.properties.liveLink.rich_text[0]?.text.content ?? ""
     }
 }
