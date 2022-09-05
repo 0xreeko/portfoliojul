@@ -5,4 +5,5 @@ export type ExpProps = {
     startYear: number
     endMonth: string
     endYear: number
+    bullets: string[]
 }

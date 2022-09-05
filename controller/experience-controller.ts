@@ -26,6 +26,7 @@ const experienceTranformer = (block: any): ExpProps => {
         startMonth: block.properties.StartMonth.rich_text[0]?.plain_text,
         startYear: block.properties.StartYear.number,
         endMonth: block.properties.EndMonth.rich_text[0]?.plain_text,
-        endYear: block.properties.EndYear.number 
+        endYear: block.properties.EndYear.number,
+        bullets: [block.properties.BulletOne.rich_text[0]?.plain_text ?? '', block.properties.BulletTwo.rich_text[0]?.plain_text ?? '', block.properties.BulletThree.rich_text[0]?.plain_text ?? '']
     }
 }
