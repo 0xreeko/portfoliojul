@@ -27,64 +27,6 @@ const FeaturedCard = (props: FPProps) => {
     )
 }
 
-const data: FPProps[] = [
-    {
-        title: "*********",
-        description: "Coming Soon. Keep an eye out on my social media accounts 👀",
-        image: "",
-        isDev: false,
-        isLive: false,
-        devLink: "",
-        liveLink: ""
-    },
-    {
-        title: "RuskelUI",
-        description: "An Reactjs UI component library for rapid Web3 development.",
-        image: '/ruskelUI.png',
-        isDev: true,
-        isLive: true,
-        devLink: "https://github.com/0xreeko/ruskelui",
-        liveLink: "https://0xreeko.github.io/ruskelui/"
-    },
-    {
-        title: "NexusPesquisa",
-        description: "A Web3 browser using the Google Search API.",
-        image: "",
-        isDev: true,
-        isLive: true,
-        devLink: "",
-        liveLink: ""
-    },
-    {
-        title: 'Web3Source',
-        description: 'A gateway for top Web3 jobs & talent. Currently revamping.',
-        image: '/web3source.png',
-        isDev: true,
-        isLive: true,
-        devLink: "",
-        liveLink: "https://web3source.co"
-    },
-    {
-        title: 'NFT RPG Game',
-        description: 'Dynamic ERC721 tokens representing  characters in a turn-based game against the final boss.',
-        image: '/web3source.png',
-        isDev: true,
-        isLive: true,
-        devLink: "https://replit.com/@strikzplaydirty/nft-game-starter-project#src/App.jsx",
-        liveLink: "https://nft-game-starter-project.strikzplaydirty.repl.co"
-    },
-    {
-        title: "Tweetify",
-        description: "A social media platform built with React, GraphQL.",
-        image: "",
-        isDev: true,
-        isLive: false,
-        devLink: "",
-        liveLink: ""
-    },
-
-]
-
 export const FeaturedProjects = ({props}: Props) => {
     return (
         <section id="portfolio" className="w-full py-16 mx-auto ">
