@@ -2,11 +2,11 @@ import { Client } from "@notionhq/client";
 import { NotionToMarkdown } from "notion-to-md";
 import { PostPage, ReekoPost } from "../@types/schema";
 
-  const notion = new Client({ auth: process.env.NOTION_KEY });
+  const notion = new Client({ auth: process.env.NOTION_BLOG_KEY });
   const n2m = new NotionToMarkdown({ notionClient: notion });
     
 export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
-    const databaseId = `${process.env.NOTION_DATABASE}`
+    const databaseId = `${process.env.NOTION_BLOG_DB}`
     const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
@@ -39,7 +39,7 @@ export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
   
   export const getSingleReekoPost = async(_slug: string): Promise<PostPage> => {
     let post, markdown
-    const databaseId = `${process.env.NOTION_DATABASE}`  
+    const databaseId = `${process.env.NOTION_BLOG_DB}`  
     const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
@@ -66,7 +66,7 @@ export const getPublishedPosts = async (): Promise<ReekoPost[]> => {
   }
   
   export const getTagPosts = async(_slug: string): Promise<ReekoPost[]> => {
-    const databaseId = `${process.env.NOTION_DATABASE}` 
+    const databaseId = `${process.env.NOTION_BLOG_DB}` 
     const response = await notion.databases.query({
       database_id: databaseId,
       filter: {

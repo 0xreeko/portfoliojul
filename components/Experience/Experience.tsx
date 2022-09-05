@@ -1,5 +1,9 @@
 import { ExpProps } from '../../@types/experience';
 
+interface Props {
+    props: ExpProps[]
+}
+
 const _data: ExpProps[] = [
     { title: "Fullstack Web3 Developer", company: '0xreeko', startMonth: "Oct", startYear: 2020, endMonth: "cur", endYear: 2022 },
     { title: "Web3 Contractor", company: 'CWJ Capital', startMonth: "Mar", startYear: 2022, endMonth: "Jul", endYear: 2022 },
@@ -21,7 +25,7 @@ const ExpCard = ({ title, company, startMonth, startYear, endMonth, endYear }: E
     </div>
 )
 
-export const Experience = () => {
+export const Experience = ({props}: Props) => {
     return (
         <section id="experience" className='py-16'>
             <div className="flex items-end gap-4">
@@ -31,7 +35,7 @@ export const Experience = () => {
             </div>
             <div className="grid grid-cols-3 gap-6 mt-8">
                 {
-                    _data.map(({ title, company, startMonth, startYear, endMonth, endYear }, idx) => (
+                    props.map(({ title, company, startMonth, startYear, endMonth, endYear }, idx) => (
                         <ExpCard key={idx} title={title} company={company} startMonth={startMonth} startYear={startYear} endMonth={endMonth} endYear={endYear} />
                     ))
                 }

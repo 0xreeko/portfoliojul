@@ -16,9 +16,10 @@ import { mouse, touch } from '../components/Icons'
 import { Contact } from '../components/Contact/Contact'
 import { CopyHero } from '../components/CopyHero/CopyHero'
 import { Experience } from '../components/Experience/Experience'
+import { getExperiences } from '../controller/experience-controller'
 
 
-const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({ posts, expBlocks}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
@@ -69,7 +70,7 @@ const Home: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
 
             <USP />
             <Skills />
-            <Experience/>
+            <Experience props={expBlocks} />
             <Education />
             <FeaturedProjects />
             <LatestBlogs props={posts} />
@@ -87,10 +88,12 @@ export default Home
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
   const posts = await getPublishedPosts()
+  const expBlocks = await getExperiences()
 
   return {
     props: {
-      posts
+      posts,
+      expBlocks
     },
     revalidate: 135
   }
