@@ -37,13 +37,13 @@ export const Education = ({ props }: Props) => {
                 <div className="mt-8">
                     <p>
                         My current interests are
-                        {" "}<span className='underline underline-offset-4 decoration-amethyst-400'>Machine Learning & AI</span>,
-                        {" "}<span className='underline underline-offset-4 decoration-amethyst-400'>Robotics</span>,
-                        {" "}<span className='underline underline-offset-4 decoration-amethyst-400'>Internet of Things</span> and the
-                        {" "}<span className='underline underline-offset-4 decoration-amethyst-400'>Mixed Reality</span>{" "}
+                        {" "}<span className='px-1.5 py-1 rounded-lg bg-amethyst-400/20 text-amethyst-400 text-d-copy'>Machine Learning & AI</span>,
+                        {" "}<span className='px-1.5 py-1 rounded-lg bg-azure-400/20 text-azure-400 text-d-copy'>Robotics</span>,
+                        {" "}<span className='px-1.5 py-1 text-teal-400 rounded-lg text-d-copy bg-teal-400/20'>Internet of Things</span> and the
+                        {" "}<span className='px-1.5 py-1 rounded-lg bg-ruby-400/20 text-ruby-400 text-d-copy'>Mixed Reality</span>{" "}
                         umbrella. As we transition into the ongoing digital industrial revolution, I believe they will become key
                         elements in our daily lives, advancing many established and emerging sectors that leverage this modern technology.
-                        By building a strong Web3 foundation, I intend to dive deeper into these interests and build initiaves that leverage these technologies.
+                        By building a strong Web3 foundation, I intend to dive deeper into these interests and build initiatives that leverage these technologies.
                     </p>
                 </div>
             </div>
