@@ -11,7 +11,7 @@ const FeaturedCard = (props: FPProps) => {
     return (
         <div className="flex flex-col w-full h-full gap-4 p-5 duration-300 border rounded-lg group backdrop-blur-sm bg-amethyst-400/5 hover:bg-amethyst-400/10 border-sylver-100 border-opacity-5 hover:border-opacity-10">
             <div className="w-full overflow-hidden border rounded-lg h-44">
-                <Image src={props.image !== "" ? '/ruskelUI.png' : '/punk4596.png'} alt="cover" layout='responsive' objectFit='cover' width={'100%'} height={'100%'} className='w-full h-full duration-700 group-hover:scale-105' />
+                <Image priority={false} loading={'lazy'} src={props.image === undefined ? '/punk4596.png' : props.image} alt="cover" layout='responsive' objectFit='cover' width={'100%'} height={'100%'} className='duration-700 group-hover:scale-105' />
             </div>
             <div className="">
                 <div className="flex flex-wrap items-center justify-between">

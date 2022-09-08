@@ -30,14 +30,14 @@ const About: NextPage = () => (
                         </div>
                         <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-500/60 to-transparent w-fit'>
                             <div className="flex p-2 rounded-full bg-russian-600">
-                                <Image src={'/punk4596.png'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'transform bg-amethyst-500 rounded-full'} />
+                                <Image priority src={'/punk4596.png'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'transform bg-amethyst-500 rounded-full'} />
                             </div>
                         </div>
                     </div>
                     <div id="background" className="relative flex flex-col">
                             <div className="flex flex-col items-center w-full gap-8 py-1 justify-cesnter xl:flex-row">
                                 <p>I&apos;ve been in the creative industry for 8 years as a freelance Digital Developer, starting as a DJ, then covering: GFX, UI/UX, Motion Design, Web Development plus more. I graduated from the University of Northampton in 2020, having studied BSc Computing (Graphics & Visualisation).</p>
-                                <div><Image src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} alt={'uni logo'} /></div>
+                                <div><Image priority src={'/UoN-full--logo.png'} width={317.38} height={180} layout={'fixed'} alt={'uni logo'} /></div>
                                 <p>Post graduation, I spent some months learning about the dev side of Web3, leading to me transferring my skills to Web3 in Jan 2021. Since then, I&apos;ve freelanced most of the time and helped many devs transition from Web2 to blockchain.</p>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ const About: NextPage = () => (
                     <div id='outro' className="flex flex-col items-center gap-6 first-letter:justify-between md:flex-row">
                         <div className='inline-flex p-2 rounded-full bg-gradient-to-tr from-amethyst-500/60 to-transparent w-fit'>
                             <div className="flex p-2 rounded-full bg-russian-600">
-                                <Image src={'/linkedinHeadshot.jpeg'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />
+                                <Image loading={'lazy'} src={'/linkedinHeadshot.jpeg'} alt={'0xreeko LinkedIn headshot'} layout={"fixed"} width={200} height={200} className={'rounded-full'} />
                             </div>
                         </div>
                         <p className=''>You can find me on <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={'_blank'} rel={'noreferrer'} className={'decoration-amethyst-400 underline underline-offset-4 duration-300 hover:text-amethyst-400'}>Twitter</a> where I share my progress and build cool sh*t in public, follow me on <a href="https://github.com/0xreeko" className='underline duration-300 decoration-amethyst-400 underline-offset-4 hover:text-amethyst-400' target={'_blank'} rel={'noreferrer'}>Github</a>, or connect with me on <a href='https://www.linkedin.com/in/enrictrillo/' className='underline duration-300 decoration-amethyst-400 underline-offset-4 hover:text-amethyst-400' target={'_blank'} rel={'noreferrer'}>LinkedIn</a>. I intend to post often about my findings, tutorials, the entire dev process of building Web3 biz initiatives and more.</p>

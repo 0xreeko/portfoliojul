@@ -33,7 +33,7 @@ export const CopyHero = () => {
                 <div className="flex flex-col items-center gap-6">
                     <div className='relative inline-block p-2 transition-all duration-300 rounded-full bg-gradient-to-tr from-amethyst-500/80 to-transparent w-fit h-fit' >
                         <div className="flex p-2 rounded-full bg-russian-600">
-                            <Image width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
+                            <Image priority width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
                         </div>
                     </div>
                     {/* <h6 className='tracking-widest text-m-sub1 sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko </h6>  */}

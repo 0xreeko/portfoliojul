@@ -74,9 +74,7 @@ const Initiatives: NextPage = () => {
                             <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">
                                 {
                                     _data.map((item, idx) => (
-                                        <>
-                                            <InitCard key={idx} name={item.name} status={item.status} description={item.description} isDev={item.isDev} isLive={item.isLive} liveLink={item.liveLink} devLink={item.devLink} />
-                                        </>
+                                        <InitCard key={idx} name={item.name} status={item.status} description={item.description} isDev={item.isDev} isLive={item.isLive} liveLink={item.liveLink} devLink={item.devLink} />
                                     ))
                                 }
                             </div>

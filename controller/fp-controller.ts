@@ -23,11 +23,11 @@ export const getFeaturedProjects = async (): Promise<FPProps[]> => {
 }
 
 const blockTransformer = (block: any): FPProps => {
-    // console.log(block)
+    console.log(block.properties.Image.files[0])
     return {
         title: block.properties.Title.title[0]?.plain_text,
         description: block.properties.Description.rich_text[0]?.plain_text,
-        image: "",
+        image: block.properties.Image.files[0]?.file.url ?? '/punk4596.png',
         isDev: block.properties.isDev.checkbox,
         isLive: block.properties.isLive.checkbox,
         devLink: block.properties.devLink.rich_text[0]?.text.content ?? "",
