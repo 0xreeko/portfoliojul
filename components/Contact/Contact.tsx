@@ -18,7 +18,7 @@ export const Contact = () => {
                     <RuiInput name="email" color='amethyst' floatingLabel='Subject' fullWidth />
                     <div className="flex flex-col gap-3">
                     <label htmlFor="msgInput">Message</label>
-                    <textarea name="msgInput" rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
+                    <textarea name="msgInput" id='msgInput' rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
                     </div>
                 </div>
                 <div>
