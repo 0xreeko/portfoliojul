@@ -16,7 +16,10 @@ export const Contact = () => {
                     <RuiInput name="name" floatingLabel='Name' color='amethyst' fullWidth />
                     <RuiInput name="subject" color='amethyst' floatingLabel='Email' fullWidth />
                     <RuiInput name="email" color='amethyst' floatingLabel='Subject' fullWidth />
-                    <textarea rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
+                    <div className="flex flex-col gap-3">
+                    <label htmlFor="msgInput">Message</label>
+                    <textarea name="msgInput" rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
+                    </div>
                 </div>
                 <div>
                     <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`}>
