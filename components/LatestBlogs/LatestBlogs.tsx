@@ -21,7 +21,7 @@ export const LatestBlogs = ({ props }: Props) => {
                                 <HoriCard key={idx} title={item.title} slug={item.slug} date={item.date} description={item.description} tags={item.tags} />
                             )).slice(0, 2)
                         }
-                    </ol> : (<p className='text-center text-sylver-700 text-d-base'>No blog posts available :/ Check back another time, or follow me on <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`}><span className='underline text-azure-500 underline-offset-2'>Twitter</span></a> for announcements.</p>)
+                    </ol> : (<p className='mt-12 text-center text-sylver-700 text-d-base'>No blog posts available :/ Check back another time, or follow me on <a href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`}><span className='underline text-azure-500 underline-offset-2'>Twitter</span></a> for announcements.</p>)
             }
         </div>
     )

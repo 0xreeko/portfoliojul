@@ -1,4 +1,4 @@
-import { RuiInput } from 'ruskelui';
+import { RuiButton, RuiInput } from 'ruskelui';
 import { discordIcon, indieIcon, linkedInIcon, twitterIcon } from '../Icons';
 import styles from './Contact.module.css'
 
@@ -20,6 +20,7 @@ export const Contact = () => {
                     <label htmlFor="msgInput">Message</label>
                     <textarea name="msgInput" id='msgInput' rows={5} cols={50} className='p-2 duration-300 border rounded-lg outline-none bg-white/5 border-sylver-100/80 backdrop-blur-sm focus:border-amethyst-400' />
                     </div>
+                    <RuiButton size='large' color='amethyst'>Send Message</RuiButton>
                 </div>
                 <div>
                     <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`}>
