@@ -21,12 +21,12 @@ import { getFeaturedProjects } from '../controller/fp-controller'
 import { getSchools } from '../controller/education-controller'
 
 
-const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools}: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <>
       <Head>
         <title>0xreeko &middot; Fullstack Web3 Developer</title>
-        {/* <!-- HTML Meta Tags --> */} 
+        {/* <!-- HTML Meta Tags --> */}
         <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
         <meta name="keywords" content="web3, 0xreeko" />
         <meta name="author" content="0xreeko" />
@@ -60,16 +60,14 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools}: InferGet
         <div className={styles.wrapper}>
           <main className={styles.main}>
             <CopyHero />
-            {/* <Hero /> */}
             <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
               <span className='text-teal-500 animate-bounce'>{touch}</span>
-              <p className='tracking-widest'>swipe down</p>
+              <p className='tracking-widest uppercase text-m-copy md:text-d-copy'>swipe down</p>
             </div>
             <div className="items-center justify-center hidden gap-4 py-12 lg:flex">
               <span className='text-teal-500 animate-bounce'>{mouse}</span>
-              <p className='tracking-widest'>scroll down</p>
+              <p className='tracking-widest uppercase text-m-copy md:text-d-copy'>scroll down</p>
             </div>
-
             <USP />
             <Skills />
             <Experience props={expBlocks} />
