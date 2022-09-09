@@ -16,22 +16,22 @@ export const Contact = () => {
                 <a href={`mailto:enric_trillo@outlook.com`}><RuiButton size='large' color='amethyst'>Send a GM</RuiButton></a>
             </div>
             <div className="flex flex-row flex-wrap justify-center w-full gap-4 mt-8">
-                <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`} >
+                <a aria-label='twitter profile link' href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`} >
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                         <span className='text-sylver-100 duration-300 group-hover:text-[#36D8FF]'>{twitterIcon}</span>
                     </div>
                 </a>
-                <a href={`https://discord.com/users/0xreeko#1744`} target={`_blank`} rel={`noreferrer`}>
+                <a aria-label="discord profile link" href={`https://discord.com/users/0xreeko#1744`} target={`_blank`} rel={`noreferrer`}>
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                         <span className='duration-300 text-sylver-100 group-hover:text-amethyst-500 '>{discordIcon}</span>
                     </div>
                 </a>
-                <a href="https://linkedin.com/in/enrictrillo" target={'_blank'} rel={`noreferrer`}>
+                <a aria-label="linkedin profile link" href="https://linkedin.com/in/enrictrillo" target={'_blank'} rel={`noreferrer`}>
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                         <span className='text-sylver-100 duration-300 group-hover:text-[#00A0DC]'>{linkedInIcon}</span>
                     </div>
                 </a>
-                <a href="https://www.indiehackers.com/0xreeko" target={`_blank`} rel={`noreferrer`}>
+                <a aria-label="indiehackers profile link" href="https://www.indiehackers.com/0xreeko" target={`_blank`} rel={`noreferrer`}>
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                         <span className='duration-300 stroke-sylver-100 group-hover:stroke-sunstone-500'>{indieIcon}</span>
                     </div>
