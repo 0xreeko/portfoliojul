@@ -15,7 +15,7 @@ const FeaturedCard = (props: FPProps) => {
             </div>
             <div className="">
                 <div className="flex flex-wrap items-center justify-between">
-                    <h5 className='text-d-sub1'>{props.title}</h5>
+                    <p className='text-m-sub1 md:text-d-sub1'>{props.title}</p>
                     <div className="flex gap-2">
                         {props.isDev === true && props.devLink !== "" ? <a aria-label="link to github repository" href={props.devLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
                         {props.isLive === true && props.liveLink !== "" ? <a aria-label="link to live site" href={props.liveLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
