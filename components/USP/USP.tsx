@@ -6,7 +6,7 @@ interface Props {
 
 const USPCard = ({ title }: Props) => (
     <div className="flex flex-col justify-between p-4 duration-300 border cursor-default select-none h-fit w-fit rounded-2xl backdrop-blur-sm bg-amethyst-400/5 hover:bg-amethyst-400/10 border-sylver-100 border-opacity-5 hover:border-opacity-10" >
-        <h6 className='text-m-sub2 md:text-d-sub2'>{title}</h6>
+        <p className='text-m-sub2 md:text-d-sub2'>{title}</p>
     </div >
 )
 
