@@ -4,9 +4,6 @@ import styles from './Contact.module.css'
 import { useEffect, useRef } from 'react';
 
 export const Contact = () => {
-    let nameRef = useRef(null)
-    let subjectRef = useRef(null)
-    let messageRef = useRef(null)
 
     return (
         <section id='contact' className={styles.contactWrapper}>
