@@ -22,7 +22,7 @@ export const CopyHero = () => {
                     <h6 className='text-center md:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m</h6>
                     <h1 className='tracking-widest text-m-hero md:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko </h1>
                     <h3 className='italic text-m-hero md:text-d-hero'>building cool <span>sh*t</span> in public</h3>
-                    <h5 className='mt-4 text-m-sub1 sm:text-d-sub1'>Fullstack Web3 Developer</h5>
+                    <h4 className='mt-4 text-m-h4 sm:text-d-h4'>Fullstack Web3 Developer</h4>
                     <p className='max-w-lg mt-4 text-m-base md:text-d-base'>I&apos;m a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
                     <div className="flex justify-center w-full gap-6 pt-12 sm:justify-start">
                         <a href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></a>
