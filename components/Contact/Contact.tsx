@@ -1,7 +1,6 @@
-import { RuiButton, RuiInput } from 'ruskelui';
+import { RuiButton } from 'ruskelui';
 import { discordIcon, indieIcon, linkedInIcon, twitterIcon } from '../Icons';
 import styles from './Contact.module.css'
-import { useEffect, useRef } from 'react';
 
 export const Contact = () => {
 
@@ -17,7 +16,7 @@ export const Contact = () => {
                 <a href={`mailto:enric_trillo@outlook.com`}><RuiButton size='large' color='amethyst'>Send a GM</RuiButton></a>
             </div>
             <div className="flex flex-row flex-wrap justify-center w-full gap-4 mt-8">
-                <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`}>
+                <a href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`} >
                     <div className={`${styles.wrapperItem} group hover:cursor-pointer`}>
                         <span className='text-sylver-100 duration-300 group-hover:text-[#36D8FF]'>{twitterIcon}</span>
                     </div>
