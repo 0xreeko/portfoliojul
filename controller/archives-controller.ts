@@ -21,12 +21,12 @@ export const getArchives = async (): Promise<ArchivesType[]> => {
 }
 
 const blockTransformer = (block: any): ArchivesType => {
-    console.log(block)
+    console.log(block.properties.Tools)
     return {
-        year: 1,
-        title: "",
-        tools: [''],
-        devLink: "",
-        liveLink: "",
+        year: block.properties.Year.number,
+        title: block.properties.Title.title[0]?.plain_text,
+        tools: block.properties.Tools.multi_select,
+        devLink: block.properties.devLink.rich_text[0]?.plain_text ?? "",
+        liveLink: block.properties.liveLink.rich_text[0]?.plain_text ?? "",
     }
 }
