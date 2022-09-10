@@ -2,6 +2,7 @@ import { githubIcon, globeIcon } from '../Icons';
 import styles from './FeaturedProjects.module.css'
 import Image from 'next/image';
 import { FPProps } from '../../@types/fpType';
+import Link from 'next/link';
 
 interface Props {
     props: FPProps[]
@@ -27,13 +28,19 @@ const FeaturedCard = (props: FPProps) => {
     )
 }
 
-export const FeaturedProjects = ({props}: Props) => {
+export const FeaturedProjects = ({ props }: Props) => {
     return (
         <section id="portfolio" className="w-full py-16 mx-auto ">
             <div className="flex items-baseline gap-4">
                 <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>5.0</span>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400 whitespace-nowrap">Featured Projects</h3>
                 <span className='h-[1px] w-full my-auto max-w-xs bg-sylver-800 opacity-40'></span>
+            </div>
+            <div className="flex justify-center my-8">
+                <div className='relative group'>
+                    <Link href={'/archives'} className={'group-hover:text-amethyst-400'}>View the project archives </Link>
+                    <div className={`absolute -bottom-2 rounded-lg h-[1px] bg-amethyst-500 w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500 duration-300`}></div>
+                </div>
             </div>
             <div className="grid items-center grid-cols-1 gap-12 mt-8 sm:grid-cols-2 xl:grid-cols-3">
                 {
