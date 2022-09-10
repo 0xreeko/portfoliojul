@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps, InferGetStaticPropsType} from 'next';
 import Head from 'next/head';
 import { Alert } from '../components/Alert/Alert';
 import { Header } from '../components/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
 
-const Archives: NextPage = () => {
+const Archives: NextPage = ({archives}: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
         <div className={styles.container}>
             <Head>
@@ -28,3 +28,14 @@ const Archives: NextPage = () => {
 };
 
 export default Archives
+
+
+export const getStaticProps:GetStaticProps = async (ctx) => {
+
+
+    return {
+        props:{
+            data:null
+        }
+    }
+}
