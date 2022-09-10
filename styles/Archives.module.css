@@ -1,0 +1,11 @@
+.wrapper {
+    @apply backdrop-blur-sm hover:bg-amethyst-400/10 duration-300 rounded-lg
+}
+
+.wrapper > .card {
+    @apply w-1/5
+}
+
+.wrapper > .card:nth-child(3){
+    @apply w-2/5
+}
