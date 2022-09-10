@@ -7,6 +7,8 @@ import styles from '../styles/BaseLayout.module.css'
 import archiveStyles from '../styles/Archives.module.css'
 import { ArchivesType } from '../@types/archives';
 import { getArchives } from '../controller/archives-controller';
+import { Footer } from '../components/Footer/Footer';
+import { githubIcon, globeIcon } from '../components/Icons';
 
 const Archives: NextPage = ({ archives }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
@@ -21,12 +23,11 @@ const Archives: NextPage = ({ archives }: InferGetStaticPropsType<typeof getStat
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
                         <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>Archives</h1>
-                        <span className='tracking-widest text-amethyst-300/80'>A list of dev projects I&apos;ve worked on in the past in chronological order.</span>
+                        <span className='tracking-widest text-amethyst-300/80'>A list of relevant dev projects I&apos;ve worked on in the past.</span>
                     </div>
-                    <table>
-                        {/* list all relevant projects here */}
+                    <table className='mt-8 mb-16'>
                         <thead>
-                            <tr className='text-left'>
+                            <tr className='text-left text-sylver-600'>
                                 <th className="w-1/6 p-3">Year</th>
                                 <th className="w-2/5 p-3">Title</th>
                                 <th className="w-2/5 p-3">Tools</th>
@@ -38,14 +39,20 @@ const Archives: NextPage = ({ archives }: InferGetStaticPropsType<typeof getStat
                                 <tr className={archiveStyles.wrapper} key={idx}>
                                     <td className='p-3 text-amethyst-400'>{item.year}</td>
                                     <td className='p-3'>{item.title}</td>
-                                    <td className='p-3 text-d-base'>{(item.tools.join().replaceAll(',', ', '))}</td>
-                                    <td className='p-3'>{item.devLink !== '' ? item.devLink : null}</td>
+                                    <td className='items-baseline p-3 text-d-copy'>{(item.tools.map(item => item.name).join().replaceAll(',', ', '))}</td>
+                                    <td className='p-3'>
+                                        <span className='flex gap-3'>
+                                            {item.devLink !== "" ? <a aria-label="link to github repository" href={item.devLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-blue-400'>{githubIcon}</span></a> : null}
+                                            {item.liveLink !== "" ? <a aria-label="link to live site" href={item.liveLink} target={'_blank'} rel={'noreferrer'}><span className='duration-300 hover:text-amethyst-400'>{globeIcon}</span></a> : null}
+                                        </span>
+                                    </td>
                                 </tr>
                             ))}
                         </tbody>
                     </table>
                 </main>
             </div>
+            <Footer />
         </div>
     )
 };

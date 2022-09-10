@@ -21,7 +21,6 @@ export const getArchives = async (): Promise<ArchivesType[]> => {
 }
 
 const blockTransformer = (block: any): ArchivesType => {
-    console.log(block.properties.Tools)
     return {
         year: block.properties.Year.number,
         title: block.properties.Title.title[0]?.plain_text,
