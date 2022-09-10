@@ -16,7 +16,7 @@ const Archives: NextPage = ({archives}: InferGetStaticPropsType<typeof getStatic
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
                         <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>Archives</h1>
-                        <span className='tracking-widest text-amethyst-300/80'>A list of web dev projects I&apos;ve worked on in the past in chronological order.</span>
+                        <span className='tracking-widest text-amethyst-300/80'>A list of dev projects I&apos;ve worked on in the past in chronological order.</span>
                     </div>
                     <div className="">
                         {/* list all relevant projects here */}
