@@ -11,7 +11,7 @@ import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
 import { getPublishedPosts } from '../controller/notion-controller'
 import { mouse, touch } from '../components/Icons'
 import { Contact } from '../components/Contact/Contact'
-import { CopyHero } from '../components/CopyHero/CopyHero'
+import { Hero } from '../components/Hero/Hero'
 import { Experience } from '../components/Experience/Experience'
 import { getExperiences } from '../controller/experience-controller'
 import { getFeaturedProjects } from '../controller/fp-controller'
@@ -56,7 +56,7 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
         <Header />
         <div className={styles.wrapper}>
           <main className={styles.main}>
-            <CopyHero />
+            <Hero />
             <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
               <span className='text-teal-500 animate-bounce'>{touch}</span>
               <p className='tracking-widest uppercase text-m-copy md:text-d-copy'>swipe down</p>
