@@ -21,7 +21,7 @@ module.exports = {
         'm-h3': ['2.063rem', { lineHeight: '1.6' }],
         'm-h4': ['1.75rem', { lineHeight: '1.6' }],
         'm-h5': ['1.483rem', { lineHeight: '1.6' }],
-        'm-h6': ['1.188rem', { lineHeight: '1.6', fontWeight: '100', letterSpacing: "0.05" }],
+        'm-h6': ['1.188rem', { lineHeight: '1.6', letterSpacing: "0.05" }],
         'm-base': ['1rem', { lineHeight: '1.5' }],
         'm-copy': ['0.889rem', { lineHeight: '2' }],
       },
@@ -225,4 +225,3 @@ module.exports = {
   },
   plugins: [],
 }
-  
