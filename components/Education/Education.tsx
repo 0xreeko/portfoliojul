@@ -15,7 +15,7 @@ const EduCard = (_props: SchoolProps) => (
 
 export const Education = ({ props }: Props) => {
     return (
-        <section id='education' className='py-16'>
+        <section id='education' className='py-16 mx-8'>
             <div className="flex items-baseline gap-4">
                 <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>4.0</span>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400">Education</h3>
