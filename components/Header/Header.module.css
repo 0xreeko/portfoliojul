@@ -3,11 +3,11 @@
 }
 
 .nav {
-    @apply flex justify-between items-center w-full h-fit py-3 mx-6
+    @apply flex justify-between items-center w-full h-fit py-3 mx-8
 }
 
 .headerNavigation {
-    @apply gap-6 hidden lg:flex items-center
+    @apply gap-6 hidden md:flex items-center
 }
 
 .headerNavigation > a {
