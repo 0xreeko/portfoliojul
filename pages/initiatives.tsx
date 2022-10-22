@@ -65,7 +65,7 @@ const Initiatives: NextPage = () => {
             <div className={styles.wrapper}>
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
-                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2'>Initiatives</h1>
+                        <h1 className='mt-12 font-bold text-m-h2 md:text-d-h2'>Initiatives</h1>
                         <p className='mt-3 text-d-base'>I build cool sh*t in public and make live threads about my builds, so keep an eye out to be up to date with the latest by following me on Twitter. </p>
                         <div className='w-full mt-12'>
                             {/* <div className="">SECTION TO INCLUDE ALL COMBINED STATS ex. MRR</div> */}

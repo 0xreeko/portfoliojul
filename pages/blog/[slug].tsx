@@ -27,7 +27,7 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                 <div className={baseStyles.wrapper}>
                     <main className={baseStyles.main}>
                         <div className="flex flex-col items-center text-center gap-y-3">
-                            <h1 className="mt-12 font-bold text-m-h1 md:text-d-h1">{post.title}</h1>
+                            <h1 className="mt-12 font-bold text-m-h2 md:text-d-h2">{post.title}</h1>
                             <div className='flex items-center gap-3 mt-4 text-d-base'>
                                 <span>{dayjs(post.date).format('LL - HH:mm')}</span>
                                 <span>&middot;</span>

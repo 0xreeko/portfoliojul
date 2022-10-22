@@ -16,7 +16,7 @@ const About: NextPage = () => (
         <div className={styles.wrapper}>
             <main className={styles.main}>
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2'>About</h1>
+                    <h1 className='mt-12 font-bold text-m-h2 md:text-d-h2'>About</h1>
                     <h5 className='tracking-widest text-amethyst-300/80'>Here&apos;s My Story</h5>
                     <p className='text-sylver-800'>Estimated Read Time: 1 min, 45 sec</p>
                 </div>
