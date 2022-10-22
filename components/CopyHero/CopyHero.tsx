@@ -1,23 +1,13 @@
 import Image from 'next/image';
 import brandIcon from '../../public/punk4596.png'
 import { RuiButton } from 'ruskelui';
-import { gsap } from 'gsap'
-import { useEffect, useRef } from 'react';
 
 export const CopyHero = () => {
-    let hero = useRef(null)
-
-    useEffect(() => {
-        gsap.fromTo(hero, {
-            y: -45,
-            opacity: 0,
-        }, { y: 0, delay: .3, duration: 5, opacity: 1, ease: 'elastic' })
-    }, [])
 
     return (
         <section id='hero'>
             {/* @ts-ignore */}
-            <div ref={el => hero = el} className="flex flex-col-reverse items-center justify-center gap-6 py-12 lg:min-h-[60vh] text-center md:flex-row md:text-left">
+            <div className="flex flex-col-reverse items-center justify-center gap-6 py-12 lg:min-h-[60vh] text-center md:flex-row md:text-left">
                 <div className="flex flex-col justify-center w-full">
                     <h6 className='text-center md:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m</h6>
                     <h1 className='tracking-widest text-m-hero md:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko </h1>
