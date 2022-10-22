@@ -13,7 +13,7 @@ export const Contact = () => {
             </div>
             <div className="flex flex-col items-center justify-center gap-6 mt-8">
                 <p className='max-w-lg text-center'>Although I&apos;m building my own Web3 projects, my inbox is open for opportunities in the Web3 space. Whether you have a question or just want to say GM, reach out and I&apos;ll do my best to get back to you ASAP!</p>
-                <a href={`mailto:enric_trillo@outlook.com`}><RuiButton size='large' color='amethyst'>Send a GM</RuiButton></a>
+                <a href={`mailto:dev@0xreeko.com`}><RuiButton size='sm' variant='filled' color='amethyst'>Send a GM</RuiButton></a>
             </div>
             <div className="flex flex-row flex-wrap justify-center w-full gap-4 mt-8">
                 <a aria-label='twitter profile link' href={`https://twitter.com/intent/follow?screen_name=0xreeko`} target={`_blank`} rel={`noreferrer`} >

@@ -1,5 +1,5 @@
 .contactWrapper {
-    @apply flex flex-col text-sylver-100 py-16
+    @apply flex flex-col text-sylver-100 py-16 mx-8
 }
 
 .wrapperItem {

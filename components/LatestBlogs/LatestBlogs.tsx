@@ -7,7 +7,7 @@ interface Props {
 
 export const LatestBlogs = ({ props }: Props) => {
     return (
-        <div className="py-16">
+        <div className="py-16 mx-8">
             <div className="flex items-baseline gap-4">
                 <span className='font-mono text-m-sub1 md:text-d-sub1 text-amethyst-400'>6.0</span>
                 <h3 className="underline underline-offset-4 text-m-h3 md:text-d-h3 decoration-amethyst-400 whitespace-nowrap">Latest Blogs</h3>
