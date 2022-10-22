@@ -3,7 +3,7 @@
 }
 
 .reekoStyle h1 {
-    @apply text-m-h1 md:text-d-h1
+    @apply text-m-hero md:text-d-hero
 }
 
 .reekoStyle h2 {
