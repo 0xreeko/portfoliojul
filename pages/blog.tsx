@@ -5,7 +5,6 @@ import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import { getPublishedPosts } from '../controller/notion-controller';
 import styles from '../styles/BaseLayout.module.css'
 import { HoriCard } from '../components/HoriCard/HoriCard';
-import { Alert } from '../components/Alert/Alert';
 import { Header } from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
 
@@ -18,12 +17,11 @@ const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
         <meta name="robots" content="follow, index"></meta>
         <meta name="description" title="description" content="" />
       </Head>
-      <Alert />
       <Header />
       <div className={styles.wrapper}>
         <main className={styles.main}>
           <div className="relative flex flex-col items-center justify-center">
-            <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1 '>Blog</h1>
+            <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2 '>Blog</h1>
             <div className='mt-12'>
               <div className="flex flex-wrap justify-center gap-3 mt-3">
                 <TagsGroup />

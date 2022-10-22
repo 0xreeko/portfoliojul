@@ -1,7 +1,6 @@
 import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import { ReactNode } from 'react';
-import { Alert } from '../components/Alert/Alert';
 import { Header } from '../components/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
 import archiveStyles from '../styles/Archives.module.css'
@@ -17,12 +16,11 @@ const Archives: NextPage = ({ archives }: InferGetStaticPropsType<typeof getStat
             <Head>
                 <title>Archives &middot; 0xreeko</title>
             </Head>
-            <Alert />
             <Header />
             <div className={styles.wrapper}>
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
-                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>Archives</h1>
+                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2'>Archives</h1>
                         <span className='tracking-widest text-amethyst-300/80'>A list of relevant dev projects I&apos;ve worked on in the past.</span>
                     </div>
                     <table className='mt-8 mb-16'>

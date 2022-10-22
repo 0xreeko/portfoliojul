@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import React from 'react';
-import { Alert } from '../components/Alert/Alert';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import { githubIcon, globeIcon } from '../components/Icons';
@@ -62,13 +61,12 @@ const Initiatives: NextPage = () => {
                 <meta name='author' content='0xreeko' />
                 <meta name="description" title="description" content="Displaying the 33 Web3 biz initiatives I&apos;m building and their combined numbers, including status, the description of the project, and a link to the landing page." />
             </Head>
-            <Alert />
             <Header />
             <div className={styles.wrapper}>
                 <main className={styles.main}>
                     <div className="flex flex-col items-center justify-center">
-                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>Initiatives</h1>
-                        <p className='mt-3'>I build cool sh*t in public and make live threads about my builds, so keep an eye out to be up to date with the latest by following me on Twitter. </p>
+                        <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2'>Initiatives</h1>
+                        <p className='mt-3 text-d-base'>I build cool sh*t in public and make live threads about my builds, so keep an eye out to be up to date with the latest by following me on Twitter. </p>
                         <div className='w-full mt-12'>
                             {/* <div className="">SECTION TO INCLUDE ALL COMBINED STATS ex. MRR</div> */}
                             <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3 justify-items-center">

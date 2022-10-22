@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import Image from 'next/image';
 import { RuiPill } from 'ruskelui';
-import { Alert } from '../components/Alert/Alert';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
@@ -13,12 +12,11 @@ const About: NextPage = () => (
             <title>About &middot; 0xreeko</title>
             <meta name="description" title="description" content="Hey there, anon! I&apos;m 0xreeko, a Fullstack Web3 Developer solving problems and materialising visions into tangible products." />
         </Head>
-        <Alert />
         <Header />
         <div className={styles.wrapper}>
             <main className={styles.main}>
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className='mt-12 font-bold text-m-h1 md:text-d-h1'>About</h1>
+                    <h1 className='mt-12 font-bold text-m-h1 md:text-d-h2'>About</h1>
                     <h5 className='tracking-widest text-amethyst-300/80'>Here&apos;s My Story</h5>
                     <p className='text-sylver-800'>Estimated Read Time: 1 min, 45 sec</p>
                 </div>

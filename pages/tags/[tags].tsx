@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReekoPost } from '../../@types/schema';
 import { tagsType } from '../../@types/tags';
-import { Alert } from '../../components/Alert/Alert';
 import { Footer } from '../../components/Footer/Footer';
 import { Header } from '../../components/Header/Header';
 import { HoriCard } from '../../components/HoriCard/HoriCard';
@@ -20,7 +19,6 @@ const Tags: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps
                 <title>{`${router.query.tags} · Blog · 0xreeko`}</title>
                 <meta name="0xreeko&pos;s blog" />
             </Head>
-            <Alert />
             <Header/>
             <div className={styles.wrapper}>
                 <main className={styles.main}>

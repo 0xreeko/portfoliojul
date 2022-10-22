@@ -1,6 +1,5 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
-import { Alert } from '../components/Alert/Alert'
 import { Education } from '../components/Education/Education'
 import { Footer } from '../components/Footer/Footer'
 import { Header } from '../components/Header/Header'
@@ -34,7 +33,7 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
         <meta property="og:type" content="website" />
         <meta property="og:title" content="0xreeko &middot; Fullstack Web3 Developer" />
         <meta property="og:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta property="og:image" content="https://portfoliojul.vercel.app/ogmain.png" />
+        <meta property="og:image" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
         <meta property="og:image:secure_url" content="https://portfoliojul.vercel.app/ogmain.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
@@ -51,9 +50,9 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
         <meta property="twitter:image:type" content="image/png" />
         <meta property="twitter:image:width" content="1200" />
         <meta property="twitter:image:height" content="630" />
+        <script type="text/javascript" async src="https://embeds.beehiiv.com/attribution.js"></script>
       </Head>
       <div className={styles.container}>
-        <Alert />
         <Header />
         <div className={styles.wrapper}>
           <main className={styles.main}>

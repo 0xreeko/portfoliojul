@@ -28,11 +28,11 @@ export const Hero = () => {
                     {/* neon street light flicker every 6s ? */}
                     <h6 className='text-center sm:text-left text-m-sub2 sm:text-d-sub2'>GM anon👾, I&apos;m </h6>
                     <h1 className='tracking-widest text-center sm:text-left text-m-hero sm:text-d-hero text-amethyst-400 hover:text-amethyst-400/20'>0xreeko</h1>
-                    <h5 className='text-center sm:text-left text-m-sub1 sm:text-d-sub1'>Fullstack Web3 Developer</h5>
+                    <h5 className='text-center sm:text-left text-m-sub1 sm:text-d-sub1'>Digital Craftsman </h5>
                     <p className='max-w-lg mt-4 text-center sm:text-left text-m-base md:text-d-base'>I&apos;m a creative based in London and I enjoy solving problems and materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
                     <div className="flex justify-center w-full gap-6 pt-12 sm:justify-start">
-                        <a href={'/about'}><RuiButton size='base' color='amethyst'>More about me</RuiButton></a>
-                        <a href={'/blog'}><RuiButton size='base' color='russian'>Read the blog</RuiButton></a>
+                        <a href={'/about'}><RuiButton size='sm' variant='filled' color='amethyst'>More about me</RuiButton></a>
+                        <a href={'/blog'}><RuiButton size='sm' variant='filled' color='russian'>Read the blog</RuiButton></a>
                     </div>
                 </div>
 

@@ -25,7 +25,7 @@ export const Skills = () => {
                 </div>
                 <div className={`${styles.mainSkillItem} relative`}>
                     <span>{greensock}</span>
-                    <p>GSAP</p>
+                    <p>Framer Motion</p>
                 </div>
                 <div className={styles.mainSkillItem}>
                     <span>{photoshop}</span>
@@ -45,7 +45,7 @@ export const Skills = () => {
                 </div>
                 <div className={styles.mainSkillItem}>
                     <span className='duration-300 fill-sylver-100 hover:fill-sylver-100/80'>{prisma}</span>
-                    <p>Prisma</p>
+                    <p>Git</p>
                 </div>
                 <div className={styles.mainSkillItem}>
                     <span>{jwt}</span>
@@ -56,12 +56,10 @@ export const Skills = () => {
                     <p>MongoDB</p>
                 </div>
                 <div className={styles.mainSkillItem}>
-                    {/* <SiEthereum className='duration-300 w-14 h-14 fill-azure-500' /> */}
                     <span>{ethers}</span>
                     <p>EthersJS</p>
                 </div>
                 <div className={styles.mainSkillItem}>
-                    {/* <FaHardHat className='duration-300 w-14 h-14 fill-jasper-500' /> */}
                     <span>{hardhat}</span>
                     <p>Hardhat</p>
                 </div>

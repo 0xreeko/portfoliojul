@@ -10,7 +10,6 @@ import dayjs from '../../utils/day'
 import styles from './Slug.module.css'
 import baseStyles from '../../styles/BaseLayout.module.css'
 import { Footer } from '../../components/Footer/Footer';
-import { Alert } from '../../components/Alert/Alert';
 import { Header } from '../../components/Header/Header';
 
 
@@ -24,7 +23,6 @@ const Slug: NextPage = ({ markdown, post }: InferGetStaticPropsType<typeof getSt
                 <meta name='description' title='description' content={post.description} />
                 <meta name='og:description' title='og:description' content={post.description} />
             </Head>
-            <Alert />
             <Header/>
                 <div className={baseStyles.wrapper}>
                     <main className={baseStyles.main}>
