@@ -7,7 +7,7 @@ export const CopyHero = () => {
 
     return (
         <section>
-            <div className="flex flex-col mt-12">
+            <div className="flex flex-col mt-12 min-h-[45vh]">
                 <div id="0xreeko" className="flex flex-col items-center">
                     <div className='relative inline-block p-2 transition-all duration-300 rounded-full bg-gradient-to-tr from-amethyst-500/80 to-transparent w-fit h-fit' >
                         <div className="flex p-2 rounded-full bg-russian-600">
@@ -35,7 +35,7 @@ export const CopyHero = () => {
                     </p>
                 </div>
             </div>
-            <div className={`flex flex-col items-center w-full gap-3 text-center rounded-3xl px-8 ${styles.subscribe}`}>
+            <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 h-64 ${styles.subscribe}`}>
                 <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Subscribe to 0xBits</span>
                 <p className='max-w-2xl'>
                     Get daily bits🗞 on emerging tech industries from a developer's perspective,
