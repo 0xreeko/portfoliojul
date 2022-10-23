@@ -16,12 +16,12 @@ const Newsletter: NextPage = () => {
                         <div className="flex justify-center">
                             <div className="w-32 h-32 border"></div>
                         </div>
-                        <h1 className='text-m-hero sm:text-d-hero'>0xBits <span className='italic text-amethyst-500'>by 0xreeko</span>.</h1>
-                        <span className=' text-m-h3 sm:text-d-h3'>Ride digital waves before the many</span>
+                        <h1 className='text-m-hero sm:text-d-hero'>0xBits <span className='italic text-amethyst-500'>by 0xreeko</span></h1>
+                        <span className=' text-m-h3 sm:text-d-h3'>Ride digital waves before the many.</span>
                         <div className="mx-20 mt-6">
                             <p>
                                 0xBits is a fresh newsletter covering the latest scoop in Web3, Metaverse, Mixed Reality
-                                and more - all from an unique developer's perspective. You also get dev updates on products
+                                and more - all from a developer's unique perspective. You also get dev updates on products
                                 I build in public, which you can get involved in as an early adopter!
                             </p>
                         </div>
