@@ -1,7 +1,7 @@
 import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import { ReactNode } from 'react';
-import { Header } from '../components/Hero/Header/Header';
+import { Header } from '../components/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
 import archiveStyles from '../styles/Archives.module.css'
 import { ArchivesType } from '../@types/archives';

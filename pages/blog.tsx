@@ -5,7 +5,7 @@ import { TagsGroup } from '../components/TagsGroup/TagsGroup';
 import { getPublishedPosts } from '../controller/notion-controller';
 import styles from '../styles/BaseLayout.module.css'
 import { HoriCard } from '../components/HoriCard/HoriCard';
-import { Header } from '../components/Hero/Header/Header';
+import { Header } from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
 
 const Blog: NextPage = ({ posts }: InferGetStaticPropsType<typeof getStaticProps>) => {
