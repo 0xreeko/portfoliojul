@@ -1,5 +1,5 @@
 .headerContainer {
-    @apply shadow-lg z-20 mx-auto flex items-center max-w-4xl w-full sticky top-0 rounded-xl bg-bayoux-600/10 translate-y-6 backdrop-blur-sm
+    @apply shadow-lg z-20 mx-auto flex items-center max-w-4xl w-full sticky top-0 rounded-xl bg-bayoux-600/25 translate-y-6 backdrop-blur-xl border border-bayoux-300 border-opacity-25
 }
 
 .nav {

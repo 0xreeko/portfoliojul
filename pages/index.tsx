@@ -9,7 +9,7 @@ import styles from '../styles/BaseLayout.module.css'
 import { USP } from '../components/USP/USP'
 import { LatestBlogs } from '../components/LatestBlogs/LatestBlogs'
 import { getPublishedPosts } from '../controller/notion-controller'
-import { mouse, touch } from '../components/Icons'
+import { discordIcon, linkedInIcon, mouse, touch, twitterIcon } from '../components/Icons'
 import { Contact } from '../components/Contact/Contact'
 import { Hero } from '../components/Hero/Hero'
 import { Experience } from '../components/Experience/Experience'
@@ -55,6 +55,11 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
         <Header />
         <div className={styles.wrapper}>
           <main className={styles.main}>
+            <span className='fixed z-10 flex flex-col gap-3 -translate-x-20 top-1/4'>
+              <a aria-label="twitter profile link" className='duration-300 transform hover:-translate-y-1' href="https://twitter.com/intent/follow?screen_name=0xreeko" target={`_blank`} rel="noreferrer"><span className='hover:text-amethyst-400'>{twitterIcon}</span></a>
+              <a aria-label="discord profile link" className='duration-300 transform hover:-translate-y-1' href="https://discord.com/users/0xreeko#1744" target={`_blank`} rel="noreferrer"><span className='hover:text-amethyst-400'>{discordIcon}</span></a>
+              <a aria-label="linkedin profile link" className='duration-300 transform hover:-translate-y-1' href="https://www.linkedin.com/in/enrictrillo/" target={`_blank`} rel="noreferrer"><span className='hover:text-amethyst-400'>{linkedInIcon}</span></a>
+            </span>
             <Hero />
             <div className="flex items-center justify-center gap-4 py-12 sm:hidden">
               <span className='text-teal-500 animate-bounce'>{touch}</span>
