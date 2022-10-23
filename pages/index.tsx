@@ -22,6 +22,7 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
   return (
     <>
       <Head>
+        <script type="text/javascript" async src="https://embeds.beehiiv.com/attribution.js"></script>
         <title>0xreeko &middot; Fullstack Web3 Developer</title>
         {/* <!-- HTML Meta Tags --> */}
         <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
@@ -45,12 +46,11 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
         <meta property="twitter:url" content="https://portfoliojul.vercel.app/" />
         <meta name="twitter:title" content="0xreeko &middot; Fullstack Web3 Developer" />
         <meta name="twitter:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta name="twitter:image" content="https://portfoliojul.vercel.app/ogmain.png" />
-        <meta property="twitter:image:secure_url" content="https://portfoliojul.vercel.app/ogmain.png" />
+        <meta name="twitter:image" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
+        <meta property="twitter:image:secure_url" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
         <meta property="twitter:image:type" content="image/png" />
         <meta property="twitter:image:width" content="1200" />
         <meta property="twitter:image:height" content="630" />
-        <script type="text/javascript" async src="https://embeds.beehiiv.com/attribution.js"></script>
       </Head>
       <div className={styles.container}>
         <Header />

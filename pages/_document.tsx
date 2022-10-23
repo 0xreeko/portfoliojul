@@ -13,7 +13,6 @@ class MyDoc extends Document {
                 <Head>
                     <link rel="icon" href="/favicon.ico" />
                     <link href="https://api.fontshare.com/css?f[]=outfit@100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
-                    
                 </Head>
                 <body>
                     <Main />
