@@ -7,10 +7,28 @@
     font-family: 'Outfit', sans-serif;
     @apply selection:bg-amethyst-500
   }
+
   body {
     @apply bg-russian-600 text-sylver-100
   }
-  .text-d-hero > span, .text-m-hero > span, .text-d-h4 > span, .text-m-h4 > span {
+
+  ::-webkit-scrollbar {
+    @apply w-3
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-bayoux-600/40
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-gradient-to-b from-azure-300 to-amethyst-500
+   
+}
+
+  .text-d-hero>span,
+  .text-m-hero>span,
+  .text-d-h4>span,
+  .text-m-h4>span {
     @apply text-amethyst-400
   }
 }
