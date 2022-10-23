@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { RuiButton } from 'ruskelui';
 import { Footer } from '../components/Footer/Footer';
@@ -13,7 +14,7 @@ const Newsletter: NextPage = () => {
             <div className={`${styles.wrapper}`}>
                 <main className={styles.main}>
                     <div className="flex flex-col justify-center mt-12 text-center">
-                        <div className="flex justify-center">
+                        <div className="flex justify-center mb-3">
                             <div className="w-32 h-32 border"></div>
                         </div>
                         <h1 className='text-m-hero sm:text-d-hero'>0xBits <span className='italic text-amethyst-500'>by 0xreeko</span></h1>
@@ -25,7 +26,7 @@ const Newsletter: NextPage = () => {
                                 I build in public, which you can get involved in as an early adopter!
                             </p>
                         </div>
-                        <div className={`flex flex-col mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
+                        <div className={`flex flex-col relative mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
                             <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the 0xBits crew</h2>
                             <p className='max-w-2xl'>
                                 Get the juiciest educational and actionable scoop on emerging tech industries.
@@ -37,10 +38,13 @@ const Newsletter: NextPage = () => {
                                 style={{ margin: '0', borderRadius: '0px !important', backgroundColor: 'transparent' }}>
                             </iframe>
                         </div>
+                        {/* INFO: inc. social proof section with feedback from members  */}
                         <div className="flex justify-center my-6">
-                        <RuiButton size='sm' variant="text" color="azure" onClick={() => router.push('/')}>
-                            Return to 0xreeko.com
-                        </RuiButton>
+                            <Link href={'/'}>
+                                <RuiButton size='sm' variant="text" color="azure">
+                                    Return to 0xreeko.com
+                                </RuiButton>
+                            </Link>
                         </div>
                     </div>
                 </main>
