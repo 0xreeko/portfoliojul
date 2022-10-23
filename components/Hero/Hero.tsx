@@ -10,7 +10,7 @@ export const Hero = () => {
             <div className="flex flex-col mt-12 gap-6 min-h-[45vh]">
                 <div id="0xreeko" className="flex flex-col items-center">
                     <div className='relative inline-block p-2 transition-all duration-300 rounded-full bg-gradient-to-tr from-amethyst-500/80 to-transparent w-fit h-fit' >
-                        <div className="flex p-2 duration-300 rounded-full bg-russian-600 hover:scale-110 active:scale-110">
+                        <div className="flex p-2 duration-700 rounded-full bg-russian-600 hover:scale-105 active:scale-105">
                             <Image priority width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="overflow-hidden rounded-full bg-amethyst-500" />
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export const Hero = () => {
                 </div>
             </div>
             <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
-                <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Subscribe to 0xBits</span>
+                <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the 0xBits crew</span>
                 <p className='max-w-2xl'>
                     Get daily bits🗞 on emerging tech industries from a developer&apos;s perspective,
                     and become an early adopter as I drop updates on the products that carve my
