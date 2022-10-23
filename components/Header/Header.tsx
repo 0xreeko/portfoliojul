@@ -26,10 +26,6 @@ export const Header = () => {
             </div>
             <div className={styles.headerNavigation}>
                 <div className='relative group'>
-                    <Link href={'/newsletter'}>0xBits by 0xreeko </Link>
-                    <div className={`absolute -bottom-2 rounded-lg h-[1px] w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500 duration-300`}></div>
-                </div>
-                <div className='relative group'>
                     <Link href={'/initiatives'}>Initiatives </Link>
                     <div className={`absolute -bottom-2 rounded-lg h-[1px] ${router.route.split('/')[1] === "initiatives" ? "w-full bg-amethyst-500" : "w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500"} duration-300`}></div>
                 </div>
@@ -42,7 +38,7 @@ export const Header = () => {
                     <div className={`absolute -bottom-2 rounded-lg h-[1px] ${router.route.split('/')[1] === "blog" ? "w-[100%] bg-amethyst-500" : "w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500"} duration-300`}></div>
                 </div>
                     { router.route.split('/')[1] !== 'newsletter' && 
-                        <a href={'/0xbits-newsletter'}>
+                        <a href={'/newsletter'}>
                         <RuiButton color='amethyst' variant='filled' size='sm'>
                             <span className='font-medium tracking-wide'>Join the 0xBits newsletter</span>
                         </RuiButton>
