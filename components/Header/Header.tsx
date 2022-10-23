@@ -26,6 +26,10 @@ export const Header = () => {
             </div>
             <div className={styles.headerNavigation}>
                 <div className='relative group'>
+                    <Link href={'/newsletter'}>0xBits by 0xreeko </Link>
+                    <div className={`absolute -bottom-2 rounded-lg h-[1px] w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500 duration-300`}></div>
+                </div>
+                <div className='relative group'>
                     <Link href={'/initiatives'}>Initiatives </Link>
                     <div className={`absolute -bottom-2 rounded-lg h-[1px] ${router.route.split('/')[1] === "initiatives" ? "w-full bg-amethyst-500" : "w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500"} duration-300`}></div>
                 </div>
