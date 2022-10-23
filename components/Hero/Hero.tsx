@@ -35,7 +35,7 @@ export const Hero = () => {
                     </p>
                 </div>
             </div>
-            <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 ${styles.subscribe}`}>
+            <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
                 <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Subscribe to 0xBits</span>
                 <p className='max-w-2xl'>
                     Get daily bits🗞 on emerging tech industries from a developer&apos;s perspective,

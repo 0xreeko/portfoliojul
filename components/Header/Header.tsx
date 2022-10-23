@@ -41,11 +41,13 @@ export const Header = () => {
                     <Link href={'/blog'}>Blog</Link>
                     <div className={`absolute -bottom-2 rounded-lg h-[1px] ${router.route.split('/')[1] === "blog" ? "w-[100%] bg-amethyst-500" : "w-[0%] bg-transparent group-hover:w-[100%] group-hover:bg-amethyst-500"} duration-300`}></div>
                 </div>
-                <a href={'/0xbits-newsletter'}>
-                    <RuiButton color='amethyst' variant='filled' size='sm'>
-                        <span className='font-medium tracking-wide'>Join the 0xBits newsletter</span>
-                    </RuiButton>
-                </a>
+                    { router.route.split('/')[1] !== 'newsletter' && 
+                        <a href={'/0xbits-newsletter'}>
+                        <RuiButton color='amethyst' variant='filled' size='sm'>
+                            <span className='font-medium tracking-wide'>Join the 0xBits newsletter</span>
+                        </RuiButton>
+                    </a>
+                }
             </div>
             <div className={styles.headerMenu}>
                 {menu}
