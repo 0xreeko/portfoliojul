@@ -2,7 +2,7 @@ import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import { Education } from '../components/Education/Education'
 import { Footer } from '../components/Footer/Footer'
-import { Header } from '../components/Header/Header'
+import { Header } from '../components/Hero/Header/Header'
 import { FeaturedProjects } from '../components/FeaturedProjects/FeaturedProjects'
 import { Skills } from '../components/Skills/Skills'
 import styles from '../styles/BaseLayout.module.css'
@@ -23,29 +23,28 @@ const Home: NextPage = ({ posts, expBlocks, featuredProjects, schools }: InferGe
     <>
       <Head>
         <script type="text/javascript" async src="https://embeds.beehiiv.com/attribution.js"></script>
-        <title>0xreeko &middot; Fullstack Web3 Developer</title>
+        <title>0xreeko &middot; Digital Craftsman</title>
         {/* <!-- HTML Meta Tags --> */}
-        <meta name="description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
-        <meta name="keywords" content="web3, 0xreeko" />
+        <meta name="description" content="0xreeko is a Digital Craftsman building digital startups in public." />
+        <meta name="keywords" content="web3, 0xreeko, web3 developer, AI & ML developer" />
         <meta name="author" content="0xreeko" />
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://portfoliojul.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="0xreeko &middot; Fullstack Web3 Developer" />
-        <meta property="og:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
+        <meta property="og:description" content="0xreeko is a Digital Craftsman building digital startups in public." />
         <meta property="og:image" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
-        <meta property="og:image:secure_url" content="https://portfoliojul.vercel.app/ogmain.png" />
+        <meta property="og:image:secure_url" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="portfoliojul.vercel.app" />
-        <meta property="twitter:url" content="https://portfoliojul.vercel.app/" />
-        <meta name="twitter:title" content="0xreeko &middot; Fullstack Web3 Developer" />
-        <meta name="twitter:description" content="The Coolest Fullstack Web3 Developer Building Cool Sh*t In Public." />
+        <meta property="twitter:domain" content="0xreeko.com" />
+        <meta property="twitter:url" content="https://0xreeko.com/" />
+        <meta name="twitter:title" content="0xreeko &middot; Digital Craftsman" />
+        <meta name="twitter:description" content="0xreeko is a Digital Craftsman building digital startups in public." />
         <meta name="twitter:image" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
         <meta property="twitter:image:secure_url" content="https://vercel-og-nextjs-54tl803oy-0xreeko.vercel.app/api/0xreeko/dynamic-title" />
         <meta property="twitter:image:type" content="image/png" />

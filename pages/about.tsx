@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { RuiPill } from 'ruskelui';
 import { Footer } from '../components/Footer/Footer';
-import { Header } from '../components/Header/Header';
+import { Header } from '../components/Hero/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
 
 const About: NextPage = () => (

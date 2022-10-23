@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head';
 import React from 'react';
 import { Footer } from '../components/Footer/Footer';
-import { Header } from '../components/Header/Header';
+import { Header } from '../components/Hero/Header/Header';
 import { githubIcon, globeIcon } from '../components/Icons';
 import styles from '../styles/BaseLayout.module.css'
 

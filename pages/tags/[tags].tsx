@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { ReekoPost } from '../../@types/schema';
 import { tagsType } from '../../@types/tags';
 import { Footer } from '../../components/Footer/Footer';
-import { Header } from '../../components/Header/Header';
+import { Header } from '../../components/Hero/Header/Header';
 import { HoriCard } from '../../components/HoriCard/HoriCard';
 import { TagsGroup } from '../../components/TagsGroup/TagsGroup';
 import { getTagPosts } from '../../controller/notion-controller';

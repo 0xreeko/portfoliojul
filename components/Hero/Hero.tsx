@@ -10,8 +10,8 @@ export const Hero = () => {
             <div className="flex flex-col mt-12 gap-6 min-h-[45vh]">
                 <div id="0xreeko" className="flex flex-col items-center">
                     <div className='relative inline-block p-2 transition-all duration-300 rounded-full bg-gradient-to-tr from-amethyst-500/80 to-transparent w-fit h-fit' >
-                        <div className="flex p-2 rounded-full bg-russian-600">
-                            <Image priority width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="rounded-full bg-amethyst-500" />
+                        <div className="flex p-2 duration-300 rounded-full bg-russian-600 hover:scale-110 active:scale-110">
+                            <Image priority width={172} height={172} layout={'fixed'} placeholder="blur" src={brandIcon} alt="0xreeko NFT headshot" className="overflow-hidden rounded-full bg-amethyst-500" />
                         </div>
                     </div>
                 </div>
