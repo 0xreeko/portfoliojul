@@ -2,8 +2,6 @@ import type { NextPage } from 'next'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { RuiButton } from 'ruskelui';
-import { Footer } from '../components/Footer/Footer';
-import { Header } from '../components/Header/Header';
 import styles from '../styles/BaseLayout.module.css'
 
 const Newsletter: NextPage = () => {
