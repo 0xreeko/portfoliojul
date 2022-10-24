@@ -15,17 +15,17 @@ const Newsletter: NextPage = () => {
                         <div className="flex justify-center mb-3">
                             <div className="w-32 h-32 border"></div>
                         </div>
-                        <h1 className='text-m-hero sm:text-d-hero'>0xBits <span className='italic text-amethyst-500'>by 0xreeko</span></h1>
+                        <h1 className='text-m-hero sm:text-d-hero'>Woze <span className='italic text-amethyst-500'>by 0xreeko</span></h1>
                         <span className=' text-m-h3 sm:text-d-h3'>Ride digital waves before the many.</span>
                         <div className="mx-20 mt-6">
                             <p>
-                                0xBits is a fresh newsletter covering the latest scoop in Web3, Metaverse, Mixed Reality
+                                Woze is a fresh newsletter covering the latest scoop in Web3, Metaverse, Mixed Reality
                                 and more - all from a developer's unique perspective. You also get dev updates on products
                                 I build in public, which you can get involved in as an early adopter!
                             </p>
                         </div>
                         <div className={`flex flex-col relative mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
-                            <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the 0xBits crew</h2>
+                            <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the Woze crew</h2>
                             <p className='max-w-2xl'>
                                 Get the juiciest educational and actionable scoop on emerging tech industries.
                             </p>

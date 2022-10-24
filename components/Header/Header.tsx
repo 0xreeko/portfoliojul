@@ -40,7 +40,7 @@ export const Header = () => {
                     { router.route.split('/')[1] !== 'newsletter' && 
                         <a href={'/newsletter'}>
                         <RuiButton color='amethyst' variant='filled' size='sm'>
-                            <span className='font-medium tracking-wide'>Join the 0xBits newsletter</span>
+                            <span className='font-medium tracking-wide'>Join the Woze newsletter</span>
                         </RuiButton>
                     </a>
                 }
