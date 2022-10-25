@@ -18,9 +18,9 @@ export const Header = () => {
                         (
                             <Image src={'/punk4596.png'} layout={'fixed'} width={32} height={32 } className={'-translate-y-0.5'} alt={'smaller 0xreeko NFT headshot'} />
                         ) : (
-                            <Link href={'/'}>
+                            <a href={'/'}>
                                 <Image src={'/punk4596.png'} layout={'fixed'} width={32} height={32} className='hover:cursor-pointer -translate-y-0.5' alt={'smaller 0xreeko NFT headshot'} />
-                            </Link>
+                            </a>
                         )
                 }
             </div>
