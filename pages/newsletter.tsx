@@ -25,8 +25,8 @@ const Newsletter: NextPage = () => {
                                 I build in public, which you can get involved in as an early adopter! Launching soon.
                             </p>
                         </div>
-                        <div className={`flex flex-col relative mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
-                            <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the Woze crew</h2>
+                        <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mt-8 px-4 h-80 md:h-64 subscribe`}>
+                            <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join Woze</span>
                             <p className='max-w-2xl'>
                                 Daily scoop on emerging tech industries for techies and non-techies. Trends, discussions, reviews, how-to&apos;s & more. All from a developer&apos;s perspective.
                             </p>

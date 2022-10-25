@@ -15,12 +15,12 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div id="landCopy" className="flex flex-col justify-center w-full">
-                    <span className='font-bold text-center text-m-h5 sm:text-d-h5 '>GM, I&apos;m 0xreeko 👾</span>
-                    <h1 className='italic text-center text-m-hero md:text-d-hero'>building cool <span>sh*t</span> in public</h1>
-                    <p className='hidden mt-4 text-m-base md:text-d-base'>I&apos;m a <span className='text-amethyst-400'>Digital Craftsman</span> based in London and I enjoy solving problems by materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid Web3 development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
+                <div id="landCopy" className="flex flex-col justify-center w-full text-center">
+                    <span className='font-bold text-m-h5 sm:text-d-h5 '>GM, I&apos;m 0xreeko 👾</span>
+                    <h1 className='italic text-m-hero md:text-d-hero'>building cool <span>sh*t</span> in public</h1>
+                    <p className='py-6 mx-6 text-m-base md:text-d-base'>I&apos;m a <span className='text-amethyst-400'>Digital Craftsman</span> based in London and I enjoy solving problems by materialising visions into <span className='italic text-amethyst-400'>tangible products</span>. Currently, I&apos;m building an UI library for rapid frontend development at <span className='text-amethyst-400'>RuskelUI</span>.</p>
                     <p className='hidden mt-4 text-m-base md:text-d-base'>
-                        I&apos;ve begun a brand new newsletter called <span className='text-amethyst-400'> 0xBits by 0xreeko</span>,
+                        I&apos;ve begun a brand new newsletter called <span className='text-amethyst-400'> Woze by 0xreeko</span>,
                         &nbsp;a newsletter where I publish the juiciest bits on emerging tech industries, from Web3, Mixed Reality to
                         AI & Machine Learning, and development updates on my solopreneur journey as I build cool sh*t in public.
                     </p>
@@ -29,15 +29,15 @@ export const Hero = () => {
                         solving problems by materialising visions into <span className='italic text-amethyst-400'>tangible products</span>.
                         <br />
                         <br />
-                        Join my newsletter, <span className='text-amethyst-400'> 0xBits by 0xreeko</span>, where you get daily
+                        Join my newsletter, <span className='text-amethyst-400'> Woze by 0xreeko</span>, where you get daily
                         bits🗞 on emerging tech industries, from Web3 to Mixed Reality, and dev updates
                         as carve out my solopreneur journey by building cool sh*t in public.
                     </p>
                 </div>
             </div>
-            <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
-                <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the 0xBits crew</span>
-                <p className='max-w-2xl'>
+            <div className={`flex flex-col items-center gap-3 text-center rounded-3xl mx-8 px-4 h-80 md:h-64 subscribe`}>
+                <span className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join Woze</span>
+                <p className='max-w-2xl text-d-base'>
                     Get daily bits🗞 on emerging tech industries from a developer&apos;s perspective,
                     and become an early adopter as I drop updates on the products that carve my
                     solopreneur journey 👾
