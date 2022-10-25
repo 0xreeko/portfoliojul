@@ -21,14 +21,14 @@ const Newsletter: NextPage = () => {
                         <div className="mt-6 sm:mx-20">
                             <p>
                                 Woze is a fresh newsletter covering the latest scoop in Web3, Metaverse, Mixed Reality
-                                and more - all from a developer's unique perspective. You also get dev updates on products
+                                and more - all from a developer&apos;s unique perspective. You also get dev updates on products
                                 I build in public, which you can get involved in as an early adopter! Launching soon.
                             </p>
                         </div>
                         <div className={`flex flex-col relative mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
                             <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the Woze crew</h2>
                             <p className='max-w-2xl'>
-                                Daily scoop on emerging tech industries for techies and non-techies. Trends, discussions, reviews, how-to's & more. All from a developer's perspective.
+                                Daily scoop on emerging tech industries for techies and non-techies. Trends, discussions, reviews, how-to&apos;s & more. All from a developer&apos;s perspective.
                             </p>
                             <iframe src="https://embeds.beehiiv.com/d14ef743-b3cc-4b5f-bb97-049375add901?slim=true"
                                 data-test-id="beehiiv-embed"
