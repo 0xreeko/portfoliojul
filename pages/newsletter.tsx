@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { RuiButton } from 'ruskelui';
 import styles from '../styles/BaseLayout.module.css'
@@ -40,11 +39,11 @@ const Newsletter: NextPage = () => {
                         </div>
                         {/* INFO: inc. social proof section with feedback from members  */}
                         <div className="flex justify-center my-6">
-                            <Link href={'/'}>
+                            <a href={'/'}>
                                 <RuiButton size='sm' variant="text" color="azure">
                                     Return to 0xreeko.com
                                 </RuiButton>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </main>
