@@ -11,23 +11,25 @@ const Newsletter: NextPage = () => {
         <div className={styles.containers}>
             <div className={`${styles.wrapper}`}>
                 <main className={styles.main}>
-                    <div className="flex flex-col justify-center mt-12 text-center">
+                    <div className="flex flex-col justify-center mx-8 mt-12 text-center">
                         <div className="flex justify-center mb-3">
-                            <div className="w-32 h-32 border"></div>
+                            <div className="w-32 h-32 border">
+                                <div className="w-full h-full rounded-full bg-gradient-to-tr from-rose-500 to-amethyst-500"></div>
+                            </div>
                         </div>
-                        <h1 className='text-m-hero sm:text-d-hero'>Woze <span className='italic text-amethyst-500'>by 0xreeko</span></h1>
-                        <span className=' text-m-h3 sm:text-d-h3'>Ride digital waves before the many.</span>
-                        <div className="mx-20 mt-6">
+                        <span className='font-bold text-m-h3 sm:text-d-h3'>Woze <span className=' text-amethyst-500'>by 0xreeko</span></span>
+                        <h1 className='font-black text-m-h2 sm:text-d-h2'>Ride digital waves before the many.</h1>
+                        <div className="mt-6 sm:mx-20">
                             <p>
                                 Woze is a fresh newsletter covering the latest scoop in Web3, Metaverse, Mixed Reality
                                 and more - all from a developer's unique perspective. You also get dev updates on products
-                                I build in public, which you can get involved in as an early adopter!
+                                I build in public, which you can get involved in as an early adopter! Launching soon.
                             </p>
                         </div>
                         <div className={`flex flex-col relative mt-12 items-center gap-3 text-center rounded-3xl mx-8 h-72 md:h-64 subscribe`}>
                             <h2 className='mt-6 font-bold text-m-h2 sm:text-d-h2'>Join the Woze crew</h2>
                             <p className='max-w-2xl'>
-                                Get the juiciest educational and actionable scoop on emerging tech industries.
+                                Daily scoop on emerging tech industries for techies and non-techies. Trends, discussions, reviews, how-to's & more. All from a developer's perspective.
                             </p>
                             <iframe src="https://embeds.beehiiv.com/d14ef743-b3cc-4b5f-bb97-049375add901?slim=true"
                                 data-test-id="beehiiv-embed"
