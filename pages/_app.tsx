@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import NextGA from '../components/NextGA'
+import { NextGA} from 'nextgas'
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
